@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #DA0000;
+  --gray: #777777;
+  --background: #ffffff;
+  --backround-2: #FAF2F2;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #FFFFFF;
+    --gray: #BCC3D7;
+    --background: #ffffff;
+    --backround-2: #FAF2F2;
+  }
+}
+
+p {
+  color: var(--gray);
+}
+
+bg-red-tint {
+  background-color: var(--backround-2);
+}
+
+bg-red-primary {
+  background-color: var(--primary);
+}
