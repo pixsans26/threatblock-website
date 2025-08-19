@@ -1,98 +1,143 @@
 // components/Footer.jsx
-import { ArrowRight, Instagram, Facebook, Youtube } from 'lucide-react';
+
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import Button from './widgets/button_white';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
-    const quickLinks = ['Home', 'About', 'Services', 'Blogs'];
-    const resources = ['Contact Us', 'Privacy Policy', 'Terms & Condition', 'Careers', 'Teams', 'Blogs'];
+    // const quickLinks = ['Home', 'About', 'Services', 'Blogs'];
+    // const resources = ['Contact Us', 'Privacy Policy', 'Terms & Condition', 'Careers', 'Teams', 'Blogs'];
 
     const socialLinks = [
-        { icon: <Instagram size={20} />, href: '#' },
-        { icon: <Facebook size={20} />, href: '#' },
-        { icon: <Youtube size={20} />, href: '#' },
+        { icon: <FaInstagram size={20} />, href: 'www.instagram.com' },
+        { icon: <FaFacebook size={20} />, href: 'www.facebook.com' },
+        { icon: <FaYoutube size={20} />, href: 'www.youtube.com' },
     ];
 
     return (
-        <footer className="bg-[#1a0e0e] text-white pt-20 pb-8 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
-                {/* Main footer content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <section>
+            <div className='w-full flex h-auto mb-[-1px]'>
+                <Image src='/images/footer-bg.png' height={100} width={1000} alt='footer-bg' className='w-full lg:flex hidden' />
+                <Image src='/images/footer-mob-bg.png' height={100} width={1000} alt='footer-bg' className='w-full lg:hidden flex' />
+            </div>
 
-                    {/* Column 1: Brand and Contact Button */}
-                    <div className="md:col-span-2 lg:col-span-1">
-                        <h2 className="text-2xl font-bold text-red-600 mb-2">
-                            <span className="text-white">Threat</span>Block
-                        </h2>
-                        <h3 className="text-3xl lg:text-4xl font-extrabold tracking-tight mb-6">
-                            DEFENDING TOMORROW, TODAY
-                        </h3>
-                        <button className="bg-white text-black font-semibold py-3 px-5 rounded-full inline-flex items-center gap-3 transition-transform hover:scale-105">
-                            <span className="bg-red-600 text-white rounded-full p-1">
-                                <ArrowRight size={16} />
-                            </span>
-                            CONTACT US
-                        </button>
-                    </div>
+            <footer className="w-full bg-gradient-to-b from-[#250000] to-[#120000] text-white ">
 
-                    {/* Column 2: Quick Links */}
-                    <div>
-                        <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Quick Links</h4>
-                        <ul className="space-y-3">
-                            {quickLinks.map((link) => (
-                                <li key={link}>
-                                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                        {link}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                <div className="lg:w-10/12 w-11/12 mx-auto pb-8 sm:px-6 lg:px-8">
+                    {/* Main footer content */}
+                    <div className="lg:flex justify-between">
 
-                    {/* Column 3: Resources */}
-                    <div>
-                        <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Resources</h4>
-                        <ul className="space-y-3">
-                            {resources.map((link) => (
-                                <li key={link}>
-                                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                        {link}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Column 4: Contact Info */}
-                    <div>
-                        <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Contact</h4>
-                        <div className="text-gray-400 space-y-3">
-                            <p className="font-semibold text-white">Office- Delhi</p>
-                            <p>2nd Floor, 67, Satya Niketan, New Delhi, Delhi 110021</p>
-                            <p>+91 922 023 3681</p>
+                        {/* Column 1: Brand and Contact Button */}
+                        <div className="lg:w-5/12 w-full flex flex-col lg:items-start items-center mb-14">
+                            <div className='mb-2'>
+                                <Image src='/logo-white.svg' width={300} height={100} alt='logo' />
+                            </div>
+                            <h3 className="text-xl lg:text-2xl font-extrabold tracking-tight mb-6">
+                                DEFENDING TOMORROW, TODAY
+                            </h3>
+                            <Button href='/contact' text='Contact Now' />
                         </div>
-                        <div className="flex items-center space-x-4 mt-6">
-                            {socialLinks.map((social, index) => (
-                                <a
-                                    key={index}
-                                    href={social.href}
-                                    className="text-gray-400 border border-gray-600 rounded-md p-2 hover:text-white hover:border-white transition-all"
-                                    aria-label={`Follow us on ${social.href}`}
-                                >
-                                    {social.icon}
-                                </a>
-                            ))}
+
+                        <div className='lg:w-7/12 w-full grid lg:grid-cols-3 grid-cols-2 gap-10'>
+                            {/* Column 2: Quick Links */}
+                            <div>
+                                <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Quick Links</h4>
+                                <ul className="space-y-3">
+
+                                    <li>
+                                        <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                                            Home
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                                            About
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/servies" className="text-gray-400 hover:text-white transition-colors">
+                                            Servcies
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/blogs" className="text-gray-400 hover:text-white transition-colors">
+                                            Blogs
+                                        </Link>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            {/* Column 3: Resources */}
+                            <div>
+                                <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Resources</h4>
+                                <ul className="space-y-3">
+                                    <li>
+                                        <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                                            Contact
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/privacy_policy" className="text-gray-400 hover:text-white transition-colors">
+                                            Privacy Policy
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/terms_condition" className="text-gray-400 hover:text-white transition-colors">
+                                            Terms & Condition
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/careers" className="text-gray-400 hover:text-white transition-colors">
+                                            Careers
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link href="/#teams" className="text-gray-400 hover:text-white transition-colors">
+                                            Teams
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            {/* Column 4: Contact Info */}
+                            <div>
+                                <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Contact</h4>
+                                <div className="text-gray-400 space-y-3">
+                                    <p className="font-semibold text-white">Office- Delhi</p>
+                                    <p>2nd Floor, 67, Satya Niketan, New Delhi, Delhi 110021</p>
+                                    <p>+91 922 023 3681</p>
+                                </div>
+                                <div className="flex items-center space-x-4 mt-6">
+                                    {socialLinks.map((social, index) => (
+                                        <a
+                                            key={index}
+                                            href={social.href}
+                                            className="text-gray-400 border border-gray-600 rounded-md p-2 hover:text-white hover:border-white transition-all"
+                                            aria-label={`Follow us on ${social.href}`}
+                                        >
+                                            {social.icon}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
+
                     </div>
+
 
                 </div>
 
                 {/* Bottom copyright section */}
-                <div className="mt-16 pt-8 border-t border-gray-800 text-center">
+                <div className="w-full text-center bg-[#1A0D0D] lg:py-10 py-5">
                     <p className="text-gray-500 text-sm">
                         © 2025 ThreatBlock All right reserved.
                     </p>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </section>
     );
 };
 

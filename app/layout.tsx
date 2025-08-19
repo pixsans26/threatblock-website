@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/footer";
-import NavbarMobile from "@/components/navMobile";
+import NavbarMobile from "@/components/navbar/navMobile";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -22,10 +22,10 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
 
-  title: "ThreatBlock",
+  title: "ThreatBlock - Cyber Security Consultancy",
   description: "The Best Cyber Security Consultant",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 

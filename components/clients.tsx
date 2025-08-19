@@ -28,7 +28,7 @@ export default function ClientsSlider() {
                 viewport={{
                   once: true
                 }}
-                className='text-4xl font-bold w-full'>Trusted Clients</MotionH2>
+                className='lg:text-4xl text-2xl font-bold w-full'>Trusted Clients</MotionH2>
             </div>
 
           </div>
@@ -39,7 +39,7 @@ export default function ClientsSlider() {
               // direction='right\\\'
               gradient={true}
               gradientColor='#ffffff'
-              gradientWidth="300px"
+              gradientWidth="200px"
               speed={30}
               loop={0}
               autoFill={true}
@@ -49,10 +49,10 @@ export default function ClientsSlider() {
                 {ClientsData?.map((curElm: any) => (
                   <div
                     key={curElm.id}
-                    className='w-1/12 mx-16'>
+                    className='w-1/12 lg:mx-16 mx-8'>
                     <img
                       className=''
-                      width={200}
+                      width={100}
                       height={100}
                       src={curElm.logo}
                       alt={curElm.name} />

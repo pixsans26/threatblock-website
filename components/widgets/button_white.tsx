@@ -10,7 +10,7 @@ interface ButtonProps {
     className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ href, text, className = '' }) => {
+const ButtonWhite: React.FC<ButtonProps> = ({ href, text, className = '' }) => {
     return (
 
         <Link
@@ -47,4 +47,4 @@ const Button: React.FC<ButtonProps> = ({ href, text, className = '' }) => {
     );
 };
 
-export default Button
+export default ButtonWhite

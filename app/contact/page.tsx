@@ -9,22 +9,25 @@ export default function Contact() {
     return (
         <>
             <ContactHero />
-            <section className="w-full h-[60vh] flex mx-auto justify-center items-center text-white">
+            <section className="w-full lg:h-[60vh] flex mx-auto justify-center items-center text-white lg:mb-40 mb-20 ">
                 {/*  */}
-                <div className="w-9/12 h-auto flex mx-auto absolute">
-                    <div className="w-full relative flex items-center">
+                <div className="lg:w-9/12 w-10/12 h-auto lg:flex absolute">
+                    <div className="w-full h-full relative lg:flex items-center ">
                         {/* Left Side */}
-                        <div className="w-4/12">
+                        <div className="lg:w-4/12 w-11/12 lg:mx-0 mx-auto h-full">
                             {/* Address */}
-                            <div className="w-10/12 ">
-                                <h3 className="text-2xl font-bold text-white my-10">
-                                    Contact Us
+                            <div className="lg:w-10/12 w-full h-auto">
+                                <h3 className="lg:text-2xl font-bold text-white lg:my-10 mb-10">
+                                    Contact Details
                                 </h3>
                                 {/* Address */}
-                                <div className="flex flex-col gap-10 justify-center item-starts">
+                                <div className="flex flex-col lg:gap-10 gap-4 justify-center lg:item-starts">
 
-                                    <div className="flex justify-start items-start">
-                                        <FaLocationPin />
+                                    <div className="flex justify-start items-start gap-1">
+                                        <div className="h-10 w-10 flex justify-center items-center">
+                                            <FaLocationPin />
+                                        </div>
+
                                         <div>
                                             Office no. 416, Global Business Hub, Kharadi, Pune, 411014
                                         </div>
@@ -32,7 +35,7 @@ export default function Contact() {
 
                                     {/* Email */}
                                     <div className="flex gap-1 justify-start items-center ">
-                                        <div>
+                                        <div className="h-10 w-10 flex justify-center items-center">
                                             <FaEnvelope />
                                         </div>
                                         <div>
@@ -42,7 +45,7 @@ export default function Contact() {
 
                                     {/* Website */}
                                     <div className="flex gap-1 justify-start items-center">
-                                        <div>
+                                        <div className="h-10 w-10 flex justify-center items-center">
                                             <FaGlobe />
                                         </div>
                                         <div>
@@ -52,7 +55,9 @@ export default function Contact() {
 
                                     {/* Phone */}
                                     <div className="flex gap-1 justify-start items-center">
-                                        <FaMobile />
+                                        <div className="h-10 w-10 flex justify-center items-center">
+                                            <FaMobile />
+                                        </div>
                                         <div>
                                             +91 983023204
                                         </div>
@@ -62,8 +67,8 @@ export default function Contact() {
                         </div>
 
                         {/* Right side form */}
-                        <div className="w-8/12 absolute h-[60vh] right-0">
-                            <div className=' w-full border-[1px] h-[60vh]  border-gray-300  p-2  bg-white mb-10'>
+                        <div className="lg:w-8/12 w-11/12 lg:mx-0 mx-auto lg:absolute lg:h-[60vh] right-0 lg:flex hidden">
+                            <div className=' w-full border-[1px] lg:h-[60vh]  border-gray-300  p-2  bg-white mb-10'>
                                 <div className="p-4 flex justify-between bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden text-black">
                                     form
                                 </div>
@@ -71,12 +76,21 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex">
-                    <div className="w-5/12">
+                <div className="w-full flex h-auto">
+                    <div className="lg:w-5/12">
                         <Image src='/images/contact-details.png' width={1000} height={100} alt='contacr_bg' />
                     </div>
                 </div>
             </section >
+
+            {/* Right side form */}
+            <div className="w-11/12 lg:mx-0 mx-auto lg:absolute lg:h-[60vh] right-0 lg:hidden flex">
+                <div className=' w-full border-[1px] lg:h-[60vh]  border-gray-300  p-2  bg-white mb-10'>
+                    <div className="p-4 flex justify-between bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden text-black">
+                        form
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
