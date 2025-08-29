@@ -8,11 +8,13 @@ export const env = createEnv({
     //   },
     client: {
         NEXT_PUBLIC_API_URL: z.string().min(1),
+        NEXT_PUBLIC_DIRECTUS_TOKEN: z.string().min(1),
         // NEXT_PUBLIC_GA_ID: z.string().min(1),
         // NEXT_PUBLIC_GTM_ID: z.string().min(1)
     },
     runtimeEnv: {
         NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+        NEXT_PUBLIC_DIRECTUS_TOKEN: process.env.NEXT_PUBLIC_DIRECTUS_TOKEN,
         // NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
         // NEXT_PUBLIC_GTM_ID: process.env.NEXT_PUBLIC_GTM_ID
     }

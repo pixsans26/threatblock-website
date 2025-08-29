@@ -1,3 +1,4 @@
+import ContactFrom from "@/components/contact-form"
 import ContactHero from "@/components/contact_hero"
 import Image from "next/image"
 import { FaEnvelope } from "react-icons/fa"
@@ -67,12 +68,8 @@ export default function Contact() {
                         </div>
 
                         {/* Right side form */}
-                        <div className="lg:w-8/12 w-11/12 lg:mx-0 mx-auto lg:absolute lg:h-[60vh] right-0 lg:flex hidden">
-                            <div className=' w-full border-[1px] lg:h-[60vh]  border-gray-300  p-2  bg-white mb-10'>
-                                <div className="p-4 flex justify-between bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden text-black">
-                                    form
-                                </div>
-                            </div>
+                        <div className="lg:w-8/12 w-11/12 lg:mx-0 mx-auto lg:absolute right-0 lg:flex hidden">
+                            <ContactFrom />
                         </div>
                     </div>
                 </div>
@@ -85,11 +82,7 @@ export default function Contact() {
 
             {/* Right side form */}
             <div className="w-11/12 lg:mx-0 mx-auto lg:absolute lg:h-[60vh] right-0 lg:hidden flex">
-                <div className=' w-full border-[1px] lg:h-[60vh]  border-gray-300  p-2  bg-white mb-10'>
-                    <div className="p-4 flex justify-between bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden text-black">
-                        form
-                    </div>
-                </div>
+                <ContactFrom />
             </div>
         </>
     )

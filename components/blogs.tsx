@@ -18,6 +18,7 @@ export default function Blogs() {
                     </div>
                     <div className="w-4/12 lg:flex justify-end hidden">
                         <Button
+                            target="_parent"
                             href="/blogs"
                             text='More Blogs' />
                     </div>
@@ -78,10 +79,11 @@ export default function Blogs() {
                     <div className="w-6/12 lg:hidden justify-end flex">
                         <Button
                             href="/blogs"
+                            target="_parent"
                             text='More Blogs' />
                     </div>
 
- 
+
 
 
 

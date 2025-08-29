@@ -1,22 +1,17 @@
 import * as React from "react";
-import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 
 
 
 interface ButtonProps {
-    href: string;
     text: string;
-    target: string;
-    className?: string;
 }
 
-const ButtonDark: React.FC<ButtonProps> = ({ href, text, target, className = '' }) => {
+const ButtonSubmit: React.FC<ButtonProps> = ({ text }) => {
     return (
 
-        <Link
-            href={href}
-            target={target}
+        <button
+            type='submit'
             className={`
         group 
         inline-flex 
@@ -32,7 +27,6 @@ const ButtonDark: React.FC<ButtonProps> = ({ href, text, target, className = '' 
         focus:ring-2 
         focus:ring-offset-2 
         focus:ring-red-500
-        ${className}
       `}
         >
             {/* Red circle for the icon */}
@@ -45,8 +39,8 @@ const ButtonDark: React.FC<ButtonProps> = ({ href, text, target, className = '' 
             <span className='px-4 text-lg font-medium'>
                 {text}
             </span>
-        </Link>
+        </button>
     );
 };
 
-export default ButtonDark;
+export default ButtonSubmit;

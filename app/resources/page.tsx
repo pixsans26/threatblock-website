@@ -1,11 +1,14 @@
 import ResourcesHero from "@/components/resources_hero";
 import Image from "next/image";
-import Link from "next/link";
-import { resourcesData } from '@/data/resources'
 import Button from "@/components/widgets/button_dark";
+import { getResources } from "@/api/getData";
+import { env } from "@/utils/env";
+const baseUrl = env.NEXT_PUBLIC_API_URL
 
 
-export default function Resources() {
+export default async function Resources() {
+    const { data: resources } = await getResources()
+
     return (
         <>
             <ResourcesHero />
@@ -27,8 +30,8 @@ export default function Resources() {
             <section className="lg:w-9/12 w-11/12 mx-auto grid lg:grid-cols-2 grid-1 justify-between items-center gap-10 mb-40">
 
                 {/* Card */}
-                {resourcesData.map((curElm: any) => (
-                    <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
+                {resources.map((curElm: any) => (
+                    <div key={curElm.id} className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
                         <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
                             {/* Icon */}
                             <div className="text-5xl text-zinc-600 mb-4 lg:2h-[20rem] bg-slate-50 overflow-hidden relative">
@@ -36,7 +39,7 @@ export default function Resources() {
                                     <Image src='/icons/pdf.svg' height={100} width={40} alt='pdf' />
                                 </div>
                                 <div>
-                                    <Image src={curElm.image} height={100} width={1000} alt={curElm.title} />
+                                    <Image src={`${baseUrl}/assets/${curElm.image}`} height={100} width={1000} alt={curElm.title} />
                                 </div>
 
                             </div>
@@ -50,7 +53,7 @@ export default function Resources() {
                                 {curElm.description}
                             </p>
                             <div>
-                                <Button href={curElm.link} text="Download" />
+                                <Button href={`${baseUrl}/assets/${curElm.pdf_file}`} text="Download" target="_blank" />
                             </div>
                         </div>
                     </div>

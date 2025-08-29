@@ -45,7 +45,7 @@ export default function Careers() {
                                     {curElm.description}
                                 </p>
                                 <div>
-                                    <Button href='/apply' text="Apply Now" />
+                                    <Button target="_parent" href='/apply' text="Apply Now" />
                                 </div>
                             </div>
 

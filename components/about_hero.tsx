@@ -1,4 +1,5 @@
 
+import { MotionDiv, MotionH1, MotionP } from "@/utils/motioDiv";
 import Image from "next/image";
 
 export default function AboutHero() {
@@ -13,15 +14,31 @@ export default function AboutHero() {
                     <div className="w-9/12 lg:flex hidden justify-around items-center mx-auto gap-20 z-10 lg:my-10 mt-30">
                         <div className="w-6/12 flex flex-col gap-4 justify-start">
 
-                            <h1 className="lg:text-6xl text-3xl font-bold text-white">
-                                Tailored <span className="text-red-600">Consulting</span> for the Advanced Security
-                            </h1>
-                            <p className="text-gray-200 text-lg">
-                                Our mission is to empowers businesses off all size to thrive in an businesses ever changing marketplace. We are committed to the delivering exceptional in the value through our strategic inset, innovative approaches. Our mission is to empower businesses of all sizes to thrive.
-                            </p>
-                            <p>
-                                Committed to the delivering exceptional in the value through our strategic inset, innovative approaches empower.
-                            </p>
+                            <MotionH1
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                                transition={{ duration: .8, delay: .3 }}
+                                viewport={{
+                                    once: true
+                                }}
+                                className="lg:text-6xl text-3xl font-bold text-white mb-10">
+                                Tailored <span className="text-red-600">Consulting</span> for Advanced Security
+                            </MotionH1>
+                            <MotionP
+                                initial={{ x: -50, opacity: 0 }}
+                                whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                                transition={{ duration: .8, delay: .6 }}
+                                viewport={{
+                                    once: true
+                                }}
+                                className="text-gray-400 lg:text-lg">
+                                At ThreatBlock, we specialize in delivering cybersecurity solutions that are both <span className="font-bold text-white"> cutting-edge and
+                                    deeply personalized</span>. Our mission is to empower organizations of every size to navigate today’s
+                                evolving threat landscape with confidence. By combining <span className="font-bold text-white">strategic insight, advanced tools, and a
+                                    client-first mindset</span>, we ensure security becomes a true enabler of business growth—not just a
+                                compliance checkbox.
+                            </MotionP>
+
                         </div>
                         <div className="w-6/12">
                         </div>
@@ -29,9 +46,16 @@ export default function AboutHero() {
 
                 </div>
                 <div className="lg:w-9/12 w-11/12 lg:h-[90vh] h-[30vh] lg:flex justify-around absolute items-center mx-auto">
-                    <div className="lg:w-6/12 w-7/12 right-0 absolute bottom-0">
+                    <MotionDiv
+                        initial={{ x: 50, opacity: 0 }}
+                        whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                        transition={{ duration: .8, delay: .3 }}
+                        viewport={{
+                            once: true
+                        }}
+                        className="lg:w-6/12 w-7/12 right-0 absolute bottom-0">
                         <Image src='/images/about_team.png' height={100} width={1000} alt="about" />
-                    </div>
+                    </MotionDiv>
                 </div>
 
             </section>
@@ -39,15 +63,27 @@ export default function AboutHero() {
             {/* Responsive */}
             <section className="w-11/12 lg:hidden mx-auto gap-20 z-10 mt-40">
 
-                <h1 className="lg:text-6xl text-3xl font-bold text-zinc-900">
-                    Tailored <span className="text-red-600">Consulting</span> for the Advanced Security
-                </h1>
-                <p className="text-gray-500 mb-2 text-justify">
-                    Our mission is to empowers businesses off all size to thrive in an businesses ever changing marketplace. We are committed to the delivering exceptional in the value through our strategic inset, innovative approaches. Our mission is to empower businesses of all sizes to thrive.
-                </p>
-                <p className="text-gray-500 text-justify">
-                    Committed to the delivering exceptional in the value through our strategic inset, innovative approaches empower.
-                </p>
+                <MotionH1
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                    transition={{ duration: .8, delay: .3 }}
+                    viewport={{
+                        once: true
+                    }}
+                    className="lg:text-6xl text-3xl font-bold text-zinc-900">
+                    Tailored <span className="text-red-600">Consulting</span> for Advanced Security
+                </MotionH1>
+                <MotionP
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                    transition={{ duration: .8, delay: .6 }}
+                    viewport={{
+                        once: true
+                    }}
+                    className="text-gray-600 mb-2 text-justify">
+                    At ThreatBlock, we specialize in delivering cybersecurity solutions that are both <span className="font-bold text-white"> cutting-edge anddeeply personalized</span>. Our mission is to empower organizations of every size to navigate today’s
+                    evolving threat landscape with confidence. By combining <span className="font-bold text-white">strategic insight, advanced tools, and aclient-first mindset</span>, we ensure security becomes a true enabler of business growth—not just acompliance checkbox.
+                </MotionP>
 
             </section>
         </>

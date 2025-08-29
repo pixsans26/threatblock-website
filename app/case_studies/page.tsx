@@ -1,9 +1,12 @@
 import CaseStudiesHero from "@/components/case_studies_hero";
 import ButtonDark from "@/components/widgets/button_dark";
 import Image from "next/image";
-import { caseStudiesData } from '@/data/case-studies'
+import { getCaseStudies } from "@/api/getData";
+import { env } from "@/utils/env";
+const baseUrl = env.NEXT_PUBLIC_API_URL
 
-export default function CaseStudies() {
+export default async function CaseStudies() {
+    const { data: caseStudies } = await getCaseStudies()
     return (
         <>
             <CaseStudiesHero />
@@ -23,11 +26,12 @@ export default function CaseStudies() {
                 </div>
             </section>
 
-            <section className="lg:w-9/12 w-11/12 mx-auto grid lg:grid-cols-2 grid-1 justify-between items-center gap-10 mb-40">
+            <div id=".." className="lg:w-9/12 w-11/12 mx-auto grid lg:grid-cols-2 grid-1 justify-between items-center gap-10 mb-40">
 
                 {/* Card */}
-                {caseStudiesData.map((curElm: any) => (
-                    <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
+                {caseStudies.map((curElm: any) => (
+
+                    <div id={curElm.id} className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
                         <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
                             {/* Icon */}
                             <div className="text-5xl text-zinc-600 mb-4 lg:h-[20rem] bg-slate-50 overflow-hidden relative">
@@ -35,7 +39,7 @@ export default function CaseStudies() {
                                     <Image src='/icons/pdf.svg' height={100} width={40} alt='pdf' />
                                 </div>
                                 <div>
-                                    <Image src={curElm.image} height={100} width={1000} alt={curElm.title} />
+                                    <Image src={`${baseUrl}/assets/${curElm.image}`} height={100} width={1000} alt={curElm.title} />
                                 </div>
 
                             </div>
@@ -49,7 +53,7 @@ export default function CaseStudies() {
                                 {curElm.description}
                             </p>
                             <div>
-                                <ButtonDark href={curElm.link} text="Download" />
+                                <ButtonDark href={`${baseUrl}/assets/${curElm.pdf_file}`} target="_blank" text="Download" />
                             </div>
 
 
@@ -57,7 +61,7 @@ export default function CaseStudies() {
                     </div>
                 ))}
 
-            </section>
+            </div>
         </>
     );
 }

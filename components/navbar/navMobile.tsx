@@ -73,7 +73,7 @@ const NavbarMobile = () => {
                             Contact
                         </Link>
                         <div className='flex justify-center'>
-                            <ButtonDark href='/contact' text='Get In Touch' />
+                            <ButtonDark target='_parent' href='/contact' text='Get In Touch' />
                         </div>
                     </nav>
                 </div>

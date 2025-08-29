@@ -1,32 +1,45 @@
 
-// import { env } from "@/utils/env";
-// const baseUrl = env.NEXT_PUBLIC_API_URL
+import { env } from "@/utils/env";
+const baseUrl = env.NEXT_PUBLIC_API_URL
+const DIRECTUS_TOKEN = env.NEXT_PUBLIC_DIRECTUS_TOKEN
 
-// // // get Core Team
-// // export async function getTeam() {
+// get resources
+export async function getResources() {
 
-// //     try {
-// //         const res = await fetch(`${baseUrl}/items/team?fields=id,name,email,photo,designation&filter[core_member][_eq]=true&sort=date_created`, { cache: 'no-store' });
-// //         const response = await res.json();
+    try {
+        const res = await fetch(`${baseUrl}/items/resources`, {
+            headers: {
+                Authorization: `Bearer ${DIRECTUS_TOKEN}`,
+            },
+            next: { revalidate: 30 }
+        });
+        const response = await res.json();
 
-// //         return response
-// //     } catch (error) {
-// //         console.log(error)
-// //     }
-// // }
+        return response
+    } catch (error) {
+        console.log(error)
+    }
+}
 
-// // get FAQs
-// // export async function getFaqs() {
+// get casestudies
 
-// //     try {
-// //         const res = await fetch(`${baseUrl}/items/faq`, { cache: 'no-store' });
-// //         const response = await res.json();
+export async function getCaseStudies() {
 
-// //         return response
-// //     } catch (error) {
-// //         console.log(error)
-// //     }
-// // }
+    try {
+        const res = await fetch(`${baseUrl}/items/case_studies`, {
+            headers: {
+                Authorization: `Bearer ${DIRECTUS_TOKEN}`,
+            },
+
+            next: { revalidate: 30 }
+        });
+        const response = await res.json();
+
+        return response
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 // // get Clients
 // export async function getClients() {
