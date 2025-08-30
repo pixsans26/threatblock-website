@@ -1,8 +1,8 @@
 export const TeamData = [
     {
         id: 1,
-        name: 'Name Surname',
-        designation: 'Designation',
+        name: 'Samaksh Kaushik',
+        designation: 'Founder & CEO',
         image: '/images/team1.png',
         facebook: 'https://link',
         instagram: 'https://link',
@@ -10,8 +10,8 @@ export const TeamData = [
     },
     {
         id: 2,
-        name: 'Name Surname',
-        designation: 'Designation',
+        name: 'Sunil Kumar Kaushik',
+        designation: 'Operation Head',
         image: '/images/team1.png',
         facebook: 'https://link',
         instagram: 'https://link',
@@ -19,8 +19,8 @@ export const TeamData = [
     },
     {
         id: 3,
-        name: 'Name Surname',
-        designation: 'Designation',
+        name: 'Sujata Kumbhare',
+        designation: 'Sales Head',
         image: '/images/team1.png',
         facebook: 'https://link',
         instagram: 'https://link',
@@ -28,7 +28,7 @@ export const TeamData = [
     },
     {
         id: 4,
-        name: 'Name Surname',
+        name: 'Mohit Tripathi',
         designation: 'Designation',
         image: '/images/team1.png',
         facebook: 'https://link',

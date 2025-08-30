@@ -62,7 +62,7 @@ export default function AboutHome() {
                                         once: true
                                     }}
                                     className="lg:text-4xl text-2xl font-bold w-full">
-                                    Our dedicated team collectively invests 10,000 hours each year in cybersecurity efforts.
+                                    Tailored Consulting for Advanced Security
                                 </MotionH2>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ export default function AboutHome() {
                                         once: true
                                     }}
                                     className="text-gray-500 lg:text-lg">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    At ThreatBlock, we specialize in delivering cybersecurity solutions that are both cutting-edge and deeply personalized...
                                 </MotionP>
                                 <MotionDiv
 

@@ -9,7 +9,7 @@ export default function Values() {
 
 
             <section className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between h-auto  gap-20 mb-28 z-10">
-                <div className="lg:w-6/12 w-full flex-col flex gap-2">
+                <div className="lg:w-6/12 w-full flex-col flex gap-2 lg:mb-0 mb-10">
                     <MotionDiv
                         initial={{ x: -50, opacity: 0 }}
                         whileInView={{ x: 0, scale: 1, opacity: 1 }}
@@ -77,10 +77,17 @@ export default function Values() {
 
                     </div>
                 </div>
-                <div className="lg:w-6/12 w-full flex justify-between gap-10">
-                    <div className="w-6/12 flex-col flex gap-10">
+                <div className="lg:w-6/12 w-full lg:flex justify-between lg:gap-10">
+                    <div className="lg:w-6/12 lg:flex-col lg:flex lg:gap-10">
                         {/* card */}
-                        <div className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6]">
+                        <MotionDiv
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
+                            transition={{ duration: .8, delay: .3 }}
+                            viewport={{
+                                once: true
+                            }}
+                            className="w-full h-auto lg:p-8 p-4 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
                                 <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
                             </div>
@@ -91,9 +98,16 @@ export default function Values() {
                                     what we’re doing, why we’re doing it, and how it benefits them.
                                 </p>
                             </div>
-                        </div>
+                        </MotionDiv>
                         {/* card */}
-                        <div className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6]">
+                        <MotionDiv
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
+                            transition={{ duration: .8, delay: .9 }}
+                            viewport={{
+                                once: true
+                            }}
+                            className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
                                 <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
                             </div>
@@ -104,11 +118,17 @@ export default function Values() {
                                         certifications</span>, allowing us to stay ahead of rapidly evolving threats
                                 </p>
                             </div>
-                        </div>
+                        </MotionDiv>
                     </div>
-                    <div className="w-6/12 flex flex-col mt-20 gap-10">
+                    <div className="lg:w-6/12 flex flex-col lg:mt-20 lg:gap-10">
                         {/* card */}
-                        <div className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6]">
+                        <MotionDiv
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
+                            transition={{ duration: .8, delay: .6 }}
+                            viewport={{
+                                once: true
+                            }} className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
                                 <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
                             </div>
@@ -118,10 +138,17 @@ export default function Values() {
                                     We believe the best defense is built together. Our engagements are <span className="font-semibold text-black"> partnerships, not transactions </span>—we work hand-in-hand with your teams to design and implement practical security.
                                 </p>
                             </div>
-                        </div>
+                        </MotionDiv>
 
                         {/* card */}
-                        <div className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6]">
+                        <MotionDiv
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
+                            transition={{ duration: .8, delay: 1.2 }}
+                            viewport={{
+                                once: true
+                            }}
+                            className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
                                 <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
                             </div>
@@ -131,7 +158,7 @@ export default function Values() {
                                     Cybersecurity is never static. We embrace <span className="font-semibold text-black">creative thinking and emerging technologies</span> to transform your defenses from reactive shields into proactive, predictive systems.
                                 </p>
                             </div>
-                        </div>
+                        </MotionDiv>
                     </div>
                 </div>
             </section>

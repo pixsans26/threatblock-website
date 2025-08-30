@@ -1,14 +1,38 @@
 'use client'
-import React, { useState } from 'react';
-
+import React, { useState, useRef, useEffect } from 'react';
+import { IoIosArrowForward } from "react-icons/io";
 import Link from "next/link";
 import { FaBarsStaggered } from 'react-icons/fa6';
 import ButtonDark from '../widgets/button_dark';
 
 
+
 const NavbarMobile = () => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+    const servicesRef = useRef<HTMLDivElement>(null);
+    const [dropdownHeight, setDropdownHeight] = useState('0px');
+
+    useEffect(() => {
+        if (servicesDropdownOpen) {
+            // Check if the ref exists before accessing its properties
+            if (servicesRef.current) {
+                setDropdownHeight(`${servicesRef.current.scrollHeight}px`);
+            }
+        } else {
+            setDropdownHeight('0px');
+        }
+    }, [servicesDropdownOpen]);
+
+    const toggleServicesDropdown = () => {
+        setServicesDropdownOpen(!servicesDropdownOpen);
+    };
+
+    const closeSidebarAndDropdown = () => {
+        setSidebarOpen(false);
+        setServicesDropdownOpen(false);
+    };
 
     return (
         <>
@@ -20,54 +44,104 @@ const NavbarMobile = () => {
 
                         <button
                             className="lg:hidden text-gray-400 hover:text-white"
-                            onClick={() => setSidebarOpen(false)}>
+                            onClick={closeSidebarAndDropdown}>
                             ✖
                         </button>
                     </div>
                     <nav className="space-y-4 bg-white backdrop-blur-sm h-screen text-zinc-800">
                         <div className='w-11/12 flex justify-center items-center h-24'>
-                            <Link onClick={() => setSidebarOpen(false)} href="/">
+                            <Link onClick={closeSidebarAndDropdown} href="/">
                                 <img src='/logo.svg' />
                             </Link>
                         </div>
                         <Link
                             href="/"
-                            onClick={() => setSidebarOpen(false)}
+                            onClick={closeSidebarAndDropdown}
                             className="block px-4 py-2 rounded hover:bg-gray-700 transition"
                         >
                             Home
                         </Link>
                         <Link
                             href="/about"
-                            onClick={() => setSidebarOpen(false)}
+                            onClick={closeSidebarAndDropdown}
                             className="block px-4 py-2 rounded hover:bg-gray-700 transition"
                         >
                             About
                         </Link>
+                        <div>
+                            <button
+                                onClick={toggleServicesDropdown}
+                                className="w-full flex justify-between items-center text-left px-4 py-2 rounded hover:bg-red-100 transition ease-in-out"
+                            >
+                                Services
+                                <span><IoIosArrowForward /></span>
+                            </button>
+                            {servicesDropdownOpen && (
+                                <div
+                                    ref={servicesRef}
+                                    style={{ height: dropdownHeight }}
+                                    className={`
+                                    overflow-hidden transition-all duration-300 ease-in-out pl-8 pt-2 text-gray-500 text-sm
+                                `}
+                                >
+                                    <Link href="/services/penetration-testing" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Penetration Testing
+                                    </Link>
+                                    <Link href="/services/red-team-assesments" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Red Team Assesments
+                                    </Link>
+                                    <Link href="/services/security-audit-compliance" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Security Audits and Compliance
+                                    </Link>
+                                    <Link href="/services/threat-intellligence" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Threat Intelligence
+                                    </Link>
+                                    <Link href="/services/web-application-pt" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Web Application PT
+                                    </Link>
+                                    <Link href="/services/mobile-application-pt" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Mobile Application PT
+                                    </Link>
+                                    <Link href="/services/network-pentesting" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Network Pentesting
+                                    </Link>
+                                    <Link href="/services/api-pentesting" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        API Pentetsting
+                                    </Link>
+                                    <Link href="/services/cloud-security" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        Cloud Security
+                                    </Link>
+                                    <Link href="/services/devsecops" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        DevSecOps
+                                    </Link>
+
+                                </div>
+                            )}
+                        </div>
                         <Link
                             href="/press_room"
-                            onClick={() => setSidebarOpen(false)}
+                            onClick={closeSidebarAndDropdown}
                             className="block px-4 py-2 rounded hover:bg-gray-700 transition"
                         >
                             Press Room
                         </Link>
                         <Link
                             href="/resources"
-                            onClick={() => setSidebarOpen(false)}
+                            onClick={closeSidebarAndDropdown}
                             className="block px-4 py-2 rounded hover:bg-gray-700 transition"
                         >
                             Resources
                         </Link>
                         <Link
                             href="/case_studies"
-                            onClick={() => setSidebarOpen(false)}
+                            onClick={closeSidebarAndDropdown}
                             className="block px-4 py-2 rounded hover:bg-gray-700 transition"
                         >
                             Case Studies
                         </Link>
                         <Link
                             href="/contact"
-                            onClick={() => setSidebarOpen(false)}
+                            onClick={closeSidebarAndDropdown}
                             className="block px-4 py-2 rounded hover:bg-gray-700 transition"
                         >
                             Contact

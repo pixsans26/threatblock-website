@@ -7,7 +7,7 @@ import { MotionDiv, MotionH1, MotionH4, MotionP } from '@/utils/motioDiv';
 export default function Hero() {
     return (
         <>
-            <section className="w-full relative mx-auto bg-[#FAF2F2] lg:mb-48 mb-32">
+            <section className="w-full relative mx-auto bg-[#FAF2F2] lg:mb-48 mb-56">
                 <div className="w-full lg:absolute mx-auto h-auto ">
 
                     {/* section bg */}
@@ -73,7 +73,7 @@ export default function Hero() {
                                     <div className="opacity-20">
                                         <Image src="/images/counter_hero_bg.png" width={1000} height={1000} alt="hero_image_1" className="" />
                                     </div>
-                                    <div className="w-full flex h-full justify-between absolute items-center lg:py-12 lg:px-8 px-4 py-8">
+                                    <div className="w-full flex h-full justify-between absolute items-center lg:py-12 gap-2 lg:px-8 px-4 py-8">
                                         <div className="">
                                             <h3 className="lg:text-4xl text-xl text-white font-bold">50+</h3>
                                             <p className="lg:text-lg text-xs">Security Engagements</p>

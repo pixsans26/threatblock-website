@@ -9,14 +9,14 @@ export default function ServiceSlide() {
 
 
 
-            <section className="w-full relative">
+            <section className="w-full relative lg:mb-0 mb-20">
                 {/* Background Decoration */}
                 <div className="absolute inset-0 top-40 z-0">
                     <div className="w-full h-full bg-no-repeat bg-right " style={{ backgroundImage: `url('/images/hexagon.svg')`, backgroundAttachment: `fixed`, backgroundRepeat: 'fill' }}></div>
                 </div>
                 <div className="lg:w-9/12 w-11/12 mx-auto z-10">
-                    <div className="relative mx-auto flex justify-between h-full py-[200px] lg:gap-20">
-                        <div className="h-[300px] sticky top-[300px] w-6/12 flex flex-col justify-center">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:py-[200px] lg:gap-20">
+                        <div className="h-[300px] lg:sticky top-[300px] lg:w-6/12 flex flex-col justify-center">
                             <div className="">
                                 <MotionDiv
                                     initial={{ x: -50, opacity: 0 }}
@@ -57,6 +57,7 @@ export default function ServiceSlide() {
                                         viewport={{
                                             once: true
                                         }}
+                                        className="lg:flex hidden"
                                     >
                                         <ButtonDark href="/services" text="Explore our Services" target="_parent" />
                                     </MotionDiv>
@@ -71,7 +72,7 @@ export default function ServiceSlide() {
                             viewport={{
                                 once: true
                             }}
-                            className="w-6/12 flex flex-col gap-80 sticky">
+                            className="lg:w-6/12 lg:flex flex-col lg:gap-80 sticky">
 
                             {servicesData.map((curElm: any) => (
                                 <ServiceCard
@@ -85,6 +86,17 @@ export default function ServiceSlide() {
 
 
                     </div>
+                    <MotionDiv
+                        initial={{ x: -50, opacity: 0 }}
+                        whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                        transition={{ duration: .8, delay: 1.2 }}
+                        viewport={{
+                            once: true
+                        }}
+                        className="flex lg:hidden"
+                    >
+                        <ButtonDark href="/services" text="Explore our Services" target="_parent" />
+                    </MotionDiv>
 
                 </div>
 

@@ -26,7 +26,7 @@ export default async function CaseStudies() {
                 </div>
             </section>
 
-            <div id=".." className="lg:w-9/12 w-11/12 mx-auto grid lg:grid-cols-2 grid-1 justify-between items-center gap-10 mb-40">
+            <div className="lg:w-9/12 w-11/12 mx-auto grid lg:grid-cols-2 grid-1 justify-between items-center gap-10 mb-40">
 
                 {/* Card */}
                 {caseStudies.map((curElm: any) => (

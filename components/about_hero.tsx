@@ -70,7 +70,7 @@ export default function AboutHero() {
                     viewport={{
                         once: true
                     }}
-                    className="lg:text-6xl text-3xl font-bold text-zinc-900">
+                    className="lg:text-6xl text-3xl font-bold text-zinc-900 mb-5">
                     Tailored <span className="text-red-600">Consulting</span> for Advanced Security
                 </MotionH1>
                 <MotionP
@@ -80,9 +80,9 @@ export default function AboutHero() {
                     viewport={{
                         once: true
                     }}
-                    className="text-gray-600 mb-2 text-justify">
-                    At ThreatBlock, we specialize in delivering cybersecurity solutions that are both <span className="font-bold text-white"> cutting-edge anddeeply personalized</span>. Our mission is to empower organizations of every size to navigate today’s
-                    evolving threat landscape with confidence. By combining <span className="font-bold text-white">strategic insight, advanced tools, and aclient-first mindset</span>, we ensure security becomes a true enabler of business growth—not just acompliance checkbox.
+                    className="text-gray-600 mb-2">
+                    At ThreatBlock, we specialize in delivering cybersecurity solutions that are both <span className="font-bold text-black"> cutting-edge anddeeply personalized</span>. Our mission is to empower organizations of every size to navigate today’s
+                    evolving threat landscape with confidence. By combining <span className="font-bold text-black">strategic insight, advanced tools, and aclient-first mindset</span>, we ensure security becomes a true enabler of business growth—not just acompliance checkbox.
                 </MotionP>
 
             </section>
