@@ -5,6 +5,8 @@ import AboutHome from "@/components/about";
 import ClientSlider from "@/components/clients";
 import Reviews from "@/components/reviews";
 import Blogs from "@/components/blogs";
+import Industries from "@/components/industries";
+import WorkProcess from "@/components/work_process";
 
 
 
@@ -17,6 +19,8 @@ export default function Home() {
       <TrustedBadges />
       <ServiceSlide />
       <AboutHome />
+      <WorkProcess />
+      <Industries />
       <ClientSlider />
       <Reviews />
       <Blogs />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import * as React from "react";
 
 
@@ -8,9 +9,11 @@ interface ServiceCardProps {
     description: string;
     className?: string;
     image: string;
+    href: string;
+    linktext: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, className = '' }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, className = "", href, linktext }) => {
     return (
 
         <div
@@ -18,7 +21,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, cl
         ${className}
       `}
         >
-            <div className="p-4 flex lg:h-[350px] flex-col gap-5 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden py-10">
+            <div className="p-4 flex lg:h-[400px] flex-col gap-5 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden pt-5">
                 {/* Icon */}
                 <div className="text-5xl text-zinc-600 mb-5">
                     <Image src={image} height={100} width={100} alt={image} />
@@ -33,6 +36,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, cl
                 <p className="text-lg text-gray-500">
                     {description}
                 </p>
+
+                <Link href={href} >
+                    <span className="tex-lg text-red-600">
+                        {linktext}
+                    </span>
+                </Link>
             </div>
 
         </div>

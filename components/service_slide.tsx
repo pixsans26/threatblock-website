@@ -26,7 +26,7 @@ export default function ServiceSlide() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-lg text-xs">// SERVICES</span>
+                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// SERVICES</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col gap-5 mt-5">
@@ -47,7 +47,7 @@ export default function ServiceSlide() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 text-lg mb-10">
+                                        className="text-gray-500 lg:text-2xl mb-10">
                                         We provide a comprehensive suite of cybersecurity services designed to protect your assets and ensure business continuity.
                                     </MotionP>
                                     <MotionDiv
@@ -80,6 +80,8 @@ export default function ServiceSlide() {
                                     image={curElm.image}
                                     title={curElm.title}
                                     description={curElm.description}
+                                    linktext={curElm.linktext}
+                                    href={curElm.href}
                                 />
                             ))}
                         </MotionDiv>

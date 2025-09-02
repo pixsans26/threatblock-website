@@ -19,9 +19,14 @@
   }
 }
 
+
+
+
 p {
   color: var(--gray);
 }
+
+
 
 bg-red-tint {
   background-color: var(--backround-2);

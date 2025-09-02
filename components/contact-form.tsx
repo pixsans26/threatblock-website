@@ -96,9 +96,8 @@ export default function ContactFrom() {
 
                         <div className="w-full lg:mb-5 mb-2">
                             <label>Query</label>
-                            <input className="bg-white h-32 p-4 w-full rounded-none border-gray-200 border-[1px]"
+                            <textarea className="bg-white h-32 p-4 w-full rounded-none border-gray-200 border-[1px] placeholder-"
                                 id='name'
-                                type="text"
                                 name="query"
                                 required
                                 placeholder="Enter Your Message" />

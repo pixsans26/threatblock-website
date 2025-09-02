@@ -15,11 +15,11 @@ export default function ClientsSlider() {
 
   return (
     <>
-      <section className='w-full lg:py-20 py-5 lg:mb-20 mb:10'>
+      <section className='w-full lg:my-32 py-5 my-10'>
 
         <div className="lg:w-9/12 w-11/12 mx-auto">
           <div className='lg:w-5/12 w-full flex mx-auto justify-center '>
-            <div className='w-full text-center mx-auto lg:mb-10 mb-5'>
+            <div className='w-full text-center mx-auto lg:mb-20 mb-10'>
               <h4 className="text-gradient-purple lg:text-center"></h4>
               <MotionH2
                 initial={{ y: 30, opacity: 0 }}

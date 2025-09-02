@@ -17,7 +17,7 @@ export default async function Resources() {
                     <div className="flex gap-8 lg:w-9/12">
                         <div className="lg:w-8/12 flex flex-col gap-2">
                             <div className="lg:mb-4 mb-2">
-                                <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-lg text-xs">//resources</span>
+                                <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//resources</span>
                             </div>
                             <h2 className="lg:text-4xl text-2xl font-bold w-full">
                                 Documents and Resources
@@ -49,7 +49,7 @@ export default async function Resources() {
                             </h3>
 
                             {/* Description */}
-                            <p className="lg:text-lg text-gray-500">
+                            <p className="lg:text-2xl text-gray-500">
                                 {curElm.description}
                             </p>
                             <div>

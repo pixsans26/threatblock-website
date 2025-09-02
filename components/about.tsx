@@ -6,7 +6,7 @@ import { MotionDiv, MotionH2, MotionP } from "@/utils/motioDiv";
 export default function AboutHome() {
     return (
         <>
-            <section className="w-full relative lg:flex justify-center items-center bg-[#FAF2F2] lg:mb-0 mb-20">
+            <section className="w-full relative lg:flex justify-center items-center bg-[#FAF2F2] lg:mb-40 mb-20">
                 <MotionDiv
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, scale: 1, opacity: 1 }}
@@ -52,7 +52,7 @@ export default function AboutHome() {
                                         once: true
                                     }}
                                     className="mb-4">
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-lg text-xs">//ABOUT US</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//ABOUT US</span>
                                 </MotionDiv>
                                 <MotionH2
                                     initial={{ x: 50, opacity: 0 }}
@@ -62,14 +62,14 @@ export default function AboutHome() {
                                         once: true
                                     }}
                                     className="lg:text-4xl text-2xl font-bold w-full">
-                                    Tailored Consulting for Advanced Security
+                                    Future-Proof Cybersecurity for Businesses of Every Size
                                 </MotionH2>
                             </div>
                         </div>
 
                         <hr className="lg:my-10 my-4" />
                         <div className="lg:flex gap-8 lg:w-9/12 w-ful">
-                            <div className="lg:w-7/12 w-6/12 flex flex-col gap-10">
+                            <div className="lg:w-8/12 w-6/12 flex flex-col gap-10">
                                 <MotionP
                                     initial={{ x: 50, opacity: 0 }}
                                     whileInView={{ x: 0, scale: 1, opacity: 1 }}
@@ -77,8 +77,9 @@ export default function AboutHome() {
                                     viewport={{
                                         once: true
                                     }}
-                                    className="text-gray-500 lg:text-lg">
-                                    At ThreatBlock, we specialize in delivering cybersecurity solutions that are both cutting-edge and deeply personalized...
+                                    className="text-gray-500 lg:text-2xl">
+                                    From lean startups to global enterprises, our experts deliver scalable security that evolves with your
+                                    growth.
                                 </MotionP>
                                 <MotionDiv
 
@@ -92,12 +93,12 @@ export default function AboutHome() {
                                     <Button
                                         target="_parent"
                                         href="/about"
-                                        text="Read More" />
+                                        text="See How We Can Protect You" />
                                 </MotionDiv>
                             </div>
                             <div
 
-                                className="lg:w-5/12 w-6/12">
+                                className="lg:w-4/12 w-6/12">
                                 <MotionDiv
                                     initial={{ x: 50, opacity: 0 }}
                                     whileInView={{ x: 0, scale: 1, opacity: 1 }}
@@ -110,8 +111,8 @@ export default function AboutHome() {
                                         <Image src='/images/about_2.png' height={100} width={250} alt='about2' />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold lg:text-lg ">Samaksh</h4>
-                                        <p className="text-gray-500 lg:text-lg text-sm">Founder</p>
+                                        <h4 className="font-semibold lg:text-2xl ">Samaksh</h4>
+                                        <p className="text-gray-500 lg:text-2xl text-sm">Founder</p>
                                     </div>
                                 </MotionDiv>
                             </div>

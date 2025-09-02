@@ -21,13 +21,13 @@ export async function sendQuery(formData: FormData) {
         });
         const result = await response.json();
         if (response.status == 200) {
-            console.log('Message sent Succesfully', result)
+            // console.log('Message sent Succesfully', result)
             return {
                 success: `Message Sent`,
                 result
             }
         } else {
-            console.log('Message Not Sent', result)
+            // console.log('Message Not Sent', result)
             return {
                 failed: 'Message Not Sent',
 
@@ -38,7 +38,7 @@ export async function sendQuery(formData: FormData) {
         return {
             Error: 'Something went wrong',
         };
-        console.log(error)
+        // console.log(error)
     }
 }
 

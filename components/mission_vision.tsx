@@ -29,7 +29,7 @@ export default function MissionVision() {
                                     once: true
                                 }}
                                 className="mb-4">
-                                <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-lg text-xs">//mission</span>
+                                <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//mission</span>
                             </MotionDiv>
                             <div className="flex flex-col lg:gap-8 gap-2">
                                 <MotionH2
@@ -49,7 +49,7 @@ export default function MissionVision() {
                                     viewport={{
                                         once: true
                                     }}
-                                    className="text-gray-500 lg:text-lg">
+                                    className="text-gray-500 lg:text-2xl">
                                     Our goal is to provide<span className="text-black font-bold"> proactive, customized security strategies</span> designed around your unique
                                     infrastructure, challenges, and future ambitions. We believe every business deserves more than a
                                     one-size-fits-all approach. By understanding your risk posture and operational needs, we
@@ -81,7 +81,7 @@ export default function MissionVision() {
                                     once: true
                                 }}
                                 className="mb-4">
-                                <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-lg text-xs">//vision</span>
+                                <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//vision</span>
                             </MotionDiv>
                             <div className="flex flex-col lg:gap-8 gap-2">
                                 <MotionH2
@@ -101,7 +101,7 @@ export default function MissionVision() {
                                     viewport={{
                                         once: true
                                     }}
-                                    className="text-gray-500 text-lg">
+                                    className="text-gray-500 lg:text-2xl">
                                     We envision a digital future where <span className="text-black font-bold">businesses innovate without fear </span> —protected by robust,
                                     adaptive, and intelligent cybersecurity. ThreatBlock strives to become the <span className="text-black font-bold">trusted security partner
                                         for enterprises and startups alike</span>, ensuring your critical assets remain protected while your

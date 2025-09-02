@@ -106,9 +106,9 @@ const Footer = () => {
                             <div>
                                 <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Contact</h4>
                                 <div className="text-gray-400 space-y-3">
-                                    <p className="font-semibold text-white">Office- Delhi</p>
-                                    <p>2nd Floor, 67, Satya Niketan, New Delhi, Delhi 110021</p>
-                                    <p>+91 922 023 3681</p>
+                                    <div className="font-semibold text-white">Office- Delhi</div>
+                                    <span>2nd Floor, 67, Satya Niketan, New Delhi, Delhi 110021</span>
+                                    <span>+91 922 023 3681</span>
                                 </div>
                                 <div className="flex items-center space-x-4 mt-6">
                                     {socialLinks.map((social, index) => (
@@ -132,9 +132,10 @@ const Footer = () => {
 
                 {/* Bottom copyright section */}
                 <div className="w-full text-center bg-[#1A0D0D] lg:py-10 py-5">
-                    <p className="text-gray-500 text-sm">
+                    <span className="text-gray-500 text-sm">
                         © 2025 ThreatBlock All right reserved.
-                    </p>
+                    </span>
+
                 </div>
             </footer>
         </section>

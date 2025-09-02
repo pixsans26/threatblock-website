@@ -22,7 +22,7 @@ export default function Reviews() {
                         className="lg:w-8/12 w-8/12 bg-white absolute top-0 left-0 py-4">
                         <div
                             className="mb-4">
-                            <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-lg text-xs">//clients feedback</span>
+                            <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//clients feedback</span>
                         </div>
                         <h2
                             className="lg:text-4xl text-2xl font-bold">
@@ -52,12 +52,10 @@ export default function Reviews() {
                             </span>
                         </div>
                         <div className="mb-2">
-                            <p className="text-gray-500 lg:text-lg text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+                            <p className="text-gray-500 lg:text-2xl text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
                         </div>
                         <div className="">
-                            <div className="rounded-full w-[6rem] h-[6rem] flex justify-center items-center overflow-hidden mb-2">
-                                <Image src='/images/review_image.png' width={100} height={100} alt="rwview-bg" className="w-[6rem] h-[6rem] object-cover " />
-                            </div>
+
                             <div>
                                 <div className="">
                                     <h5 className="font-semibold text-lg ">Pixsans</h5>
@@ -78,12 +76,10 @@ export default function Reviews() {
                             </span>
                         </div>
                         <div className="mb-2">
-                            <p className="text-gray-500 lg:text-lg text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+                            <p className="text-gray-500 lg:text-2xl text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
                         </div>
                         <div className="">
-                            <div className="rounded-full w-[6rem] h-[6rem] flex justify-center items-center overflow-hidden mb-2">
-                                <Image src='/images/review_image.png' width={100} height={100} alt="rwview-bg" className="w-[6rem] h-[6rem] object-cover " />
-                            </div>
+
                             <div>
                                 <div className="">
                                     <h5 className="font-semibold text-lg ">Name</h5>
@@ -104,12 +100,10 @@ export default function Reviews() {
                             </span>
                         </div>
                         <div className="mb-2">
-                            <p className="text-gray-500 lg:text-lg text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+                            <p className="text-gray-500 lg:text-2xl text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
                         </div>
                         <div className="">
-                            <div className="rounded-full w-[6rem] h-[6rem] flex justify-center items-center overflow-hidden mb-2">
-                                <Image src='/images/review_image.png' width={100} height={100} alt="rwview-bg" className="w-[6rem] h-[6rem] object-cover " />
-                            </div>
+
                             <div>
                                 <div className="">
                                     <h5 className="font-semibold text-lg ">Name</h5>

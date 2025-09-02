@@ -7,11 +7,11 @@ import { MotionDiv, MotionH1, MotionH4, MotionP } from '@/utils/motioDiv';
 export default function Hero() {
     return (
         <>
-            <section className="w-full relative mx-auto bg-[#FAF2F2] lg:mb-48 mb-56">
+            <section className="w-full relative mx-auto bg-[#FAF2F2] lg:mb-48 mb-56 ">
                 <div className="w-full lg:absolute mx-auto h-auto ">
 
                     {/* section bg */}
-                    <div className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between items-center lg:h-[95vh] h-[54rem] lg:py-0 pt-10">
+                    <div className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between items-center lg:h-screen h-[54rem] lg:py-0 pt-10">
                         <MotionDiv
                             initial={{ scale: 5, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
@@ -41,7 +41,7 @@ export default function Hero() {
                                 viewport={{
                                     once: true
                                 }}
-                                className="lg:w-11/12 text-gray-500 lg:text-lg lg:text-start text-center">
+                                className="lg:w-11/12 text-gray-500 lg:text-2xl lg:text-start text-center">
                                 We safeguard organizations through proactive Red Team assessments, cloud security enhancement,
                                 and rapid-response incident handling—so you can stay focused on your core mission.
                             </MotionP>
@@ -73,20 +73,20 @@ export default function Hero() {
                                     <div className="opacity-20">
                                         <Image src="/images/counter_hero_bg.png" width={1000} height={1000} alt="hero_image_1" className="" />
                                     </div>
-                                    <div className="w-full flex h-full justify-between absolute items-center lg:py-12 gap-2 lg:px-8 px-4 py-8">
+                                    <div className="w-full flex h-full justify-between absolute items-center lg:py-12 gap-4 lg:px-8 px-4 py-8">
                                         <div className="">
-                                            <h3 className="lg:text-4xl text-xl text-white font-bold">50+</h3>
-                                            <p className="lg:text-lg text-xs">Security Engagements</p>
+                                            <h3 className="lg:text-6xl text-3xl text-white font-bold">50+</h3>
+                                            <p className="lg:text-2xl text-xs">Security Engagements</p>
                                         </div>
                                         <div className="border-l border-gray-300 h-20"></div>
                                         <div className="">
-                                            <h3 className="lg:text-4xl text-xl text-white font-bold">1.3B+</h3>
-                                            <p className="lg:text-lg text-xs">Security Signals Processed Daily</p>
+                                            <h3 className="lg:text-6xl text-3xl text-white font-bold">1.3B+</h3>
+                                            <p className="lg:text-2xl text-xs">Security Signals Processed Daily</p>
                                         </div>
                                         <div className="border-l border-gray-300 h-20"></div>
                                         <div className="">
-                                            <h3 className="lg:text-4xl text-xl text-white font-bold">100%</h3>
-                                            <p className="lg:text-lg text-xs">Clients Satisfaction</p>
+                                            <h3 className="lg:text-6xl text-3xl text-white font-bold">100%</h3>
+                                            <p className="lg:text-2xl text-xs">Clients Satisfaction</p>
                                         </div>
                                     </div>
 
@@ -108,7 +108,7 @@ export default function Hero() {
                     </div>
 
                 </div>
-                <div className="lg:w-full h-[95vh] lg:flex hidden justify-between">
+                <div className="lg:w-full lg:h-screen h-[95vh] lg:flex hidden justify-between">
                     <div className="w-8/12 flex bg-red-tint h-full justify-start items-center">
                     </div>
                     <MotionDiv
