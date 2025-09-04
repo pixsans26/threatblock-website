@@ -6,7 +6,7 @@ import { industriesData } from '@/data/industries'
 export default function Industries() {
     return (
         <>
-            <section className='w-full lg:my-32 py-5 my-10'>
+            <section className='w-full lg:mt-20 py-5 mt-10'>
 
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className='lg:w-5/12 w-full flex mx-auto justify-center '>
@@ -46,7 +46,7 @@ export default function Industries() {
                             autoFill={true}
                         >
 
-                            <div className="flex w-full h-auto items-center">
+                            <div className="flex w-full h-auto items-start">
                                 {industriesData?.map((curElm: any) => (
                                     <div
                                         key={curElm.id}

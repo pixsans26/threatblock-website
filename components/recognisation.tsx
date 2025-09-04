@@ -28,9 +28,9 @@ export default function RecognisationSlider() {
                 viewport={{
                   once: true
                 }}
-                className='lg:text-4xl text-2xl font-bold w-full mb-2'>Trusted Clients</MotionH2>
+                className='lg:text-4xl text-2xl font-bold w-full mb-2'>Backed by Leading Ecosystems</MotionH2>
 
-              <MotionP
+              {/* <MotionP
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, scale: 1, opacity: 1 }}
                 transition={{ duration: .5, delay: .6 }}
@@ -40,14 +40,14 @@ export default function RecognisationSlider() {
                 className="text-gray-500 lg:text-2xl"
               >
                 Trusted by a wide range of clients for impactful, lasting results.
-              </MotionP>
+              </MotionP> */}
             </div>
           </div>
 
           <div className='lg:mb-10 mb-5'>
             <Marquee
               pauseOnHover={true}
-              direction='right'
+              // direction='right'
               gradient={true}
               gradientColor='#ffffff'
               gradientWidth="200px"
