@@ -2,7 +2,7 @@
 import { MotionH2, MotionP } from '@/utils/motioDiv';
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { ClientsData } from '@/data/clients'
+import { RecognisationData } from '@/data/reconisation'
 
 
 interface ClientsData {
@@ -11,7 +11,7 @@ interface ClientsData {
   logo: string
 }
 
-export default function ClientsSlider() {
+export default function RecognisationSlider() {
 
   return (
     <>
@@ -57,13 +57,13 @@ export default function ClientsSlider() {
             >
 
               <div className="flex w-full h-auto items-center">
-                {ClientsData?.map((curElm: any) => (
+                {RecognisationData?.map((curElm: any) => (
                   <div
                     key={curElm.id}
-                    className='w-1/12 lg:mx-16 mx-8'>
+                    className='w-2/12 lg:mx-16 mx-8'>
                     <img
                       className=''
-                      width={100}
+                      width={200}
                       height={100}
                       src={curElm.logo}
                       alt={curElm.name} />

@@ -1,6 +1,7 @@
-import { MotionH2 } from "@/utils/motioDiv"
+import { MotionH2, MotionP } from "@/utils/motioDiv"
 import Image from "next/image"
-
+import Marquee from "react-fast-marquee"
+import { industriesData } from '@/data/industries'
 
 export default function Industries() {
     return (
@@ -9,31 +10,60 @@ export default function Industries() {
 
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className='lg:w-5/12 w-full flex mx-auto justify-center '>
-                        <div className='w-full text-center mx-auto lg:mb-20 mb-10'>
+                        <div className='w-full text-center mx-auto mb-10'>
                             <h4 className="text-gradient-purple lg:text-center"></h4>
                             <MotionH2
                                 initial={{ y: 30, opacity: 0 }}
                                 whileInView={{ y: 0, scale: 1, opacity: 1 }}
-                                transition={{ duration: .5, delay: .2 }}
+                                transition={{ duration: .5, delay: .3 }}
                                 viewport={{
                                     once: true
                                 }}
-                                className='lg:text-4xl text-2xl font-bold w-full'>Industries We Serve</MotionH2>
+                                className='lg:text-4xl text-2xl font-bold w-full mb-2'>Industries We Serve</MotionH2>
+                            <MotionP
+                                initial={{ y: 30, opacity: 0 }}
+                                whileInView={{ y: 0, scale: 1, opacity: 1 }}
+                                transition={{ duration: .5, delay: .6 }}
+                                viewport={{
+                                    once: true
+                                }}
+                                className="text-gray-500 lg:text-2xl"
+                            >
+                                Driving growth in diverse industries with tailored solutions.
+                            </MotionP>
                         </div>
 
                     </div>
+                    <div className='lg:mb-10 mb-5'>
+                        <Marquee
+                            pauseOnHover={true}
+                            // direction='right\\\'
+                            gradient={true}
+                            gradientColor='#ffffff'
+                            gradientWidth="200px"
+                            speed={30}
+                            loop={0}
+                            autoFill={true}
+                        >
 
-                    <div className='w-full grid lg:grid-cols-5 grid-cols-2 lg:gap-10 justify-between items-center'>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
-                        <div className="h-20 w-[10rem] bg-slate-200"></div>
+                            <div className="flex w-full h-auto items-center">
+                                {industriesData?.map((curElm: any) => (
+                                    <div
+                                        key={curElm.id}
+                                        className='w-1/12 lg:mx-8 mx-4 flex flex-col justify-start items-center'>
+                                        <img
+                                            className='text-red-300 mb-2'
+                                            width={60}
+                                            height={100}
+                                            src={curElm.logo}
+                                            alt={curElm.name} />
+                                        <span className="text-center text-gray-500">
+                                            {curElm.title}
+                                        </span>
+                                    </div>
+                                ))}
+                            </div>
+                        </Marquee>
                     </div>
 
 
