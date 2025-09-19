@@ -24,19 +24,19 @@ const Services = [
     },
     {
         id: 2,
-        text: 'Red Team Assessments',
-        link: '/services/red-team-assesments',
+        text: 'Red Teaming',
+        link: '/services/red-teaming',
 
     },
     {
         id: 3,
-        text: 'Security Audits & Compliance',
-        link: '/services/security-audits-compliance',
+        text: 'Audits & Compliance',
+        link: '/services/audits-compliance',
     },
     {
         id: 4,
         text: 'Threat Intelligence',
-        link: '/services/threat-inteligence',
+        link: '/services/threat-intelligence',
     },
     {
         id: 5,
@@ -93,7 +93,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className={`w-8/12 flex justify-center`}>
-                    <ul className='flex flex-row justify-center items-center h-16 relative '>
+                    <ul className='flex flex-row justify-center items-center h-16 relative text-lg'>
                         <li><Link className={styles.navLink} href="/">Home</Link></li>
                         <li><Link className={styles.navLink} href="/about">About</Link></li>
                         <li className={`flex nav-link justify-start items-center cursor-pointer`} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>

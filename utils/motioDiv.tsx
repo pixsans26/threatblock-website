@@ -25,15 +25,25 @@ export const fadeInUp = {
     show: (index: number) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: .5, delay: 0.1 * index }
+        transition: { duration: .3, delay: 0.2 * index }
     })
 }
 
-export const fadeInUpTeam = {
-    hidden: { opacity: 0, y: 30 },
+export const fadeInLeft = {
+    hidden: { opacity: 0, x: 30 },
     show: (index: number) => ({
         opacity: 1,
-        y: 0,
-        transition: { duration: .5, delay: 0.3 * index }
+        x: 0,
+        transition: { duration: .3, delay: 0.2 * index }
     })
 }
+
+export const fadeInRight = {
+    hidden: { opacity: 0, x: -30 },
+    show: (index: number) => ({
+        opacity: 1,
+        x: 0,
+        transition: { duration: .3, delay: 0.2 * index }
+    })
+}
+

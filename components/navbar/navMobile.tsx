@@ -5,7 +5,61 @@ import Link from "next/link";
 import { FaBarsStaggered } from 'react-icons/fa6';
 import ButtonDark from '../widgets/button_dark';
 
+const Services = [
+    {
+        id: 1,
+        text: 'Penetration Testing',
+        link: '/services/penetration-testing',
 
+    },
+    {
+        id: 2,
+        text: 'Red Teaming',
+        link: '/services/red-teaming',
+
+    },
+    {
+        id: 3,
+        text: 'Audits & Compliance',
+        link: '/services/audits-compliance',
+    },
+    {
+        id: 4,
+        text: 'Threat Intelligence',
+        link: '/services/threat-intelligence',
+    },
+    {
+        id: 5,
+        text: 'Web application PT',
+        link: '/services/web-application-pt',
+    },
+    {
+        id: 6,
+        text: 'Mobile application PT',
+        link: '/services/mobile-application-pt',
+    },
+    {
+        id: 7,
+        text: 'Network Pentesting',
+        link: '/services/network-pentesting',
+    },
+    {
+        id: 8,
+        text: 'API Pentesting',
+        link: '/services/api-pentesting',
+    },
+    {
+        id: 9,
+        text: 'Cloud Security',
+        link: '/services/cloud-security',
+    },
+    {
+        id: 10,
+        text: 'DevSecOps',
+        link: '/services/devsecops',
+    },
+
+]
 
 const NavbarMobile = () => {
 
@@ -84,36 +138,13 @@ const NavbarMobile = () => {
                                     overflow-hidden transition-all duration-300 ease-in-out pl-8 pt-2 text-gray-500 text-sm
                                 `}
                                 >
-                                    <Link href="/services/penetration-testing" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Penetration Testing
-                                    </Link>
-                                    <Link href="/services/red-team-assesments" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Red Team Assesments
-                                    </Link>
-                                    <Link href="/services/security-audit-compliance" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Security Audits and Compliance
-                                    </Link>
-                                    <Link href="/services/threat-intellligence" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Threat Intelligence
-                                    </Link>
-                                    <Link href="/services/web-application-pt" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Web Application PT
-                                    </Link>
-                                    <Link href="/services/mobile-application-pt" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Mobile Application PT
-                                    </Link>
-                                    <Link href="/services/network-pentesting" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Network Pentesting
-                                    </Link>
-                                    <Link href="/services/api-pentesting" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        API Pentetsting
-                                    </Link>
-                                    <Link href="/services/cloud-security" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        Cloud Security
-                                    </Link>
-                                    <Link href="/services/devsecops" onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
-                                        DevSecOps
-                                    </Link>
+
+                                    {Services.map((curElm: any) => (
+                                        <Link key={curElm.id} href={curElm.link} onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                            {curElm.text}
+                                        </Link>
+                                    ))}
+
 
                                 </div>
                             )}

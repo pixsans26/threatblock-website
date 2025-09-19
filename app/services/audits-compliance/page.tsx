@@ -8,13 +8,12 @@ import { useState } from 'react';
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
-
-import MethodologyCloudSecurity from "@/components/methodology/cloudSecurity";
-
+import MethodologyAuditCompliance from "@/components/methodology/auditCompliance";
 
 
 
-export default function CloudSecurity() {
+
+export default function SecurityAuditCompliance() {
 
     // State to track the ID of the currently open FAQ item
     const [openId, setOpenId] = useState(null);
@@ -44,7 +43,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                                Cloud Security
+                                Audits and Compliance
                             </MotionH1>
                         </div>
                         <div className="lg:w-6/12 w-full lg:h-[90vh] h-[35vh] lg:mx-0 relative">
@@ -56,7 +55,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="lg:w-full w-8/12 absolute right-0 bottom-0">
-                                <Image src='/images/services/cloud-security.svg' height={100} width={1000} alt="about" />
+                                <Image src='/images/services/audit-compliance.svg' height={100} width={1000} alt="about" />
                             </MotionDiv>
                         </div>
                     </div>
@@ -73,7 +72,7 @@ export default function CloudSecurity() {
                         once: true
                     }}
                     className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                    Cloud Security
+                    Audits and Compliance
                 </MotionH1>
             </section>
 
@@ -96,7 +95,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-xl font-bold w-full">
-                            Strengthen Cloud Security: Safeguarding Your Digital Assets
+                            Achieve Audits and Compliance: Build Trust with Proven Security Standards
                         </MotionH2>
                         <MotionP
                             initial={{ x: -50, opacity: 0 }}
@@ -105,7 +104,7 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg">ACloud environments are prime targets for misconfigurations and unauthorized access, with breaches averaging $5.2 million. Our Cloud Security Assessments secure AWS, Azure, and GCP environments using industry standards like CSA CCM.
+                            className="text-gray-500 lg:text-2xl text-lg">Audits and Compliance services ensure your organization meets stringent regulatory and industry standards, safeguarding your reputation and operations. Our service validates your security posture against frameworks like GDPR, PCI-DSS, and ISO 27001, preventing costly penalties averaging $4.5 million per nonTAGS:non-compliance incident.
 
                         </MotionP>
 
@@ -148,7 +147,7 @@ export default function CloudSecurity() {
                             once: true
                         }}
                         className="lg:text-4xl text-xl font-bold w-full">
-                        Why is Cloud Security Important?
+                        Why Are Audits and Compliance Important?
                     </MotionH2>
                     <MotionP
                         initial={{ x: 50, opacity: 0 }}
@@ -157,7 +156,7 @@ export default function CloudSecurity() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Cloud adoption accelerates innovation but introduces risks like exposed S3 buckets or weak IAM policies. Our service ensures:</MotionP>
+                        className="text-gray-500 lg:text-2xl text-lg mb-2">Regulatory non-compliance can lead to fines, legal action, and reputational damage. With data breaches amplifying scrutiny, audits are critical to:</MotionP>
 
                     <div className="w-full gap-2">
                         {WhyImportance.map((curElm: any, index: number) => (
@@ -260,7 +259,7 @@ export default function CloudSecurity() {
 
             </section >
 
-            <MethodologyCloudSecurity />
+            <MethodologyAuditCompliance />
             {/* What we do */}
 
 
@@ -288,7 +287,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-2xl font-bold w-full text-center">
-                            Component - Coverage Details
+                            API Security Testing – Coverage
                         </MotionH2>
                     </div>
 
@@ -357,7 +356,7 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg mb-5">Cloud security experts, reducing exposures by 80% for global clients.
+                            className="text-gray-500 lg:text-2xl text-lg mb-5">Our certified auditors have helped global enterprises achieve 100% audit success rates, reducing compliance risks by 80% on average.
                         </MotionP>
 
                     </div>
@@ -543,9 +542,9 @@ export default function CloudSecurity() {
                         <div className="p-4 lg:flex gap-2 bg-gradient-to-b from-white to-[#fff6f6]">
                             <div className="lg:w-8/12 flex flex-col lg:justify-center lg:items-start items-center lg:mb-0 mb-10">
                                 <h3 className="text-2xl font-bold text-black mb-5">
-                                    Let’s Secure Your Cloud
+                                    Let’s Secure Your Web Apps Together
                                 </h3>
-                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “Cloud Security Checklist” or schedule a consultation</p>
+                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “Web Security Checklist” or schedule a consultation.</p>
                                 <ButtonDark href="/contact" text="Schedule a Free Consultation" target="_parent" />
                             </div>
                             <div className="lg:w-4/12 w-11/12 flex lg:justify-end justify-center lg:mb-0 mb-10 lg:mx-0 mx-auto">

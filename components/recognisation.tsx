@@ -60,7 +60,7 @@ export default function RecognisationSlider() {
                 {RecognisationData?.map((curElm: any) => (
                   <div
                     key={curElm.id}
-                    className='w-2/12 lg:mx-16 mx-8'>
+                    className='lg:w-2/12 w-1/12 lg:mx-16 mx-8'>
                     <img
                       className=''
                       width={200}

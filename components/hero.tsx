@@ -6,11 +6,11 @@ export default function Hero() {
     return (
         <>
             <section className="h-screen lg:mb-48 mb-56 ">
-                <div className="w-full relative mx-auto bg-[#FAF2F2]">
+                <div className="w-full h-screen relative mx-auto bg-[#FAF2F2]">
                     <div className="w-full lg:absolute mx-auto h-auto ">
 
                         {/* section bg */}
-                        <div className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between items-center lg:h-[90vh] h-[54rem] lg:py-0 pt-10">
+                        <div className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between items-center h-screen lg:py-0 pt-10">
                             <MotionDiv
                                 initial={{ scale: 5, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
@@ -21,7 +21,7 @@ export default function Hero() {
                                 className="absolute left-0">
                                 <Image src="/images/bg-deco.svg" width={800} height={100} alt="bg-1" />
                             </MotionDiv>
-                            <div className="lg:w-7/12 lg:mx-0 mx-auto w-full relative flex flex-col lg:items-start items-center justify-center lg:gap-10 gap-2">
+                            <div className="lg:w-7/12 lg:mx-0 mx-auto w-full relative flex flex-col lg:items-start items-center justify-center lg:gap-10 gap-2 lg:mt-20">
                                 {/* Title */}
                                 <MotionH1
                                     initial={{ y: 50, opacity: 0 }}
@@ -57,40 +57,7 @@ export default function Hero() {
                                     <Button href="/contact" text="Free Consultation" target="_parent" />
                                 </MotionDiv>
 
-                                {/* Counter */}
-                                <MotionDiv
 
-                                    initial={{ y: 50, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ duration: .8, delay: 1 }}
-                                    viewport={{
-                                        once: true
-                                    }}
-                                    className="lg:[clip-path:polygon(50px_0,_100%_0,_100%_calc(100%_-_50px),_calc(100%_-_50px)_100%,_0_100%,_0_50px)] 
-                            [clip-path:polygon(20px_0,_100%_0,_100%_calc(100%_-_20px),_calc(100%_-_20px)_100%,_0_100%,_0_20px)] lg:h-[22vh] h-[16vh] lg:w-full w-11/12 absolute lg:right-0 lg:bottom-[-16rem] bottom-[-44rem] lg:z-0 z-10">
-                                    <div className="flex w-full h-full bg-black">
-                                        <div className="opacity-20">
-                                            <Image src="/images/counter_hero_bg.png" width={1000} height={1000} alt="hero_image_1" className="" />
-                                        </div>
-                                        <div className="w-full flex h-full justify-between absolute items-center lg:py-12 gap-4 lg:px-8 px-4 py-8">
-                                            <div className="">
-                                                <h3 className="lg:text-6xl text-3xl text-white font-bold">50+</h3>
-                                                <p className="lg:text-2xl text-xs">Security Engagements</p>
-                                            </div>
-                                            <div className="border-l border-gray-300 h-20"></div>
-                                            <div className="">
-                                                <h3 className="lg:text-6xl text-3xl text-white font-bold">1.3B+</h3>
-                                                <p className="lg:text-2xl text-xs">Security Signals Processed Daily</p>
-                                            </div>
-                                            <div className="border-l border-gray-300 h-20"></div>
-                                            <div className="">
-                                                <h3 className="lg:text-6xl text-3xl text-white font-bold">100%</h3>
-                                                <p className="lg:text-2xl text-xs">Clients Satisfaction</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </MotionDiv>
                             </div>
                             <MotionDiv
                                 initial={{ x: 50, opacity: 0 }}
@@ -107,7 +74,7 @@ export default function Hero() {
                         </div>
 
                     </div>
-                    <div className="lg:w-full lg:h-[90vh] h-[95vh] lg:flex hidden justify-between">
+                    <div className="lg:w-full lg:h-screen h-[95vh] lg:flex hidden justify-between">
                         <div className="w-8/12 flex bg-red-tint h-full justify-start items-center">
                         </div>
                         <MotionDiv

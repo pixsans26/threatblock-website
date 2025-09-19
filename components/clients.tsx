@@ -15,7 +15,7 @@ export default function ClientsSlider() {
 
   return (
     <>
-      <section className='w-full lg:my-32 py-5 my-10'>
+      <section className='w-full lg:my-24 py-5 my-10'>
 
         <div className="lg:w-9/12 w-11/12 mx-auto">
           <div className='lg:w-5/12 w-full flex mx-auto justify-center '>

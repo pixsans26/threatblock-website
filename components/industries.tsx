@@ -50,7 +50,7 @@ export default function Industries() {
                                 {industriesData?.map((curElm: any) => (
                                     <div
                                         key={curElm.id}
-                                        className='w-1/12 lg:mx-8 mx-4 flex flex-col justify-start items-center'>
+                                        className='lg:w-1/12 lg:mx-8 mx-4 flex flex-col justify-start items-center'>
                                         <img
                                             className='text-red-300 mb-2'
                                             width={60}

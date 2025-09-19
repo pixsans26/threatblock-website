@@ -2,19 +2,16 @@
 
 import { MotionDiv, MotionH1, MotionH2, MotionP, fadeInLeft, fadeInUp } from "@/utils/motioDiv"
 import Image from "next/image"
-import { WhyImportance, GrowBusiness, OurServices, Faqs, WhatWeDo } from '@/data/auditCompliance'
+import { WhyImportance, GrowBusiness, WhatWeDo, OurServices } from '@/data/mobileApplicationPentesting'
 import { useState } from 'react';
 // Using more intuitive icons for open/close states
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
-
-import MethodologyCloudSecurity from "@/components/methodology/cloudSecurity";
-
+import MethodologyMobileApplicationTesting from "@/components/methodology/mobileApplicationPentesting";
 
 
-
-export default function CloudSecurity() {
+export default function MobileApplicationPentesting() {
 
     // State to track the ID of the currently open FAQ item
     const [openId, setOpenId] = useState(null);
@@ -44,7 +41,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                                Cloud Security
+                                Mobile Application Pentesting
                             </MotionH1>
                         </div>
                         <div className="lg:w-6/12 w-full lg:h-[90vh] h-[35vh] lg:mx-0 relative">
@@ -56,7 +53,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="lg:w-full w-8/12 absolute right-0 bottom-0">
-                                <Image src='/images/services/cloud-security.svg' height={100} width={1000} alt="about" />
+                                <Image src='/images/services/threat-intelligence.svg' height={100} width={1000} alt="about" />
                             </MotionDiv>
                         </div>
                     </div>
@@ -73,7 +70,7 @@ export default function CloudSecurity() {
                         once: true
                     }}
                     className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                    Cloud Security
+                    Mobile Application Pentesting
                 </MotionH1>
             </section>
 
@@ -96,7 +93,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-xl font-bold w-full">
-                            Strengthen Cloud Security: Safeguarding Your Digital Assets
+                            Secure Your Mobile Apps: Protecting User Data in a Mobile-First World
                         </MotionH2>
                         <MotionP
                             initial={{ x: -50, opacity: 0 }}
@@ -105,8 +102,7 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg">ACloud environments are prime targets for misconfigurations and unauthorized access, with breaches averaging $5.2 million. Our Cloud Security Assessments secure AWS, Azure, and GCP environments using industry standards like CSA CCM.
-
+                            className="text-gray-500 lg:text-2xl text-lg">Mobile apps are the frontline of user interaction, handling sensitive data like location, payments, and personal information—making them lucrative targets for cybercriminals. Our Mobile Application Penetration Testing uncovers vulnerabilities in iOS, Android, and hybrid apps to safeguard your users and maintain app integrity.
                         </MotionP>
 
                     </div>
@@ -148,7 +144,7 @@ export default function CloudSecurity() {
                             once: true
                         }}
                         className="lg:text-4xl text-xl font-bold w-full">
-                        Why is Cloud Security Important?
+                        Why is Mobile Application Penetration Testing Important?
                     </MotionH2>
                     <MotionP
                         initial={{ x: 50, opacity: 0 }}
@@ -157,7 +153,7 @@ export default function CloudSecurity() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Cloud adoption accelerates innovation but introduces risks like exposed S3 buckets or weak IAM policies. Our service ensures:</MotionP>
+                        className="text-gray-500 lg:text-2xl text-lg mb-2">In an era where mobile devices dominate daily life, apps are increasingly exploited through flaws like insecure data storage, weak encryption, and API vulnerabilities. A single breach—such as malware injection or session hijacking—can expose millions of users, leading to identity theft, financial loss, and regulatory violations. With the average cost of a mobile-related data breach exceeding $4.7 million, proactive testing is vital to:</MotionP>
 
                     <div className="w-full gap-2">
                         {WhyImportance.map((curElm: any, index: number) => (
@@ -260,9 +256,9 @@ export default function CloudSecurity() {
 
             </section >
 
-            <MethodologyCloudSecurity />
-            {/* What we do */}
+            <MethodologyMobileApplicationTesting />
 
+            {/* what we do */}
 
             <section className="w-full lg:mb-40 mb-20">
                 <div className="lg:w-9/12 w-11/12 mx-auto">
@@ -288,7 +284,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-2xl font-bold w-full text-center">
-                            Component - Coverage Details
+                            API Security Testing – Coverage
                         </MotionH2>
                     </div>
 
@@ -325,7 +321,7 @@ export default function CloudSecurity() {
             </section>
 
 
-            {/* Why Choose */}
+            {/* Why API */}
 
             <section className="w-full lg:mb-40 mb-20">
                 <div className="lg:w-9/12 w-11/12 mx-auto mb-10 lg:flex justify-center items-center gap-10">
@@ -348,7 +344,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-xl font-bold w-full mb-2">
-                            Why Choose ThreatBlock?
+                            Why OWASP Matters in Mobile Pentesting
                         </MotionH2>
                         <MotionP
                             initial={{ x: -50, opacity: 0 }}
@@ -357,99 +353,28 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg mb-5">Cloud security experts, reducing exposures by 80% for global clients.
+                            className="text-gray-500 lg:text-2xl text-lg mb-5">OWASP provides globally recognized standards like
                         </MotionP>
+                        <ul className="list-disc text-lg mb-10 text-gray-500">
+                            <li>
+                                <b>OWASP Mobile Top 10 </b>– Common mobile app vulnerabilities.
+                            </li>
+                            <li>
+                                <b> OWASP MASVS</b> – A benchmark for secure mobile app development.
+                            </li>
 
-                    </div>
-                </div>
-            </section>
+                        </ul>
 
 
-
-            {/* FAQs */}
-            <section className="w-full bg-red-50 lg:h-[120vh] lg:py-0 py-20 lg:mb-24 mb-20 flex flex-col justify-center items-center overflow-hidden">
-
-                <div className="lg:w-7/12 w-11/12 lg:absolute mx-auto">
-                    <div className="lg:w-6/12 flex flex-col justify-center items-center mx-auto space-y-4 mb-10">
-
-                        <MotionDiv
-                            initial={{ y: 50, opacity: 0 }}
-                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
-                            transition={{ duration: .8, delay: .3 }}
+                        <MotionP
+                            initial={{ x: -50, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: .8, delay: 1.2 }}
                             viewport={{
                                 once: true
                             }}
-                        >
-                            <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// FAQs</span>
-                        </MotionDiv>
-
-
-                        <MotionH2
-                            initial={{ y: 50, opacity: 0 }}
-                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
-                            transition={{ duration: .8, delay: .6 }}
-                            viewport={{
-                                once: true
-                            }}
-                            className="lg:text-4xl text-2xl font-bold w-full text-center">
-                            Frequently Asked Questions
-                        </MotionH2>
+                            className="text-gray-500 lg:text-2xl text-lg mb-2">By aligning with OWASP, we ensure testing meets <b>industry best practices and compliance requirements (PCI DSS, HIPAA, GDPR).</b></MotionP>
                     </div>
-                    <div className="flex flex-col gap-5 justify-start items-center">
-                        {Faqs.map((curElm: any, index: number) => {
-                            // Check if the current item is the one that's open
-                            const isOpen = curElm.id === openId;
-
-                            return (
-                                <MotionDiv
-                                    variants={fadeInUp}
-                                    initial="hidden"
-                                    whileInView={'show'}
-                                    viewport={{
-                                        once: true
-                                    }}
-                                    tabIndex={curElm.id}
-                                    custom={index}
-                                    key={curElm.id}
-
-                                    className="w-full">
-                                    <div className='border border-gray-300 p-2 min-w-sm bg-white'>
-                                        <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6]">
-                                            {/* Question section - now clickable to toggle */}
-                                            <div
-                                                className="flex justify-between items-center cursor-pointer"
-                                                onClick={() => toggleFaq(curElm.id)}
-                                            >
-                                                <h3 className="lg:text-xl  font-bold text-black">
-                                                    {curElm.question}
-                                                </h3>
-                                                {/* Change icon based on the 'isOpen' state */}
-                                                <span>
-                                                    {isOpen ? <BiChevronUp size={28} /> : <BiChevronDown size={28} />}
-                                                </span>
-                                            </div>
-
-                                            {/* Answer section with smooth transition */}
-                                            <div
-                                                className={`grid overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
-                                                    }`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <p className="lg:text-lg text-gray-500 pt-4">
-                                                        {curElm.answers}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </MotionDiv>
-                            );
-                        })}
-                    </div>
-                </div>
-
-                <div className="w-full top-0 mx-auto lg:flex hidden justify-center ">
-                    <Image src='/images/services/faq-bg.svg' height={100} width={2000} alt='bg' className="object-cover" />
                 </div>
             </section>
 
@@ -487,7 +412,7 @@ export default function CloudSecurity() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Combine with:</MotionP>
+                        className="text-gray-500 lg:text-2xl text-lg mb-2">Maximize security by combining Mobile App Pentesting with:</MotionP>
 
                     <div className="w-full gap-2">
                         {OurServices.map((curElm: any, index: any) => (
@@ -543,9 +468,9 @@ export default function CloudSecurity() {
                         <div className="p-4 lg:flex gap-2 bg-gradient-to-b from-white to-[#fff6f6]">
                             <div className="lg:w-8/12 flex flex-col lg:justify-center lg:items-start items-center lg:mb-0 mb-10">
                                 <h3 className="text-2xl font-bold text-black mb-5">
-                                    Let’s Secure Your Cloud
+                                    Let’s Secure Your Mobile Apps Together
                                 </h3>
-                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “Cloud Security Checklist” or schedule a consultation</p>
+                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Don’t let vulnerabilities derail your app’s success. Download our free “Mobile Security Checklist” or schedule a consultation today. </p>
                                 <ButtonDark href="/contact" text="Schedule a Free Consultation" target="_parent" />
                             </div>
                             <div className="lg:w-4/12 w-11/12 flex lg:justify-end justify-center lg:mb-0 mb-10 lg:mx-0 mx-auto">

@@ -42,7 +42,7 @@ const ButtonDark: React.FC<ButtonProps> = ({ href, text, target, className = '' 
             </span>
 
             {/* The text label */}
-            <span className='px-4 text-lg font-medium'>
+            <span className='lg:px-4 px-2 lg:text-lg text-sm font-medium'>
                 {text}
             </span>
         </Link>

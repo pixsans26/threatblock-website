@@ -2,14 +2,13 @@
 
 import { MotionDiv, MotionH1, MotionH2, MotionP, fadeInLeft, fadeInUp } from "@/utils/motioDiv"
 import Image from "next/image"
-import { WhyImportance, GrowBusiness, OurServices, Faqs, WhatWeDo } from '@/data/auditCompliance'
+import { WhyImportance, GrowBusiness, OurServices, Faqs, WhatWeDo } from '@/data/devSecOps'
 import { useState } from 'react';
 // Using more intuitive icons for open/close states
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
-
-import MethodologyCloudSecurity from "@/components/methodology/cloudSecurity";
+import MethodologyDevSecOps from "@/components/methodology/devSecOps";
 
 
 
@@ -44,7 +43,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                                Cloud Security
+                                DevSecOps
                             </MotionH1>
                         </div>
                         <div className="lg:w-6/12 w-full lg:h-[90vh] h-[35vh] lg:mx-0 relative">
@@ -56,7 +55,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="lg:w-full w-8/12 absolute right-0 bottom-0">
-                                <Image src='/images/services/cloud-security.svg' height={100} width={1000} alt="about" />
+                                <Image src='/images/services/devsecops.svg' height={100} width={1000} alt="about" />
                             </MotionDiv>
                         </div>
                     </div>
@@ -73,7 +72,7 @@ export default function CloudSecurity() {
                         once: true
                     }}
                     className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                    Cloud Security
+                    DevSecOps
                 </MotionH1>
             </section>
 
@@ -85,7 +84,6 @@ export default function CloudSecurity() {
                 </div>
                 <div className="lg:w-9/12 w-11/12 mx-auto flex justify-between items-center gap-10 mb-20">
 
-
                     <div className="lg:w-8/12 flex flex-col gap-2">
 
                         <MotionH2
@@ -96,7 +94,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-xl font-bold w-full">
-                            Strengthen Cloud Security: Safeguarding Your Digital Assets
+                            Implement DevSecOps: Secure Software at the Speed of Development
                         </MotionH2>
                         <MotionP
                             initial={{ x: -50, opacity: 0 }}
@@ -105,7 +103,7 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg">ACloud environments are prime targets for misconfigurations and unauthorized access, with breaches averaging $5.2 million. Our Cloud Security Assessments secure AWS, Azure, and GCP environments using industry standards like CSA CCM.
+                            className="text-gray-500 lg:text-2xl text-lg">DevSecOps embeds security into every stage of your development pipeline, ensuring secure, rapid releases without sacrificing quality. Our service transforms your SDLC to prevent vulnerabilities that cost an average of $4.9 million per breach.
 
                         </MotionP>
 
@@ -148,7 +146,7 @@ export default function CloudSecurity() {
                             once: true
                         }}
                         className="lg:text-4xl text-xl font-bold w-full">
-                        Why is Cloud Security Important?
+                        Why is DevSecOps Important?
                     </MotionH2>
                     <MotionP
                         initial={{ x: 50, opacity: 0 }}
@@ -157,7 +155,7 @@ export default function CloudSecurity() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Cloud adoption accelerates innovation but introduces risks like exposed S3 buckets or weak IAM policies. Our service ensures:</MotionP>
+                        className="text-gray-500 lg:text-2xl text-lg mb-2">Modern development demands speed, but insecure code can lead to catastrophic breaches. DevSecOps helps:</MotionP>
 
                     <div className="w-full gap-2">
                         {WhyImportance.map((curElm: any, index: number) => (
@@ -260,7 +258,7 @@ export default function CloudSecurity() {
 
             </section >
 
-            <MethodologyCloudSecurity />
+            <MethodologyDevSecOps />
             {/* What we do */}
 
 
@@ -543,9 +541,9 @@ export default function CloudSecurity() {
                         <div className="p-4 lg:flex gap-2 bg-gradient-to-b from-white to-[#fff6f6]">
                             <div className="lg:w-8/12 flex flex-col lg:justify-center lg:items-start items-center lg:mb-0 mb-10">
                                 <h3 className="text-2xl font-bold text-black mb-5">
-                                    Let’s Secure Your Cloud
+                                    Let’s Secure Your Pipeline
                                 </h3>
-                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “Cloud Security Checklist” or schedule a consultation</p>
+                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “DevSecOps Starter Guide” or schedule a consultation.</p>
                                 <ButtonDark href="/contact" text="Schedule a Free Consultation" target="_parent" />
                             </div>
                             <div className="lg:w-4/12 w-11/12 flex lg:justify-end justify-center lg:mb-0 mb-10 lg:mx-0 mx-auto">

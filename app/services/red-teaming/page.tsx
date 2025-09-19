@@ -2,19 +2,17 @@
 
 import { MotionDiv, MotionH1, MotionH2, MotionP, fadeInLeft, fadeInUp } from "@/utils/motioDiv"
 import Image from "next/image"
-import { WhyImportance, GrowBusiness, OurServices, Faqs, WhatWeDo } from '@/data/auditCompliance'
+import { WhyImportance, GrowBusiness, OurServices, Faqs } from '@/data/redTeaming'
 import { useState } from 'react';
 // Using more intuitive icons for open/close states
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
-
-import MethodologyCloudSecurity from "@/components/methodology/cloudSecurity";
-
+import MethodologyRedTeaming from "@/components/methodology/redTeaming";
 
 
 
-export default function CloudSecurity() {
+export default function RedTeaming() {
 
     // State to track the ID of the currently open FAQ item
     const [openId, setOpenId] = useState(null);
@@ -44,7 +42,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                                Cloud Security
+                                Red Teaming
                             </MotionH1>
                         </div>
                         <div className="lg:w-6/12 w-full lg:h-[90vh] h-[35vh] lg:mx-0 relative">
@@ -56,7 +54,7 @@ export default function CloudSecurity() {
                                     once: true
                                 }}
                                 className="lg:w-full w-8/12 absolute right-0 bottom-0">
-                                <Image src='/images/services/cloud-security.svg' height={100} width={1000} alt="about" />
+                                <Image src='/images/services/red-teaming.svg' height={100} width={1000} alt="about" />
                             </MotionDiv>
                         </div>
                     </div>
@@ -73,7 +71,7 @@ export default function CloudSecurity() {
                         once: true
                     }}
                     className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
-                    Cloud Security
+                    Red Teaming
                 </MotionH1>
             </section>
 
@@ -96,7 +94,7 @@ export default function CloudSecurity() {
                                 once: true
                             }}
                             className="lg:text-4xl text-xl font-bold w-full">
-                            Strengthen Cloud Security: Safeguarding Your Digital Assets
+                            Master Red Teaming: Simulating Real-World Adversaries
                         </MotionH2>
                         <MotionP
                             initial={{ x: -50, opacity: 0 }}
@@ -105,8 +103,7 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg">ACloud environments are prime targets for misconfigurations and unauthorized access, with breaches averaging $5.2 million. Our Cloud Security Assessments secure AWS, Azure, and GCP environments using industry standards like CSA CCM.
-
+                            className="text-gray-500 lg:text-2xl text-lg">Red Teaming emulates sophisticated attackers to test your defenses end-to-end. Our service uncovers gaps in people, processes, and technology to build true resilience.
                         </MotionP>
 
                     </div>
@@ -148,7 +145,7 @@ export default function CloudSecurity() {
                             once: true
                         }}
                         className="lg:text-4xl text-xl font-bold w-full">
-                        Why is Cloud Security Important?
+                        Why is Red Teaming Important?
                     </MotionH2>
                     <MotionP
                         initial={{ x: 50, opacity: 0 }}
@@ -157,7 +154,7 @@ export default function CloudSecurity() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Cloud adoption accelerates innovation but introduces risks like exposed S3 buckets or weak IAM policies. Our service ensures:</MotionP>
+                        className="text-gray-500 lg:text-2xl text-lg mb-2">Traditional tests miss adaptive threats. Red Teaming reveals how attackers chain exploits, with breaches costing $4.9 million on average. It's essential to:</MotionP>
 
                     <div className="w-full gap-2">
                         {WhyImportance.map((curElm: any, index: number) => (
@@ -260,69 +257,9 @@ export default function CloudSecurity() {
 
             </section >
 
-            <MethodologyCloudSecurity />
-            {/* What we do */}
+            <MethodologyRedTeaming />
 
 
-            <section className="w-full lg:mb-40 mb-20">
-                <div className="lg:w-9/12 w-11/12 mx-auto">
-                    <div className="lg:w-6/12 flex flex-col justify-center items-center mx-auto space-y-4 lg:mb-16 mb-10">
-
-                        <MotionDiv
-                            initial={{ y: 50, opacity: 0 }}
-                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
-                            transition={{ duration: .8, delay: .3 }}
-                            viewport={{
-                                once: true
-                            }}
-                        >
-                            <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// WHAT WE DO</span>
-                        </MotionDiv>
-
-
-                        <MotionH2
-                            initial={{ y: 50, opacity: 0 }}
-                            whileInView={{ y: 0, scale: 1, opacity: 1 }}
-                            transition={{ duration: .8, delay: .6 }}
-                            viewport={{
-                                once: true
-                            }}
-                            className="lg:text-4xl text-2xl font-bold w-full text-center">
-                            Component - Coverage Details
-                        </MotionH2>
-                    </div>
-
-                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 ">
-
-                        {/* points coverage */}
-                        {WhatWeDo.map((curElm: any, index: number) => (
-                            <MotionDiv
-
-                                variants={fadeInUp}
-                                initial="hidden"
-                                whileInView={'show'}
-                                viewport={{
-                                    once: true
-                                }}
-                                tabIndex={curElm.id}
-                                custom={index}
-                                key={curElm.id}
-
-                                className="w-full flex justify-start gap-4">
-                                <div className="flex justify-center items-start pt-2">
-                                    <Image src='/icons/check-hexagon.svg' height={40} width={100} alt="check" />
-                                </div>
-                                <div className="lg:w-10/12 w-11/12 flex flex-col justify-start">
-                                    <h4 className="lg:text-2xl text-xl font-semibold">{curElm.title}</h4>
-                                    <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
-                                </div>
-                            </MotionDiv>
-                        ))}
-
-
-                    </div>
-                </div>
-            </section>
 
 
             {/* Why Choose */}
@@ -357,7 +294,7 @@ export default function CloudSecurity() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg mb-5">Cloud security experts, reducing exposures by 80% for global clients.
+                            className="text-gray-500 lg:text-2xl text-lg mb-5">MITRE experts, reducing risks by 80%.
                         </MotionP>
 
                     </div>
@@ -367,7 +304,7 @@ export default function CloudSecurity() {
 
 
             {/* FAQs */}
-            <section className="w-full bg-red-50 lg:h-[120vh] lg:py-0 py-20 lg:mb-24 mb-20 flex flex-col justify-center items-center overflow-hidden">
+            <section className="w-full bg-red-50 lg:h-[80vh] lg:py-0 py-20 lg:mb-24 mb-20 flex flex-col justify-center items-center">
 
                 <div className="lg:w-7/12 w-11/12 lg:absolute mx-auto">
                     <div className="lg:w-6/12 flex flex-col justify-center items-center mx-auto space-y-4 mb-10">
@@ -487,7 +424,7 @@ export default function CloudSecurity() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Combine with:</MotionP>
+                        className="text-gray-500 lg:text-2xl text-lg mb-2">Pair with:</MotionP>
 
                     <div className="w-full gap-2">
                         {OurServices.map((curElm: any, index: any) => (
@@ -543,9 +480,9 @@ export default function CloudSecurity() {
                         <div className="p-4 lg:flex gap-2 bg-gradient-to-b from-white to-[#fff6f6]">
                             <div className="lg:w-8/12 flex flex-col lg:justify-center lg:items-start items-center lg:mb-0 mb-10">
                                 <h3 className="text-2xl font-bold text-black mb-5">
-                                    Let’s Secure Your Cloud
+                                    Let’s Red Team Your Defenses
                                 </h3>
-                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “Cloud Security Checklist” or schedule a consultation</p>
+                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download “Red Teaming Guide” or consult.</p>
                                 <ButtonDark href="/contact" text="Schedule a Free Consultation" target="_parent" />
                             </div>
                             <div className="lg:w-4/12 w-11/12 flex lg:justify-end justify-center lg:mb-0 mb-10 lg:mx-0 mx-auto">
