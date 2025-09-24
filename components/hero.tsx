@@ -5,7 +5,7 @@ import { MotionDiv, MotionH1, MotionP } from '@/utils/motioDiv';
 export default function Hero() {
     return (
         <>
-            <section className="h-screen lg:mb-48 mb-56 ">
+            <section className="h-screen lg:mb-20 mb-48">
                 <div className="w-full h-screen relative mx-auto bg-[#FAF2F2]">
                     <div className="w-full lg:absolute mx-auto h-auto ">
 
@@ -21,7 +21,7 @@ export default function Hero() {
                                 className="absolute left-0">
                                 <Image src="/images/bg-deco.svg" width={800} height={100} alt="bg-1" />
                             </MotionDiv>
-                            <div className="lg:w-7/12 lg:mx-0 mx-auto w-full relative flex flex-col lg:items-start items-center justify-center lg:gap-10 gap-2 lg:mt-20">
+                            <div className="lg:w-7/12 lg:mx-0 mx-auto w-full relative flex flex-col lg:items-start items-center justify-center lg:gap-10 gap-2 lg:mt-20 lg:mb-0 mb-10">
                                 {/* Title */}
                                 <MotionH1
                                     initial={{ y: 50, opacity: 0 }}
@@ -66,8 +66,8 @@ export default function Hero() {
                                 viewport={{
                                     once: true
                                 }}
-                                className="lg:w-5/12 w-full h-full relative me-20">
-                                <div className="bottom-0 w-full h-[60vh] flex items-end lg:absolute justify-end">
+                                className="lg:w-5/12 w-full h-full relative lg:me-20">
+                                <div className="bottom-0 w-full lg:h-[60vh] flex items-end lg:absolute justify-end">
                                     <Image src="/images/hero_image_1.png" width={1000} height={1000} alt="hero_image_1" className="" />
                                 </div>
                             </MotionDiv>

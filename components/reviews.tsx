@@ -8,7 +8,7 @@ import { FaStar } from "react-icons/fa6";
 export default function Reviews() {
     return (
         <>
-            <div className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between items-center gap-10 lg:h-[70vh] h-auto lg:mb-40 mb-20">
+            <div className="lg:w-9/12 w-11/12 mx-auto lg:flex justify-between items-center gap-10 lg:h-[70vh] h-auto lg:mb-24 mb-20">
                 <MotionDiv
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, scale: 1, opacity: 1 }}

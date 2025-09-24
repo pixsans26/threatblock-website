@@ -8,7 +8,7 @@ export default function Team() {
     return (
         <>
 
-            <section className="lg:w-9/12 w-11/12 mx-auto flex flex-col justify-center items-center h-auto lg:py-10 lg:mb-20 mb-10">
+            <section id='teams' className="lg:w-9/12 w-11/12 mx-auto flex flex-col justify-center items-center h-auto lg:py-10 lg:mb-20 mb-10">
 
                 <div className="w-8/12 mx-auto flex flex-col justify-center items-center gap-2 lg:mb-20 mb-10">
                     <div className="lg:mb-4 mb-2">

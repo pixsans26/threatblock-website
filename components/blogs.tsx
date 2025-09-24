@@ -6,7 +6,7 @@ import Button from "./widgets/button_dark";
 export default function Blogs() {
     return (
         <>
-            <section className="lg:w-9/12 w-11/12 mx-auto h-auto mb-40">
+            <section className="lg:w-9/12 w-11/12 mx-auto h-auto lg:mb-24 mb-20">
                 <div className="w-full flex justify-between items-end mb-10">
                     <div className="lg:w-4/12">
                         <div className="mb-4">

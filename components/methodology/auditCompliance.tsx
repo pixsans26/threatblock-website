@@ -6,9 +6,9 @@ import Image from "next/image"
 export default function MethodologyAuditCompliance() {
     return (
         <>
-            <section className="w-full relative lg:mb-32 mb-20 bg-red-50 py-20">
+            <section className="w-full relative lg:mb-28 mb-20 bg-red-50 py-20">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-32 mb-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-28 mb-20">
                         <div className="lg:w-7/12 flex flex-col justify-center items-center mx-auto">
                             <div className="mx-auto flex flex-col items-center">
                                 <MotionDiv
@@ -50,14 +50,14 @@ export default function MethodologyAuditCompliance() {
                     {/* CARDS */}
 
 
-                    <div className="w-full mx-auto grid lg:grid-cols-6 grid-cols-1 lg:gap-2 gap-20 items-end">
+                    <div className="w-full mx-auto flex lg:flex-row flex-col lg:gap-2 gap-20 items-stretch">
 
                         {/* First Step */}
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/1.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Planning</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Define compliance objectives (e.g., GDPR, ISO 27001, NIST).</li>
@@ -70,11 +70,11 @@ export default function MethodologyAuditCompliance() {
 
                         {/* 2nd Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/2.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Gap Analysis</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Assess current security controls against target standards.</li>
@@ -85,11 +85,11 @@ export default function MethodologyAuditCompliance() {
 
                         {/* 3rd Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/3.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">3. Evidence Collection</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Gather logs, configurations, and process documentation.</li>
@@ -100,11 +100,11 @@ export default function MethodologyAuditCompliance() {
 
                         {/* 4th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/4.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Testing & Validation</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Perform technical assessments (e.g., access controls, encryption).</li>
@@ -115,11 +115,11 @@ export default function MethodologyAuditCompliance() {
 
                         {/* 5th Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/5.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting & Remediation:</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Deliver detailed reports with compliance gaps and CVSS scores.</li>
@@ -131,11 +131,11 @@ export default function MethodologyAuditCompliance() {
 
                         {/* 6th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/6.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Ongoing Support & Certification</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Assist with remediation and re-audits.</li>

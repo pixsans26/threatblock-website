@@ -6,9 +6,9 @@ import Image from "next/image"
 export default function MethodologyRedTeaming() {
     return (
         <>
-            <section className="w-full relative lg:mb-32 mb-20 bg-red-50 py-20">
+            <section className="w-full relative lg:mb-28 mb-20 bg-red-50 py-20">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-32 mb-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-28 mb-20">
                         <div className="lg:w-7/12 flex flex-col justify-center items-center mx-auto">
                             <div className="mx-auto flex flex-col items-center">
                                 <MotionDiv
@@ -40,14 +40,14 @@ export default function MethodologyRedTeaming() {
                     {/* CARDS */}
 
 
-                    <div className="w-full mx-auto grid lg:grid-cols-4 grid-cols-1 lg:gap-16 gap-20 items-end">
+                    <div className="w-full mx-auto grid lg:grid-cols-4 grid-cols-1 lg:gap-5 lg:gap-y-20 gap-20 items-stretch">
 
                         {/* First Step */}
-                        <div className="relative w-full ">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/1.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[20rem] pt-14 px-4 pb-4 bg-white flex flex-col items-center justify-center">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Planning & Rules of Engagement</h4>
                                 <p className="text-gray-500 text-center">
                                     Define scope, objectives, and boundaries with clear alignment on what systems and personnel are in-scope or off-limits.
@@ -58,11 +58,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 2nd Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/2.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[18rem] pt-14 px-4 pb-4 bg-white flex flex-col items-center justify-center">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reconnaissance</h4>
                                 <p className="text-gray-500 text-center">
                                     Conduct passive and active intelligence gathering to identify targets, entry points, and valuable information (OSINT).
@@ -72,11 +72,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 3rd Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/3.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[20rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Initial Access</h4>
                                 <p className="text-gray-500 text-center">
                                     Attempt to gain a foothold through phishing, social engineering, web exploitation, or physical intrusion simulation.
@@ -86,11 +86,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 4th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/4.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[18rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Persistence & Privilege Escalation</h4>
                                 <p className="text-gray-500 text-center">
                                     Establish backdoors, escalate privileges, and maintain covert access to simulate long-term threats.
@@ -100,11 +100,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 5th Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/5.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[20rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Lateral Movement</h4>
                                 <p className="text-gray-500 text-center">
                                     Explore the network to move between systems, escalate control, and reach critical assets or business functions.
@@ -115,11 +115,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 6th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/6.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[18rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Objective Execution</h4>
                                 <p className="text-gray-500 text-center">
                                     Achieve agreed-upon goals (e.g., exfiltration of sensitive data, domain control) without alerting defenders.
@@ -129,11 +129,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 7th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/7.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[20rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Detection & Response Assessment </h4>
                                 <p className="text-gray-500 text-center">
                                     Monitor how internal teams detect and respond to the simulated attack in real time.
@@ -143,11 +143,11 @@ export default function MethodologyRedTeaming() {
 
                         {/* 8th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/8.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[18rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Debrief & Analysis </h4>
                                 <p className="text-gray-500 text-center">
                                     Review what was detected vs. missed and assess the effectiveness of the organization’s response.

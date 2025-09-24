@@ -31,7 +31,7 @@ export default async function CaseStudies() {
                 {/* Card */}
                 {caseStudies.map((curElm: any) => (
 
-                    <div id={curElm.id} className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
+                    <div key={curElm.id} className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
                         <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
                             {/* Icon */}
                             <div className="text-5xl text-zinc-600 mb-4 lg:h-[20rem] bg-slate-50 overflow-hidden relative">

@@ -27,7 +27,7 @@ export default function Careers() {
             <section className="w-9/12 mx-auto justify-between items-center gap-10 mb-40">
                 {/* Card */}
                 {careersData.map((curElm: any) => (
-                    <div id={curElm.id} className='border-[1px] border-gray-300 p-2 min-w-sm  bg-white mb-10'>
+                    <div key={curElm.id} className='border-[1px] border-gray-300 p-2 min-w-sm  bg-white mb-10'>
                         <div className="p-4 flex justify-between  bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
                             {/* Image */}
                             <div className="w-2/12 text-5xl text-zinc-600 bg-slate-50 overflow-hidden relative">

@@ -5,7 +5,7 @@ export default function ResourcesHero() {
     return (
         <>
 
-            <section className="w-full mx-auto flex justify-center lg:h-[90vh] lg:mb-40 mb-20">
+            <section className="w-full mx-auto flex justify-center lg:h-[90vh] lg:mb-24 mb-20">
                 <div className="w-full lg:h-[90vh] flex">
                     <div className="absolute w-full h-[80vh] z-0 overflow-hidden">
                         <Image src='/images/contact_bg.png' height={1000} width={10000} alt="about w-full" />

@@ -10,7 +10,7 @@ export default function Contact() {
     return (
         <>
             <ContactHero />
-            <section className="w-full lg:h-[60vh] flex mx-auto justify-center items-center text-white lg:mb-40 mb-20 ">
+            <section className="w-full lg:h-[60vh] flex mx-auto justify-center items-center text-white lg:mb-24 mb-20 ">
                 {/*  */}
                 <div className="lg:w-9/12 w-10/12 h-auto lg:flex absolute">
                     <div className="w-full h-full relative lg:flex items-center ">

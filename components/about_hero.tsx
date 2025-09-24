@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutHero() {
     return (
         <>
-            <section className="w-full mx-auto lg:flex justify-center lg:h-[90vh] lg:mb-40 mb-80">
+            <section className="w-full mx-auto lg:flex justify-center lg:h-[90vh] lg:mb-20 mb-80">
                 <div className="w-full lg:h-[80vh] lg:flex">
                     <div className="absolute w-full lg:h-[80vh] z-0 overflow-hidden">
                         <Image src='/images/about_page_bg.png' height={1000} width={10000} alt="about w-full" />

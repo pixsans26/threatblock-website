@@ -6,9 +6,9 @@ import Image from "next/image"
 export default function MethodologyPenetrationTesting() {
     return (
         <>
-            <section className="w-full relative lg:mb-32 mb-20 bg-red-50 py-20">
+            <section className="w-full relative lg:mb-28 mb-20 bg-red-50 py-20">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-32 mb-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-28 mb-20">
                         <div className="lg:w-7/12 flex flex-col justify-center items-center mx-auto">
                             <div className="mx-auto flex flex-col items-center">
                                 <MotionDiv
@@ -30,7 +30,7 @@ export default function MethodologyPenetrationTesting() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="lg:text-4xl text-2xl font-bold w-full">
+                                        className="lg:text-4xl text-2xl font-bold w-full text-center">
                                         METHODOLOGY
                                     </MotionH2>
                                     <MotionP
@@ -40,7 +40,7 @@ export default function MethodologyPenetrationTesting() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 ">
+                                        className="text-gray-500 text-center">
                                         Our NIST-aligned approach ensures thorough testing
                                     </MotionP>
                                 </div>
@@ -50,14 +50,14 @@ export default function MethodologyPenetrationTesting() {
                     {/* CARDS */}
 
 
-                    <div className="w-full mx-auto grid lg:grid-cols-6 grid-cols-1 lg:gap-2 gap-20 items-end">
+                    <div className="w-full mx-auto flex lg:flex-row flex-col lg:gap-5 lg:gap-y-20 gap-20 items-stretch">
 
                         {/* First Step */}
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/1.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Planning</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Define scope (networks, apps, cloud) and rules.</li>
@@ -70,11 +70,11 @@ export default function MethodologyPenetrationTesting() {
 
                         {/* 2nd Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/2.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reconnaissance</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Enumerate systems, services, and endpoints.</li>
@@ -85,11 +85,11 @@ export default function MethodologyPenetrationTesting() {
 
                         {/* 3rd Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/3.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Vulnerability Assessment</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Scan for weaknesses using tools like Nessus or Burp Suite.</li>
@@ -100,11 +100,11 @@ export default function MethodologyPenetrationTesting() {
 
                         {/* 4th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/4.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Exploitation</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Simulate attacks like SQL injection or privilege escalation</li>
@@ -115,11 +115,11 @@ export default function MethodologyPenetrationTesting() {
 
                         {/* 5th Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/5.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Provide executive and technical reports with CVSS scores.</li>
@@ -133,11 +133,11 @@ export default function MethodologyPenetrationTesting() {
 
                         {/* 6th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/6.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Retesting & Training</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">erify fixes and train teams on secure practices.</li>

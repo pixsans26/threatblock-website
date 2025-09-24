@@ -27,7 +27,7 @@ export default function CloudSecurity() {
 
     return (
         <>
-            <section className="w-full mx-auto flex justify-center lg:h-[90vh] lg:mb-40 mb-20">
+            <section className="w-full mx-auto flex justify-center lg:h-[90vh] lg:mb-24 mb-20">
                 <div className="w-full lg:h-[90vh] flex">
                     <div className="absolute w-full h-[80vh] z-0 overflow-hidden">
                         <Image src='/images/services/bg.png' height={1000} width={10000} alt="about w-full" />
@@ -114,7 +114,7 @@ export default function CloudSecurity() {
             </section>
 
 
-            <section className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-10 lg:mb-40 mb-20">
+            <section className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-10 lg:mb-24 mb-20">
 
                 <MotionDiv
                     initial={{ x: -50, opacity: 0 }}
@@ -236,9 +236,9 @@ export default function CloudSecurity() {
                                 tabIndex={curElm.id}
                                 custom={index}
                                 key={curElm.id}
-                                className="w-full">
-                                <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
-                                    <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
+                                className="w-full flex flex-grow">
+                                <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6 bg-white flex flex-grow'>
+                                    <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden flex-grow">
                                         {/* Title */}
                                         <h3 className="lg:text-2xl text-xl font-semibold text-black">
                                             {curElm.title}
@@ -262,7 +262,7 @@ export default function CloudSecurity() {
             {/* What we do */}
 
 
-            <section className="w-full lg:mb-40 mb-20">
+            <section className="w-full lg:mb-24 mb-20">
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className="lg:w-6/12 flex flex-col justify-center items-center mx-auto space-y-4 lg:mb-16 mb-10">
 
@@ -325,7 +325,7 @@ export default function CloudSecurity() {
 
             {/* Why Choose */}
 
-            <section className="w-full lg:mb-40 mb-20">
+            <section className="w-full lg:mb-24 mb-20">
                 <div className="lg:w-9/12 w-11/12 mx-auto mb-10 lg:flex justify-center items-center gap-10">
                     <MotionDiv
                         initial={{ x: 50, opacity: 0 }}
@@ -456,7 +456,7 @@ export default function CloudSecurity() {
 
             {/* Services */}
 
-            <section className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-10 lg:mb-40 mb-20">
+            <section className="lg:w-9/12 w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-10 lg:mb-24 mb-20">
                 <div className="lg:w-6/12 flex flex-col gap-2 items-start justify-start">
                     <MotionDiv
                         initial={{ x: 50, opacity: 0 }}
@@ -527,7 +527,7 @@ export default function CloudSecurity() {
 
 
             {/* Contact Card */}
-            <section className="lg:w-7/12 w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-10 lg:mb-32 mb-20">
+            <section className="lg:w-7/12 w-11/12 mx-auto flex lg:flex-row flex-col justify-between items-center gap-10 lg:mb-28 mb-20">
 
                 <div className="w-full">
                     <MotionDiv

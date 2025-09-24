@@ -6,9 +6,9 @@ import Image from "next/image"
 export default function MethodologyThreatIntelligence() {
     return (
         <>
-            <section className="w-full relative lg:mb-32 mb-20 bg-red-50 py-20">
+            <section className="w-full relative lg:mb-28 mb-20 bg-red-50 py-20">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-32 mb-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-28 mb-20">
                         <div className="lg:w-7/12 flex flex-col justify-center items-center mx-auto">
                             <div className="mx-auto flex flex-col items-center">
                                 <MotionDiv
@@ -40,14 +40,14 @@ export default function MethodologyThreatIntelligence() {
                     {/* CARDS */}
 
 
-                    <div className="w-full mx-auto grid lg:grid-cols-5 grid-cols-1 lg:gap-16 gap-20 items-end">
+                    <div className="w-full mx-auto grid lg:grid-cols-5 grid-cols-1 lg:gap-5 lg:gap-y-20 gap-20 items-stretch">
 
                         {/* First Step */}
-                        <div className="relative w-full ">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/1.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[20rem] pt-14 px-4 pb-4 bg-white flex flex-col items-center justify-center">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Intelligence Collection</h4>
                                 <p className="text-gray-500 text-center">
                                     Gather data from open sources (OSINT), dark web, deep web, commercial threat feeds, malware repositories, and internal telemetry.
@@ -58,11 +58,11 @@ export default function MethodologyThreatIntelligence() {
 
                         {/* 2nd Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/2.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[18rem] pt-14 px-4 pb-4 bg-white flex flex-col items-center justify-center">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Threat Actor Profiling</h4>
                                 <p className="text-gray-500 text-center">
                                     Identify and track tactics, techniques, and procedures (TTPs) used by known threat groups targeting your sector.
@@ -72,11 +72,11 @@ export default function MethodologyThreatIntelligence() {
 
                         {/* 3rd Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/3.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[20rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Malware & IOC Analysis</h4>
                                 <p className="text-gray-500 text-center">
                                     Analyze malware samples, hashes, indicators of compromise (IOCs), and command & control (C2) infrastructure.
@@ -86,11 +86,11 @@ export default function MethodologyThreatIntelligence() {
 
                         {/* 4th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/4.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[18rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Brand Monitoring</h4>
                                 <p className="text-gray-500 text-center">
                                     Monitor impersonation, phishing domains, data leaks, and abuse of brand assets across public and underground platforms.
@@ -100,21 +100,17 @@ export default function MethodologyThreatIntelligence() {
 
                         {/* 5th Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/5.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[20rem] pt-14 flex flex-col items-center justify-center px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Threat Intelligence Integration (optional)</h4>
                                 <p className="text-gray-500 text-center">
                                     Feed curated intelligence directly into your security stack for automation and detection.
                                 </p>
                             </div>
                         </div>
-
-
-
-
                     </div>
 
 

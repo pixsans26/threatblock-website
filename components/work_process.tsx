@@ -1,5 +1,8 @@
+'use client'
+
 import { MotionDiv, MotionH2, MotionP } from "@/utils/motioDiv"
 import Image from "next/image"
+import CountUp from 'react-countup';
 
 export default function WorkProcess() {
     return (
@@ -41,45 +44,78 @@ export default function WorkProcess() {
 
                     </div>
                 </div>
-                <div className="lg:w-7/12 w-full lg:flex justify-end lg:gap-10 relative">
-                    <div className="lg:w-10/12 w-full flex justify-end">
-                        <Image src='/images/work.png' height={100} width={500} alt='work' />
-                    </div>
+                <div className="lg:w-7/12 w-full flex lg:gap-10 relative ">
+                    <div className=" w-full flex justify-center items-center">
 
-                    {/* Counter */}
-                    <MotionDiv
+                        {/* Counter */}
+                        <div className="lg:[clip-path:polygon(50px_0,_100%_0,_100%_calc(100%_-_50px),_calc(100%_-_50px)_100%,_0_100%,_0_50px)] 
+                            [clip-path:polygon(20px_0,_100%_0,_100%_calc(100%_-_20px),_calc(100%_-_20px)_100%,_0_100%,_0_20px)] lg:h-[18vh] h-[14vh] lg:w-9/12 w-full absolute lg:z-0 z-10">
 
-                        initial={{ x: 50, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ duration: .8, delay: 1 }}
-                        viewport={{
-                            once: true
-                        }}
-                        className="lg:[clip-path:polygon(50px_0,_100%_0,_100%_calc(100%_-_50px),_calc(100%_-_50px)_100%,_0_100%,_0_50px)] 
-                            [clip-path:polygon(20px_0,_100%_0,_100%_calc(100%_-_20px),_calc(100%_-_20px)_100%,_0_100%,_0_20px)] lg:h-[18vh] h-[14vh] lg:w-9/12 w-full absolute lg:left-0  lg:bottom-4 bottom-[-5rem] lg:z-0 z-10">
-                        <div className="flex w-full h-full bg-black">
-                            <div className="opacity-20">
-                                <Image src="/images/counter_hero_bg.png" width={1000} height={1000} alt="hero_image_1" className="" />
+                            <div className="flex w-full h-full bg-black">
+                                <div className="opacity-20">
+                                    <Image src="/images/counter_hero_bg.png" width={1000} height={1000} alt="hero_image_1" className="" />
+                                </div>
+                                <div className="w-full flex h-full justify-between absolute items-center lg:py-12 gap-4 lg:px-8 px-4 py-8">
+                                    <div className="">
+
+
+                                        <CountUp
+                                            suffix="+"
+                                            start={1}
+                                            end={50}
+                                            duration={2}
+                                            useEasing={true}
+                                            enableScrollSpy={true}
+                                            scrollSpyOnce={true}
+                                            separator='' >
+                                            {({ countUpRef }) => (
+                                                <h3 className="lg:text-4xl text-3xl text-white font-bold"> <span ref={countUpRef} /></h3>
+                                            )}
+
+                                        </CountUp>
+
+                                        <p className="lg:text-xl text-xs">Security Engagements</p>
+                                    </div>
+                                    <div className="border-l border-gray-300 h-20"></div>
+                                    <div className="">
+                                        <CountUp
+                                            suffix="B+"
+                                            start={0}
+                                            end={1.3}
+                                            duration={2}
+                                            useEasing={true}
+                                            enableScrollSpy={true}
+                                            scrollSpyOnce={true}
+                                            separator='' >
+                                            {({ countUpRef }) => (
+                                                <h3 className="lg:text-4xl text-3xl text-white font-bold"> <span ref={countUpRef} /></h3>
+                                            )}
+
+                                        </CountUp>
+                                        <p className="lg:text-xl text-xs">Security Signals Processed Daily</p>
+                                    </div>
+                                    <div className="border-l border-gray-300 h-20"></div>
+                                    <div className="">
+                                        <CountUp
+                                            suffix="%"
+                                            start={50}
+                                            end={100}
+                                            duration={2}
+                                            useEasing={true}
+                                            enableScrollSpy={true}
+                                            scrollSpyOnce={true}
+                                            separator='' >
+                                            {({ countUpRef }) => (
+                                                <h3 className="lg:text-4xl text-3xl text-white font-bold"> <span ref={countUpRef} /></h3>
+                                            )}
+
+                                        </CountUp>
+                                        <p className="lg:text-xl text-xs">Clients Satisfaction</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="w-full flex h-full justify-between absolute items-center lg:py-12 gap-4 lg:px-8 px-4 py-8">
-                                <div className="">
-                                    <h3 className="lg:text-4xl text-3xl text-white font-bold">50+</h3>
-                                    <p className="lg:text-xl text-xs">Security Engagements</p>
-                                </div>
-                                <div className="border-l border-gray-300 h-20"></div>
-                                <div className="">
-                                    <h3 className="lg:text-4xl text-3xl text-white font-bold">1.3B+</h3>
-                                    <p className="lg:text-xl text-xs">Security Signals Processed Daily</p>
-                                </div>
-                                <div className="border-l border-gray-300 h-20"></div>
-                                <div className="">
-                                    <h3 className="lg:text-4xl text-3xl text-white font-bold">100%</h3>
-                                    <p className="lg:text-xl text-xs">Clients Satisfaction</p>
-                                </div>
-                            </div>
-
                         </div>
-                    </MotionDiv>
+                    </div>
                 </div>
             </section>
         </>

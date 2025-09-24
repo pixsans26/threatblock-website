@@ -6,7 +6,7 @@ import { MotionDiv, MotionH2, MotionP } from "@/utils/motioDiv";
 export default function AboutHome() {
     return (
         <>
-            <section className="w-full relative lg:flex justify-center items-center bg-[#FAF2F2] lg:mb-40 mb-20">
+            <section className="w-full relative lg:flex justify-center items-center bg-[#FAF2F2] lg:mb-24 mb-20">
                 <MotionDiv
                     initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, scale: 1, opacity: 1 }}

@@ -6,7 +6,7 @@ import { industriesData } from '@/data/industries'
 export default function Industries() {
     return (
         <>
-            <section className='w-full lg:mt-20 py-5 mt-10'>
+            <section className='w-full lg:my-5 py-5 mt-10'>
 
                 <div className="lg:w-9/12 w-11/12 mx-auto">
                     <div className='lg:w-5/12 w-full flex mx-auto justify-center '>

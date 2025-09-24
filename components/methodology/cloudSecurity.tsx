@@ -6,9 +6,9 @@ import Image from "next/image"
 export default function MethodologyCloudSecurity() {
     return (
         <>
-            <section className="w-full relative lg:mb-32 mb-20 bg-red-50 py-20">
+            <section className="w-full relative lg:mb-28 mb-20 bg-red-50 py-20">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-32 mb-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-28 mb-20">
                         <div className="lg:w-7/12 flex flex-col justify-center items-center mx-auto">
                             <div className="mx-auto flex flex-col items-center">
                                 <MotionDiv
@@ -50,14 +50,14 @@ export default function MethodologyCloudSecurity() {
                     {/* CARDS */}
 
 
-                    <div className="w-full mx-auto grid lg:grid-cols-6 grid-cols-1 lg:gap-2 gap-20 items-end">
+                    <div className="w-full mx-auto flex lg:flex-row flex-col lg:gap-2 gap-20 items-stretch">
 
                         {/* First Step */}
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/1.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Planning</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Define cloud assets (e.g., EC2, S3, Lambda) and boundaries.</li>
@@ -70,11 +70,11 @@ export default function MethodologyCloudSecurity() {
 
                         {/* 2nd Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/2.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reconnaissance</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Map cloud resources and access points.</li>
@@ -89,7 +89,7 @@ export default function MethodologyCloudSecurity() {
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/3.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Vulnerability Assessment</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Test for weak IAM, unencrypted data, and open ports.</li>
@@ -100,11 +100,11 @@ export default function MethodologyCloudSecurity() {
 
                         {/* 4th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/4.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Exploitation & Validation</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Simulate attacks like privilege escalation or data exfiltration.</li>
@@ -115,11 +115,11 @@ export default function MethodologyCloudSecurity() {
 
                         {/* 5th Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/5.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting & Remediation:</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Deliver reports with CSA CCM mappings and CVSS scores.</li>
@@ -131,11 +131,11 @@ export default function MethodologyCloudSecurity() {
 
                         {/* 6th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/6.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Retesting & Optimization:</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Assist with remediation and re-audits.</li>

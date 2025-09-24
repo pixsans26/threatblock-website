@@ -6,9 +6,9 @@ import Image from "next/image"
 export default function MethodologyDevSecOps() {
     return (
         <>
-            <section className="w-full relative lg:mb-32 mb-20 bg-red-50 py-20">
+            <section className="w-full relative lg:mb-28 mb-20 bg-red-50 py-20">
                 <div className="lg:w-10/12 w-11/12 mx-auto">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-32 mb-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:gap-20 lg:mb-28 mb-20">
                         <div className="lg:w-7/12 flex flex-col justify-center items-center mx-auto">
                             <div className="mx-auto flex flex-col items-center">
                                 <MotionDiv
@@ -51,14 +51,14 @@ export default function MethodologyDevSecOps() {
                     {/* CARDS */}
 
 
-                    <div className="w-full mx-auto grid lg:grid-cols-5 grid-cols-1 lg:gap-2 gap-20 items-end">
+                    <div className="w-full mx-auto flex lg:flex-row flex-col lg:gap-2 gap-20 items-stretch">
 
                         {/* First Step */}
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/1.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Assessment</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Evaluate current SDLC and security maturity.</li>
@@ -71,11 +71,11 @@ export default function MethodologyDevSecOps() {
 
                         {/* 2nd Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/2.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Tool Integration</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Deploy SAST, DAST, and dependency scanners.</li>
@@ -86,11 +86,11 @@ export default function MethodologyDevSecOps() {
 
                         {/* 3rd Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/3.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Secure Coding Practices</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Train developers on OWASP Top 10 and secure coding.</li>
@@ -101,11 +101,11 @@ export default function MethodologyDevSecOps() {
 
                         {/* 4th Step */}
 
-                        <div className="relative w-full">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/4.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400  lg:h-[16rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Continuous Monitoring</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Automate vulnerability scans in CI/CD.</li>
@@ -116,11 +116,11 @@ export default function MethodologyDevSecOps() {
 
                         {/* 5th Step */}
 
-                        <div className="relative w-full h-[">
+                        <div className="relative w-full flex flex-col">
                             <div className="w-full absolute flex justify-center top-[-3rem]">
                                 <Image src='/icons/5.svg' height={100} width={100} alt='1' />
                             </div>
-                            <div className="border-[1px] border-gray-400 lg:h-[18rem] pt-14 justify-start px-4 pb-4 bg-white">
+                            <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting & Improvement</h4>
                                 <ul className="list-disc text-sm space-y-2">
                                     <li className="text-gray-500">Provide dashboards with actionable metrics.</li>
