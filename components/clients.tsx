@@ -37,7 +37,7 @@ export default function ClientsSlider() {
                 viewport={{
                   once: true
                 }}
-                className="text-gray-500 lg:text-2xl"
+                className="text-gray-700 lg:text-xl"
               >
                 Trusted by a wide range of clients for impactful, lasting results.
               </MotionP>
@@ -60,10 +60,10 @@ export default function ClientsSlider() {
                 {ClientsData?.map((curElm: any) => (
                   <div
                     key={curElm.id}
-                    className='w-1/12 lg:mx-16 mx-8'>
+                    className='w-2/12 lg:mx-16 mx-8'>
                     <img
                       className=''
-                      width={100}
+                      width={150}
                       height={100}
                       src={curElm.logo}
                       alt={curElm.name} />

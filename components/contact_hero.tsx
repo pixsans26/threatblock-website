@@ -14,7 +14,7 @@ export default function ContactHero() {
                     <div className="lg:w-9/12 w-11/12 lg:flex lg:h-[auto] h-[30vh] justify-around items-center mx-auto z-10 relative gap-10">
                         <div className="w-6/12 lg:flex hidden flex-col gap-10 justify-start ">
                             {/* Title */}
-                            <h1 className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
+                            <h1 className="w-10/12 lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
                                 Contact Us
                             </h1>
                         </div>
@@ -29,7 +29,7 @@ export default function ContactHero() {
 
             <section className="w-11/12 lg:hidden flex flex-col lg:gap-10 gap-5 justify-start mx-auto mb-20">
                 {/* Title */}
-                <h1 className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
+                <h1 className="w-full lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
                     Contact Us
                 </h1>
             </section>

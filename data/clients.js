@@ -1,28 +1,24 @@
 export const ClientsData = [
     {
         id: 1,
-        title: 'Github',
-        logo: '/clients/github.png',
+        title: 'AlphaThreat',
+        logo: '/clients/AlphaThreat.png',
     },
     {
         id: 2,
-        title: 'google',
-        logo: '/clients/google.png',
+        title: 'JBNPL',
+        logo: '/clients/JBNPL.webp',
     },
     {
         id: 3,
-        title: 'infosys',
-        logo: '/clients/infosys.png',
+        title: 'planetone',
+        logo: '/clients/planetone-logo.webp',
     },
     {
         id: 4,
-        title: 'spotify',
-        logo: '/clients/spotify.png',
+        title: 'pixsans',
+        logo: '/clients/pixsans_logo.svg',
     },
-    {
-        id: 5,
-        title: 'strapi',
-        logo: '/clients/strapi.png',
-    },
+
 
 ]

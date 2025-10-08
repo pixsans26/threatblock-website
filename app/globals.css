@@ -2,31 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root {
   --primary: #DA0000;
-  --gray: #777777;
+  --gray: #ebebeb;
   --background: #ffffff;
   --backround-2: #FAF2F2;
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #FFFFFF;
-    --gray: #BCC3D7;
-    --background: #ffffff;
+    --gray: #ebebeb;
+    --background: #060606;
     --backround-2: #FAF2F2;
   }
 }
 
-
-
+body {
+  font-family: "Ubuntu", sans-serif !important;
+}
 
 p {
   color: var(--gray);
+
 }
-
-
 
 bg-red-tint {
   background-color: var(--backround-2);
@@ -34,4 +36,42 @@ bg-red-tint {
 
 bg-red-primary {
   background-color: var(--primary);
+}
+
+@layer base {
+  .theme {
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  }
+
+}
+
+@theme inline {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+
+    }
+
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+
+    }
+
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+
+    }
+
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+
+    }
+
+  }
+
 }

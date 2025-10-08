@@ -5,7 +5,7 @@ import { MotionDiv, MotionH1, MotionP } from '@/utils/motioDiv';
 export default function Hero() {
     return (
         <>
-            <section className="h-screen lg:mb-20 mb-48">
+            <section className="h-screen mb-20">
                 <div className="w-full h-screen relative mx-auto bg-[#FAF2F2]">
                     <div className="w-full lg:absolute mx-auto h-auto ">
 
@@ -30,7 +30,7 @@ export default function Hero() {
                                     viewport={{
                                         once: true
                                     }}
-                                    className="lg:text-6xl text-4xl font-bold lg:w-10/12 w-full lg:text-start text-center">
+                                    className="lg:text-5xl text-4xl font-bold lg:w-10/12 w-full lg:text-start text-center">
                                     Protect Your Business With Tailored <span className="text-red-600">Cybersecurity </span>Consulting
                                 </MotionH1>
                                 <MotionP
@@ -40,7 +40,7 @@ export default function Hero() {
                                     viewport={{
                                         once: true
                                     }}
-                                    className="lg:w-11/12 text-gray-500 lg:text-2xl lg:text-start text-center">
+                                    className="lg:w-11/12 text-gray-700 lg:text-xl lg:text-start text-center">
                                     We safeguard organizations through proactive Red Team assessments, cloud security enhancement,
                                     and rapid-response incident handling—so you can stay focused on your core mission.
                                 </MotionP>

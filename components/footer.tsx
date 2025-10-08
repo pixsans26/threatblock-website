@@ -1,6 +1,6 @@
 // components/Footer.jsx
 
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import { FaLinkedin, FaX } from 'react-icons/fa6';
 import Button from './widgets/button_white';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,9 +10,8 @@ const Footer = () => {
     // const resources = ['Contact Us', 'Privacy Policy', 'Terms & Condition', 'Careers', 'Teams', 'Blogs'];
 
     const socialLinks = [
-        { icon: <FaInstagram size={20} />, href: 'www.instagram.com' },
-        { icon: <FaFacebook size={20} />, href: 'www.facebook.com' },
-        { icon: <FaYoutube size={20} />, href: 'www.youtube.com' },
+        { icon: <FaX size={20} />, href: 'https://x.com/threatblock' },
+        { icon: <FaLinkedin size={20} />, href: 'http://linkedin.com/company/threatblock/' }
     ];
 
     return (
@@ -33,7 +32,7 @@ const Footer = () => {
                             <div className='mb-2'>
                                 <Image src='/logo-white.svg' width={300} height={100} alt='logo' />
                             </div>
-                            <h3 className="text-xl lg:text-2xl font-extrabold tracking-tight mb-6">
+                            <h3 className="text-xl lg:text-xl font-extrabold tracking-tight mb-6">
                                 DEFENDING TOMORROW, TODAY
                             </h3>
                             <Button href='/contact' text='Contact Now' />
@@ -57,7 +56,7 @@ const Footer = () => {
                                     </li>
 
                                     <li>
-                                        <Link href="/blogs" className="text-gray-400 hover:text-white transition-colors">
+                                        <Link href="https://threatblock.typeflo.io/" className="text-gray-400 hover:text-white transition-colors">
                                             Blogs
                                         </Link>
                                     </li>
@@ -128,7 +127,7 @@ const Footer = () => {
 
                 {/* Bottom copyright section */}
                 <div className="w-full text-center bg-[#1A0D0D] lg:py-10 py-5">
-                    <span className="text-gray-500 text-sm">
+                    <span className="text-gray-400 text-sm">
                         © 2025 ThreatBlock All right reserved.
                     </span>
 

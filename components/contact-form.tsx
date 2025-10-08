@@ -11,7 +11,7 @@ export default function ContactFrom() {
             <div className=' w-full border-[1px] h-auto border-gray-300 p-2 mb-10'>
                 <div className="p-4 flex flex-col justify-between bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden text-black">
                     <div className="w-full flex justify-center mx-auto py-5">
-                        <h4 className="lg:text-2xl text-lg font-semibold text-center">Send your Query</h4>
+                        <h4 className="lg:text-xl text-lg font-semibold text-center">Send your Query</h4>
                     </div>
                     <form
                         className='w-full'

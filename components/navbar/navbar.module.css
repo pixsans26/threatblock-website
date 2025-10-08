@@ -12,7 +12,7 @@
 /* navbar */
 
 .navLink {
-    font-weight: 500;
+    font-weight: 400;
     padding: 2rem 1.5rem;
     transition: ease-in-out .2s;
     display: flex;

@@ -41,7 +41,7 @@ export default function Careers() {
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-lg text-gray-500 mb-4">
+                                <p className="text-lg text-gray-700 mb-4">
                                     {curElm.description}
                                 </p>
                                 <div>

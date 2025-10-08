@@ -19,7 +19,7 @@ export default function MethodologyPenetrationTesting() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// END TO END DEFENSE STRATEGY</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// END TO END DEFENSE STRATEGY</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col mt-5 justify-center">
@@ -40,7 +40,7 @@ export default function MethodologyPenetrationTesting() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 text-center">
+                                        className="text-gray-700 text-center">
                                         Our NIST-aligned approach ensures thorough testing
                                     </MotionP>
                                 </div>
@@ -60,8 +60,8 @@ export default function MethodologyPenetrationTesting() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Planning</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Define scope (networks, apps, cloud) and rules.</li>
-                                    <li className="text-gray-500">Identify critical assets and attack surfaces.</li>
+                                    <li className="text-gray-700">Define scope (networks, apps, cloud) and rules.</li>
+                                    <li className="text-gray-700">Identify critical assets and attack surfaces.</li>
 
                                 </ul>
                             </div>
@@ -77,8 +77,8 @@ export default function MethodologyPenetrationTesting() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reconnaissance</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Enumerate systems, services, and endpoints.</li>
-                                    <li className="text-gray-500">Gather OSINT and map topologies.</li>
+                                    <li className="text-gray-700">Enumerate systems, services, and endpoints.</li>
+                                    <li className="text-gray-700">Gather OSINT and map topologies.</li>
                                 </ul>
                             </div>
                         </div>
@@ -92,8 +92,8 @@ export default function MethodologyPenetrationTesting() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Vulnerability Assessment</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Scan for weaknesses using tools like Nessus or Burp Suite.</li>
-                                    <li className="text-gray-500">Test for OWASP Top 10, misconfigurations, and exploits.</li>
+                                    <li className="text-gray-700">Scan for weaknesses using tools like Nessus or Burp Suite.</li>
+                                    <li className="text-gray-700">Test for OWASP Top 10, misconfigurations, and exploits.</li>
                                 </ul>
                             </div>
                         </div>
@@ -107,8 +107,8 @@ export default function MethodologyPenetrationTesting() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Exploitation</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Simulate attacks like SQL injection or privilege escalation</li>
-                                    <li className="text-gray-500">Validate findings with controlled exploits.</li>
+                                    <li className="text-gray-700">Simulate attacks like SQL injection or privilege escalation</li>
+                                    <li className="text-gray-700">Validate findings with controlled exploits.</li>
                                 </ul>
                             </div>
                         </div>
@@ -122,8 +122,8 @@ export default function MethodologyPenetrationTesting() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Provide executive and technical reports with CVSS scores.</li>
-                                    <li className="text-gray-500">Map to NIST and OWASP standards.</li>
+                                    <li className="text-gray-700">Provide executive and technical reports with CVSS scores.</li>
+                                    <li className="text-gray-700">Map to NIST and OWASP standards.</li>
 
 
                                 </ul>
@@ -140,7 +140,7 @@ export default function MethodologyPenetrationTesting() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Retesting & Training</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">erify fixes and train teams on secure practices.</li>
+                                    <li className="text-gray-700">erify fixes and train teams on secure practices.</li>
 
                                 </ul>
                             </div>

@@ -16,7 +16,7 @@ export default function TrustedBadges() {
                             once: true
                         }}
                         className="mb-4">
-                        <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//BADGES</span>
+                        <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//BADGES</span>
                     </MotionDiv>
                     <div className="lg:flex lg:flex-col gap-8 lg:w-full">
                         <MotionH2
@@ -36,7 +36,7 @@ export default function TrustedBadges() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl ">
+                            className="text-gray-700 lg:text-xl mb-5">
                             Backed by globally recognized certifications in web, wireless, infrastructure, and red team operations,
                             our team combines technical mastery with real-world experience. These credentials assure our clients
                             that every assessment, strategy, and remediation step we deliver meets the highest international

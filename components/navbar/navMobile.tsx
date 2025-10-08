@@ -111,14 +111,14 @@ const NavbarMobile = () => {
                         <Link
                             href="/"
                             onClick={closeSidebarAndDropdown}
-                            className="block px-4 py-2 rounded hover:bg-gray-700 transition"
+                            className="block px-4 py-2 rounded hover:bg-red-100 transition"
                         >
                             Home
                         </Link>
                         <Link
                             href="/about"
                             onClick={closeSidebarAndDropdown}
-                            className="block px-4 py-2 rounded hover:bg-gray-700 transition"
+                            className="block px-4 py-2 rounded hover:bg-red-100 transition"
                         >
                             About
                         </Link>
@@ -135,12 +135,12 @@ const NavbarMobile = () => {
                                     ref={servicesRef}
                                     style={{ height: dropdownHeight }}
                                     className={`
-                                    overflow-hidden transition-all duration-300 ease-in-out pl-8 pt-2 text-gray-500 text-sm
+                                    overflow-hidden transition-all duration-300 ease-in-out pl-8 pt-2 text-gray-700 text-sm
                                 `}
                                 >
 
                                     {Services.map((curElm: any) => (
-                                        <Link key={curElm.id} href={curElm.link} onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-gray-700 transition">
+                                        <Link key={curElm.id} href={curElm.link} onClick={closeSidebarAndDropdown} className="block px-4 py-2 rounded hover:bg-red-100 transition">
                                             {curElm.text}
                                         </Link>
                                     ))}
@@ -152,28 +152,28 @@ const NavbarMobile = () => {
                         <Link
                             href="/press_room"
                             onClick={closeSidebarAndDropdown}
-                            className="block px-4 py-2 rounded hover:bg-gray-700 transition"
+                            className="block px-4 py-2 rounded hover:bg-red-100 transition"
                         >
                             Press Room
                         </Link>
                         <Link
                             href="/resources"
                             onClick={closeSidebarAndDropdown}
-                            className="block px-4 py-2 rounded hover:bg-gray-700 transition"
+                            className="block px-4 py-2 rounded hover:bg-red-100 transition"
                         >
                             Resources
                         </Link>
                         <Link
                             href="/case_studies"
                             onClick={closeSidebarAndDropdown}
-                            className="block px-4 py-2 rounded hover:bg-gray-700 transition"
+                            className="block px-4 py-2 rounded hover:bg-red-100 transition"
                         >
                             Case Studies
                         </Link>
                         <Link
                             href="/contact"
                             onClick={closeSidebarAndDropdown}
-                            className="block px-4 py-2 rounded hover:bg-gray-700 transition"
+                            className="block px-4 py-2 rounded hover:bg-red-100 transition"
                         >
                             Contact
                         </Link>

@@ -52,7 +52,7 @@ export default function AboutHome() {
                                         once: true
                                     }}
                                     className="mb-4">
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//ABOUT US</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//ABOUT US</span>
                                 </MotionDiv>
                                 <MotionH2
                                     initial={{ x: 50, opacity: 0 }}
@@ -77,7 +77,7 @@ export default function AboutHome() {
                                     viewport={{
                                         once: true
                                     }}
-                                    className="text-gray-500 lg:text-2xl">
+                                    className="text-gray-700 lg:text-xl">
                                     From lean startups to global enterprises, our experts deliver scalable security that evolves with your
                                     growth.
                                 </MotionP>
@@ -111,8 +111,8 @@ export default function AboutHome() {
                                         <Image src='/images/about_2.png' height={100} width={250} alt='about2' />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold lg:text-2xl ">Samaksh</h4>
-                                        <p className="text-gray-500 lg:text-2xl text-sm">Founder</p>
+                                        <h4 className="font-semibold lg:text-xl ">Samaksh</h4>
+                                        <p className="text-gray-700 lg:text-xl text-sm">Founder</p>
                                     </div>
                                 </MotionDiv>
                             </div>

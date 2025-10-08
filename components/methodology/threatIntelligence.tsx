@@ -19,7 +19,7 @@ export default function MethodologyThreatIntelligence() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// END TO END DEFENSE STRATEGY</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// END TO END DEFENSE STRATEGY</span>
                                 </MotionDiv>
 
                                 <div className="flex gap-5 mt-5 justify-center">
@@ -49,7 +49,7 @@ export default function MethodologyThreatIntelligence() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Intelligence Collection</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Gather data from open sources (OSINT), dark web, deep web, commercial threat feeds, malware repositories, and internal telemetry.
                                 </p>
                             </div>
@@ -64,7 +64,7 @@ export default function MethodologyThreatIntelligence() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Threat Actor Profiling</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Identify and track tactics, techniques, and procedures (TTPs) used by known threat groups targeting your sector.
                                 </p>
                             </div>
@@ -78,7 +78,7 @@ export default function MethodologyThreatIntelligence() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Malware & IOC Analysis</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Analyze malware samples, hashes, indicators of compromise (IOCs), and command & control (C2) infrastructure.
                                 </p>
                             </div>
@@ -92,7 +92,7 @@ export default function MethodologyThreatIntelligence() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Brand Monitoring</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Monitor impersonation, phishing domains, data leaks, and abuse of brand assets across public and underground platforms.
                                 </p>
                             </div>
@@ -106,7 +106,7 @@ export default function MethodologyThreatIntelligence() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Threat Intelligence Integration (optional)</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Feed curated intelligence directly into your security stack for automation and detection.
                                 </p>
                             </div>

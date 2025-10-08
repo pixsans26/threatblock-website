@@ -27,6 +27,13 @@ export default function CareersHero() {
                 </div>
 
             </section>
+
+            <section className="w-11/12 lg:hidden flex flex-col lg:gap-10 gap-5 justify-start mx-auto mb-20">
+                {/* Title */}
+                <h1 className="w-full lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
+                    Careers
+                </h1>
+            </section>
         </>
     );
 }

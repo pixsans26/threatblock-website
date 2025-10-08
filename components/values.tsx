@@ -17,7 +17,7 @@ export default function Values() {
                         viewport={{
                             once: true
                         }} className="lg:mb-4 mb-2">
-                        <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//values</span>
+                        <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//values</span>
                     </MotionDiv>
                     <div className="flex flex-col lg:gap-8 gap-4 w-full">
                         <MotionH2
@@ -37,7 +37,7 @@ export default function Values() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl">
+                            className="text-gray-700 lg:text-xl">
                             Founded in 2025, ThreatBlock is a dynamic cybersecurity startup built on over a decade of
                             combined industry expertise. Our mission is to protect businesses of all sizes—enterprises,
                             SMBs, and startups—against evolving cyber threats with precision and proactivity. In just a
@@ -51,7 +51,7 @@ export default function Values() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl">
+                            className="text-gray-700 lg:text-xl">
                             Our team comprises certified professionals specializing in penetration testing, red teaming,
                             web and mobile application security, and advanced threat intelligence. We follow a results-
                             driven approach—aligning cutting-edge methodologies with industry best practices like ISO
@@ -67,7 +67,7 @@ export default function Values() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl">
+                            className="text-gray-700 lg:text-xl">
                             While ThreatBlock is a young company, our foundation is rooted in innovation and trust, with
                             partnerships and initiatives supported by programs like Startup India, Zoho Startups, AWS
                             Startups, and MSME India. We are committed to building a safer digital future—one
@@ -89,11 +89,11 @@ export default function Values() {
                             }}
                             className="w-full h-auto lg:p-8 p-4 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
-                                <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
+                                <Image src='/values/integrity.svg' height={100} width={100} alt="values" />
                             </div>
                             <div className="flex flex-col justify-center items-center">
                                 <h4 className="font-semibold text-lg mb-2">Integrity</h4>
-                                <p className="text-sm text-gray-500 text-center">
+                                <p className="text-sm text-gray-700 text-center">
                                     We operate with complete honesty and transparency, ensuring our clients always know exactly
                                     what we’re doing, why we’re doing it, and how it benefits them.
                                 </p>
@@ -109,11 +109,11 @@ export default function Values() {
                             }}
                             className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
-                                <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
+                                <Image src='/values/expertise.svg' height={100} width={100} alt="values" />
                             </div>
                             <div className="flex flex-col justify-center items-center">
                                 <h4 className="font-semibold text-lg mb-2">Expertise</h4>
-                                <p className="text-sm text-gray-500 text-center">
+                                <p className="text-sm text-gray-700 text-center">
                                     Our team continuously sharpens its skills through<span className="font-semibold text-black"> real-world engagements, research, and
                                         certifications</span>, allowing us to stay ahead of rapidly evolving threats
                                 </p>
@@ -130,11 +130,11 @@ export default function Values() {
                                 once: true
                             }} className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
-                                <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
+                                <Image src='/values/collaborate.svg' height={100} width={100} alt="values" />
                             </div>
                             <div className="flex flex-col justify-center items-center">
                                 <h4 className="font-semibold text-lg mb-2">Collaboration</h4>
-                                <p className="text-sm text-gray-500 text-center">
+                                <p className="text-sm text-gray-700 text-center">
                                     We believe the best defense is built together. Our engagements are <span className="font-semibold text-black"> partnerships, not transactions </span>—we work hand-in-hand with your teams to design and implement practical security.
                                 </p>
                             </div>
@@ -150,11 +150,11 @@ export default function Values() {
                             }}
                             className="w-full h-auto p-8 bg-gradient-to-b from-white to-[#fff6f6] lg:mb-0 mb-5">
                             <div className="flex justify-center item center mb-4">
-                                <Image src='/values/core-values.svg' height={100} width={100} alt="values" />
+                                <Image src='/values/innovation.svg' height={100} width={100} alt="values" />
                             </div>
                             <div className="flex flex-col justify-center items-center">
                                 <h4 className="font-semibold text-lg mb-2">Innovation</h4>
-                                <p className="text-sm text-gray-500 text-center">
+                                <p className="text-sm text-gray-700 text-center">
                                     Cybersecurity is never static. We embrace <span className="font-semibold text-black">creative thinking and emerging technologies</span> to transform your defenses from reactive shields into proactive, predictive systems.
                                 </p>
                             </div>

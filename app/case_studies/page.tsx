@@ -16,7 +16,7 @@ export default async function CaseStudies() {
                     <div className="flex gap-8 w-9/12">
                         <div className="lg:w-8/12 flex flex-col gap-2">
                             <div className="lg:mb-4 mb-2">
-                                <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//case studeis</span>
+                                <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//case studeis</span>
                             </div>
                             <h2 className="lg:text-4xl text-2xl font-bold w-full">
                                 Our Case Studeis
@@ -49,7 +49,7 @@ export default async function CaseStudies() {
                             </h3>
 
                             {/* Description */}
-                            <p className="lg:text-2xl text-gray-500">
+                            <p className="lg:text-xl text-gray-700">
                                 {curElm.description}
                             </p>
                             <div>

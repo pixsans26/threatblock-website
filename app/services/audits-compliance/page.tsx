@@ -42,7 +42,7 @@ export default function SecurityAuditCompliance() {
                                 viewport={{
                                     once: true
                                 }}
-                                className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
+                                className="w-10/12 lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
                                 Audits and Compliance
                             </MotionH1>
                         </div>
@@ -71,7 +71,7 @@ export default function SecurityAuditCompliance() {
                     viewport={{
                         once: true
                     }}
-                    className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
+                    className="w-full lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
                     Audits and Compliance
                 </MotionH1>
             </section>
@@ -104,7 +104,7 @@ export default function SecurityAuditCompliance() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg">Audits and Compliance services ensure your organization meets stringent regulatory and industry standards, safeguarding your reputation and operations. Our service validates your security posture against frameworks like GDPR, PCI-DSS, and ISO 27001, preventing costly penalties averaging $4.5 million per nonTAGS:non-compliance incident.
+                            className="text-gray-700 lg:text-xl text-lg">Audits and Compliance services ensure your organization meets stringent regulatory and industry standards, safeguarding your reputation and operations. Our service validates your security posture against frameworks like GDPR, PCI-DSS, and ISO 27001, preventing costly penalties averaging $4.5 million per nonTAGS:non-compliance incident.
 
                         </MotionP>
 
@@ -137,7 +137,7 @@ export default function SecurityAuditCompliance() {
                             once: true
                         }}
                         className="lg:mb-4 mb-2">
-                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//Importance</span>
+                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//Importance</span>
                     </MotionDiv>
                     <MotionH2
                         initial={{ x: 50, opacity: 0 }}
@@ -156,7 +156,7 @@ export default function SecurityAuditCompliance() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Regulatory non-compliance can lead to fines, legal action, and reputational damage. With data breaches amplifying scrutiny, audits are critical to:</MotionP>
+                        className="text-gray-700 lg:text-xl text-lg mb-2">Regulatory non-compliance can lead to fines, legal action, and reputational damage. With data breaches amplifying scrutiny, audits are critical to:</MotionP>
 
                     <div className="w-full gap-2">
                         {WhyImportance.map((curElm: any, index: number) => (
@@ -175,8 +175,8 @@ export default function SecurityAuditCompliance() {
                                     <Image src='/icons/bullet-hexagon.svg' height={40} width={40} alt="bullet" />
                                 </div>
                                 <div className="w-11/12 flex flex-col justify-start items-start">
-                                    <h4 className="lg:text-2xl text-xl font-semibold">{curElm.title}</h4>
-                                    <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
+                                    <h4 className="lg:text-xl text-xl font-semibold">{curElm.title}</h4>
+                                    <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
                                 </div>
                             </MotionDiv>
                         ))}
@@ -199,7 +199,7 @@ export default function SecurityAuditCompliance() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// GROWTH</span>
+                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// GROWTH</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col gap-5 mt-5">
@@ -241,11 +241,11 @@ export default function SecurityAuditCompliance() {
                                 <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white flex flex-grow'>
                                     <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden flex-grow">
                                         {/* Title */}
-                                        <h3 className="lg:text-2xl text-xl font-semibold text-black">
+                                        <h3 className="lg:text-xl text-xl font-semibold text-black">
                                             {curElm.title}
                                         </h3>
                                         {/* Description */}
-                                        <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">
+                                        <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">
                                             {curElm.description}
                                         </p>
                                     </div>
@@ -275,7 +275,7 @@ export default function SecurityAuditCompliance() {
                                 once: true
                             }}
                         >
-                            <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// WHAT WE DO</span>
+                            <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// WHAT WE DO</span>
                         </MotionDiv>
 
 
@@ -312,8 +312,8 @@ export default function SecurityAuditCompliance() {
                                     <Image src='/icons/check-hexagon.svg' height={40} width={100} alt="check" />
                                 </div>
                                 <div className="lg:w-10/12 w-11/12 flex flex-col justify-start">
-                                    <h4 className="lg:text-2xl text-xl font-semibold">{curElm.title}</h4>
-                                    <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
+                                    <h4 className="lg:text-xl text-xl font-semibold">{curElm.title}</h4>
+                                    <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
                                 </div>
                             </MotionDiv>
                         ))}
@@ -356,7 +356,7 @@ export default function SecurityAuditCompliance() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg mb-5">Our certified auditors have helped global enterprises achieve 100% audit success rates, reducing compliance risks by 80% on average.
+                            className="text-gray-700 lg:text-xl text-lg mb-5">Our certified auditors have helped global enterprises achieve 100% audit success rates, reducing compliance risks by 80% on average.
                         </MotionP>
 
                     </div>
@@ -379,7 +379,7 @@ export default function SecurityAuditCompliance() {
                                 once: true
                             }}
                         >
-                            <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// FAQs</span>
+                            <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// FAQs</span>
                         </MotionDiv>
 
 
@@ -434,7 +434,7 @@ export default function SecurityAuditCompliance() {
                                                     }`}
                                             >
                                                 <div className="overflow-hidden">
-                                                    <p className="lg:text-lg text-gray-500 pt-4">
+                                                    <p className="lg:text-lg text-gray-700 pt-4">
                                                         {curElm.answers}
                                                     </p>
                                                 </div>
@@ -467,7 +467,7 @@ export default function SecurityAuditCompliance() {
                             once: true
                         }}
                         className="lg:mb-4 mb-2">
-                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//Services</span>
+                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//Services</span>
                     </MotionDiv>
                     <MotionH2
                         initial={{ x: 50, opacity: 0 }}
@@ -486,7 +486,7 @@ export default function SecurityAuditCompliance() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Combine with:</MotionP>
+                        className="text-gray-700 lg:text-xl text-lg mb-2">Combine with:</MotionP>
 
                     <div className="w-full gap-2">
                         {OurServices.map((curElm: any, index: any) => (
@@ -506,8 +506,8 @@ export default function SecurityAuditCompliance() {
                                     <Image src='/icons/bullet-hexagon.svg' height={40} width={40} alt="bullet" />
                                 </div>
                                 <div className="w-11/12 flex flex-col justify-start items-start">
-                                    <h4 className="lg:text-2xl text-xl font-semibold">{curElm.title}</h4>
-                                    <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
+                                    <h4 className="lg:text-xl text-xl font-semibold">{curElm.title}</h4>
+                                    <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
                                 </div>
                             </MotionDiv>
                         ))}
@@ -544,7 +544,7 @@ export default function SecurityAuditCompliance() {
                                 <h3 className="text-2xl font-bold text-black mb-5">
                                     Let’s Secure Your Web Apps Together
                                 </h3>
-                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download our “Web Security Checklist” or schedule a consultation.</p>
+                                <p className="text-gray-700 lg:text-xl text-lg mb-10">Download our “Web Security Checklist” or schedule a consultation.</p>
                                 <ButtonDark href="/contact" text="Schedule a Free Consultation" target="_parent" />
                             </div>
                             <div className="lg:w-4/12 w-11/12 flex lg:justify-end justify-center lg:mb-0 mb-10 lg:mx-0 mx-auto">

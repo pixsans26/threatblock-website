@@ -37,7 +37,7 @@ export default function RecognisationSlider() {
                 viewport={{
                   once: true
                 }}
-                className="text-gray-500 lg:text-2xl"
+                className="text-gray-700 lg:text-xl"
               >
                 Trusted by a wide range of clients for impactful, lasting results.
               </MotionP> */}

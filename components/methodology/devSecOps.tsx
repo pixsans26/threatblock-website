@@ -19,7 +19,7 @@ export default function MethodologyDevSecOps() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// END TO END DEFENSE STRATEGY</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// END TO END DEFENSE STRATEGY</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col mt-5 justify-center items-center">
@@ -41,7 +41,7 @@ export default function MethodologyDevSecOps() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 lg:text-xl">
+                                        className="text-gray-700 lg:text-xl">
                                         Our OWASP DSOMM-aligned approach ensures security at every SDLC stage:
                                     </MotionP>
                                 </div>
@@ -61,8 +61,8 @@ export default function MethodologyDevSecOps() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Assessment</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Evaluate current SDLC and security maturity.</li>
-                                    <li className="text-gray-500">Define integration points (CI/CD pipelines, repos).</li>
+                                    <li className="text-gray-700">Evaluate current SDLC and security maturity.</li>
+                                    <li className="text-gray-700">Define integration points (CI/CD pipelines, repos).</li>
 
                                 </ul>
                             </div>
@@ -78,8 +78,8 @@ export default function MethodologyDevSecOps() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Tool Integration</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Deploy SAST, DAST, and dependency scanners.</li>
-                                    <li className="text-gray-500">Integrate with tools like Jenkins, GitLab, or GitHub Actions.</li>
+                                    <li className="text-gray-700">Deploy SAST, DAST, and dependency scanners.</li>
+                                    <li className="text-gray-700">Integrate with tools like Jenkins, GitLab, or GitHub Actions.</li>
                                 </ul>
                             </div>
                         </div>
@@ -93,8 +93,8 @@ export default function MethodologyDevSecOps() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Secure Coding Practices</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Train developers on OWASP Top 10 and secure coding.</li>
-                                    <li className="text-gray-500">Implement code review and threat modeling.</li>
+                                    <li className="text-gray-700">Train developers on OWASP Top 10 and secure coding.</li>
+                                    <li className="text-gray-700">Implement code review and threat modeling.</li>
                                 </ul>
                             </div>
                         </div>
@@ -108,8 +108,8 @@ export default function MethodologyDevSecOps() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Continuous Monitoring</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Automate vulnerability scans in CI/CD.</li>
-                                    <li className="text-gray-500">Monitor runtime environments for anomalies.</li>
+                                    <li className="text-gray-700">Automate vulnerability scans in CI/CD.</li>
+                                    <li className="text-gray-700">Monitor runtime environments for anomalies.</li>
                                 </ul>
                             </div>
                         </div>
@@ -123,8 +123,8 @@ export default function MethodologyDevSecOps() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting & Improvement</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Provide dashboards with actionable metrics.</li>
-                                    <li className="text-gray-500">Recommend pipeline optimizations and retraining.</li>
+                                    <li className="text-gray-700">Provide dashboards with actionable metrics.</li>
+                                    <li className="text-gray-700">Recommend pipeline optimizations and retraining.</li>
                                 </ul>
                             </div>
                         </div>

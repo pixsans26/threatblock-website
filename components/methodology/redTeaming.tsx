@@ -19,7 +19,7 @@ export default function MethodologyRedTeaming() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// END TO END DEFENSE STRATEGY</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// END TO END DEFENSE STRATEGY</span>
                                 </MotionDiv>
 
                                 <div className="flex gap-5 mt-5 justify-center">
@@ -49,7 +49,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Planning & Rules of Engagement</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Define scope, objectives, and boundaries with clear alignment on what systems and personnel are in-scope or off-limits.
                                 </p>
                             </div>
@@ -64,7 +64,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reconnaissance</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Conduct passive and active intelligence gathering to identify targets, entry points, and valuable information (OSINT).
                                 </p>
                             </div>
@@ -78,7 +78,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Initial Access</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Attempt to gain a foothold through phishing, social engineering, web exploitation, or physical intrusion simulation.
                                 </p>
                             </div>
@@ -92,7 +92,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Persistence & Privilege Escalation</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Establish backdoors, escalate privileges, and maintain covert access to simulate long-term threats.
                                 </p>
                             </div>
@@ -106,7 +106,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Lateral Movement</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Explore the network to move between systems, escalate control, and reach critical assets or business functions.
                                 </p>
                             </div>
@@ -121,7 +121,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Objective Execution</h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Achieve agreed-upon goals (e.g., exfiltration of sensitive data, domain control) without alerting defenders.
                                 </p>
                             </div>
@@ -135,7 +135,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Detection & Response Assessment </h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Monitor how internal teams detect and respond to the simulated attack in real time.
                                 </p>
                             </div>
@@ -149,7 +149,7 @@ export default function MethodologyRedTeaming() {
                             </div>
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Debrief & Analysis </h4>
-                                <p className="text-gray-500 text-center">
+                                <p className="text-gray-700 text-center">
                                     Review what was detected vs. missed and assess the effectiveness of the organization’s response.
                                 </p>
                             </div>

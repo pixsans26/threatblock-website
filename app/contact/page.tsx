@@ -18,7 +18,7 @@ export default function Contact() {
                         <div className="lg:w-4/12 w-11/12 lg:mx-0 mx-auto h-full">
                             {/* Address */}
                             <div className="lg:w-10/12 w-full h-auto">
-                                <h3 className="lg:text-2xl font-bold text-white lg:my-10 mb-10">
+                                <h3 className="lg:text-xl font-bold text-white lg:my-10 mb-10">
                                     Contact Details
                                 </h3>
                                 {/* Address */}

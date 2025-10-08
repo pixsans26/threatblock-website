@@ -33,7 +33,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description, cl
                 </h3>
 
                 {/* Description */}
-                <p className="text-lg text-gray-500">
+                <p className="text-lg text-gray-700">
                     {description}
                 </p>
 

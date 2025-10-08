@@ -27,7 +27,7 @@ export default function Industries() {
                                 viewport={{
                                     once: true
                                 }}
-                                className="text-gray-500 lg:text-2xl"
+                                className="text-gray-700 lg:text-xl"
                             >
                                 Driving growth in diverse industries with tailored solutions.
                             </MotionP>
@@ -57,7 +57,7 @@ export default function Industries() {
                                             height={100}
                                             src={curElm.logo}
                                             alt={curElm.name} />
-                                        <span className="text-center text-gray-500">
+                                        <span className="text-center text-gray-700">
                                             {curElm.title}
                                         </span>
                                     </div>

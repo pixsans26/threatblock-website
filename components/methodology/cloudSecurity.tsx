@@ -19,7 +19,7 @@ export default function MethodologyCloudSecurity() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// END TO END DEFENSE STRATEGY</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// END TO END DEFENSE STRATEGY</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col mt-5 justify-center">
@@ -40,7 +40,7 @@ export default function MethodologyCloudSecurity() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 ">
+                                        className="text-gray-700 ">
                                         Our CSA CCM-aligned approach ensures comprehensive cloud security
                                     </MotionP>
                                 </div>
@@ -60,8 +60,8 @@ export default function MethodologyCloudSecurity() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Planning</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Define cloud assets (e.g., EC2, S3, Lambda) and boundaries.</li>
-                                    <li className="text-gray-500">Review IAM policies and network configurations.</li>
+                                    <li className="text-gray-700">Define cloud assets (e.g., EC2, S3, Lambda) and boundaries.</li>
+                                    <li className="text-gray-700">Review IAM policies and network configurations.</li>
 
                                 </ul>
                             </div>
@@ -77,8 +77,8 @@ export default function MethodologyCloudSecurity() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reconnaissance</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Map cloud resources and access points.</li>
-                                    <li className="text-gray-500">Identify exposed services or misconfigurations.</li>
+                                    <li className="text-gray-700">Map cloud resources and access points.</li>
+                                    <li className="text-gray-700">Identify exposed services or misconfigurations.</li>
                                 </ul>
                             </div>
                         </div>
@@ -92,8 +92,8 @@ export default function MethodologyCloudSecurity() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Vulnerability Assessment</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Test for weak IAM, unencrypted data, and open ports.</li>
-                                    <li className="text-gray-500">Evaluate logging and monitoring gaps.</li>
+                                    <li className="text-gray-700">Test for weak IAM, unencrypted data, and open ports.</li>
+                                    <li className="text-gray-700">Evaluate logging and monitoring gaps.</li>
                                 </ul>
                             </div>
                         </div>
@@ -107,8 +107,8 @@ export default function MethodologyCloudSecurity() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Exploitation & Validation</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Simulate attacks like privilege escalation or data exfiltration.</li>
-                                    <li className="text-gray-500">Assess resilience against cloud-specific threats.</li>
+                                    <li className="text-gray-700">Simulate attacks like privilege escalation or data exfiltration.</li>
+                                    <li className="text-gray-700">Assess resilience against cloud-specific threats.</li>
                                 </ul>
                             </div>
                         </div>
@@ -122,8 +122,8 @@ export default function MethodologyCloudSecurity() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting & Remediation:</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Deliver reports with CSA CCM mappings and CVSS scores.</li>
-                                    <li className="text-gray-500">Provide hardening recommendations.</li>
+                                    <li className="text-gray-700">Deliver reports with CSA CCM mappings and CVSS scores.</li>
+                                    <li className="text-gray-700">Provide hardening recommendations.</li>
                                 </ul>
                             </div>
                         </div>
@@ -138,8 +138,8 @@ export default function MethodologyCloudSecurity() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Retesting & Optimization:</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Assist with remediation and re-audits.</li>
-                                    <li className="text-gray-500">Validate fixes and suggest monitoring improvements.</li>
+                                    <li className="text-gray-700">Assist with remediation and re-audits.</li>
+                                    <li className="text-gray-700">Validate fixes and suggest monitoring improvements.</li>
                                 </ul>
                             </div>
                         </div>

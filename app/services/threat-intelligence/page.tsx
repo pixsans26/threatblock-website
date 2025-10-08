@@ -41,7 +41,7 @@ export default function ThreatIntelligence() {
                                 viewport={{
                                     once: true
                                 }}
-                                className="w-10/12 lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
+                                className="w-10/12 lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
                                 Threat Intelligence
                             </MotionH1>
                         </div>
@@ -70,7 +70,7 @@ export default function ThreatIntelligence() {
                     viewport={{
                         once: true
                     }}
-                    className="w-full lg:text-6xl text-3xl font-bold lg:text-white text-zinc-900">
+                    className="w-full lg:text-5xl text-3xl font-bold lg:text-white text-zinc-900">
                     Threat Intelligence
                 </MotionH1>
             </section>
@@ -103,7 +103,7 @@ export default function ThreatIntelligence() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg">Threat Intelligence provides actionable insights into adversaries, vulnerabilities, and attack trends, enabling proactive defense against cyber threats. Our service empowers organizations to anticipate and neutralize risks before they materialize.
+                            className="text-gray-700 lg:text-xl text-lg">Threat Intelligence provides actionable insights into adversaries, vulnerabilities, and attack trends, enabling proactive defense against cyber threats. Our service empowers organizations to anticipate and neutralize risks before they materialize.
                         </MotionP>
 
                     </div>
@@ -135,7 +135,7 @@ export default function ThreatIntelligence() {
                             once: true
                         }}
                         className="lg:mb-4 mb-2">
-                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//Importance</span>
+                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//Importance</span>
                     </MotionDiv>
                     <MotionH2
                         initial={{ x: 50, opacity: 0 }}
@@ -154,7 +154,7 @@ export default function ThreatIntelligence() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">With cyber attacks costing businesses an average of $4.9 million per breach, staying ahead of threats like ransomware, APTs, and zero-days is critical. Threat Intelligence helps you:</MotionP>
+                        className="text-gray-700 lg:text-xl text-lg mb-2">With cyber attacks costing businesses an average of $4.9 million per breach, staying ahead of threats like ransomware, APTs, and zero-days is critical. Threat Intelligence helps you:</MotionP>
 
                     <div className="w-full gap-2">
                         {WhyImportance.map((curElm: any, index: number) => (
@@ -173,8 +173,8 @@ export default function ThreatIntelligence() {
                                     <Image src='/icons/bullet-hexagon.svg' height={40} width={40} alt="bullet" />
                                 </div>
                                 <div className="w-11/12 flex flex-col justify-start items-start">
-                                    <h4 className="lg:text-2xl text-xl font-semibold">{curElm.title}</h4>
-                                    <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
+                                    <h4 className="lg:text-xl text-xl font-semibold">{curElm.title}</h4>
+                                    <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
                                 </div>
                             </MotionDiv>
                         ))}
@@ -197,7 +197,7 @@ export default function ThreatIntelligence() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// GROWTH</span>
+                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// GROWTH</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col gap-5 mt-5">
@@ -239,11 +239,11 @@ export default function ThreatIntelligence() {
                                 <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6 bg-whiteflex flex-grow'>
                                     <div className="p-4 flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden flex flex-grow">
                                         {/* Title */}
-                                        <h3 className="lg:text-2xl text-xl font-semibold text-black">
+                                        <h3 className="lg:text-xl text-xl font-semibold text-black">
                                             {curElm.title}
                                         </h3>
                                         {/* Description */}
-                                        <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">
+                                        <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">
                                             {curElm.description}
                                         </p>
                                     </div>
@@ -294,7 +294,7 @@ export default function ThreatIntelligence() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-gray-500 lg:text-2xl text-lg mb-5">Our analysts, leveraging MITRE ATT&CK expertise, have helped enterprises reduce threat exposure by 80% on average.
+                            className="text-gray-700 lg:text-xl text-lg mb-5">Our analysts, leveraging MITRE ATT&CK expertise, have helped enterprises reduce threat exposure by 80% on average.
                         </MotionP>
 
                     </div>
@@ -317,7 +317,7 @@ export default function ThreatIntelligence() {
                                 once: true
                             }}
                         >
-                            <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// FAQs</span>
+                            <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// FAQs</span>
                         </MotionDiv>
 
 
@@ -372,7 +372,7 @@ export default function ThreatIntelligence() {
                                                     }`}
                                             >
                                                 <div className="overflow-hidden">
-                                                    <p className="lg:text-lg text-gray-500 pt-4">
+                                                    <p className="lg:text-lg text-gray-700 pt-4">
                                                         {curElm.answers}
                                                     </p>
                                                 </div>
@@ -405,7 +405,7 @@ export default function ThreatIntelligence() {
                             once: true
                         }}
                         className="lg:mb-4 mb-2">
-                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">//Services</span>
+                        <span className="bg-[#FAF2F2] text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">//Services</span>
                     </MotionDiv>
                     <MotionH2
                         initial={{ x: 50, opacity: 0 }}
@@ -424,7 +424,7 @@ export default function ThreatIntelligence() {
                         viewport={{
                             once: true
                         }}
-                        className="text-gray-500 lg:text-2xl text-lg mb-2">Pair with:</MotionP>
+                        className="text-gray-700 lg:text-xl text-lg mb-2">Pair with:</MotionP>
 
                     <div className="w-full gap-2">
                         {OurServices.map((curElm: any, index: any) => (
@@ -444,8 +444,8 @@ export default function ThreatIntelligence() {
                                     <Image src='/icons/bullet-hexagon.svg' height={40} width={40} alt="bullet" />
                                 </div>
                                 <div className="w-11/12 flex flex-col justify-start items-start">
-                                    <h4 className="lg:text-2xl text-xl font-semibold">{curElm.title}</h4>
-                                    <p className="text-gray-500 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
+                                    <h4 className="lg:text-xl text-xl font-semibold">{curElm.title}</h4>
+                                    <p className="text-gray-700 lg:text-xl text-[1.1rem] mb-2">{curElm.description}</p>
                                 </div>
                             </MotionDiv>
                         ))}
@@ -482,7 +482,7 @@ export default function ThreatIntelligence() {
                                 <h3 className="text-2xl font-bold text-black mb-5">
                                     Let’s Red Team Your Defenses
                                 </h3>
-                                <p className="text-gray-500 lg:text-xl text-lg mb-10">Download “Red Teaming Guide” or consult.</p>
+                                <p className="text-gray-700 lg:text-xl text-lg mb-10">Download “Red Teaming Guide” or consult.</p>
                                 <ButtonDark href="/contact" text="Schedule a Free Consultation" target="_parent" />
                             </div>
                             <div className="lg:w-4/12 w-11/12 flex lg:justify-end justify-center lg:mb-0 mb-10 lg:mx-0 mx-auto">

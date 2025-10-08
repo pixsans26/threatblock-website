@@ -19,7 +19,7 @@ export default function MethodologyAuditCompliance() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// END TO END DEFENSE STRATEGY</span>
+                                    <span className="bg-white text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// END TO END DEFENSE STRATEGY</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col mt-5 justify-center">
@@ -40,7 +40,7 @@ export default function MethodologyAuditCompliance() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 ">
+                                        className="text-gray-700 ">
                                         Our structured, standards-aligned approach ensures audit readiness
                                     </MotionP>
                                 </div>
@@ -60,8 +60,8 @@ export default function MethodologyAuditCompliance() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Scoping & Planning</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Define compliance objectives (e.g., GDPR, ISO 27001, NIST).</li>
-                                    <li className="text-gray-500">Review existing policies, controls, and documentation.</li>
+                                    <li className="text-gray-700">Define compliance objectives (e.g., GDPR, ISO 27001, NIST).</li>
+                                    <li className="text-gray-700">Review existing policies, controls, and documentation.</li>
 
                                 </ul>
                             </div>
@@ -77,8 +77,8 @@ export default function MethodologyAuditCompliance() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Gap Analysis</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Assess current security controls against target standards.</li>
-                                    <li className="text-gray-500">Identify non-compliance areas and risks.</li>
+                                    <li className="text-gray-700">Assess current security controls against target standards.</li>
+                                    <li className="text-gray-700">Identify non-compliance areas and risks.</li>
                                 </ul>
                             </div>
                         </div>
@@ -92,8 +92,8 @@ export default function MethodologyAuditCompliance() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">3. Evidence Collection</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Gather logs, configurations, and process documentation.</li>
-                                    <li className="text-gray-500">Conduct interviews and system reviews.</li>
+                                    <li className="text-gray-700">Gather logs, configurations, and process documentation.</li>
+                                    <li className="text-gray-700">Conduct interviews and system reviews.</li>
                                 </ul>
                             </div>
                         </div>
@@ -107,8 +107,8 @@ export default function MethodologyAuditCompliance() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Testing & Validation</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Perform technical assessments (e.g., access controls, encryption).</li>
-                                    <li className="text-gray-500">Validate compliance with frameworks like PCI-DSS or SOC 2</li>
+                                    <li className="text-gray-700">Perform technical assessments (e.g., access controls, encryption).</li>
+                                    <li className="text-gray-700">Validate compliance with frameworks like PCI-DSS or SOC 2</li>
                                 </ul>
                             </div>
                         </div>
@@ -122,8 +122,8 @@ export default function MethodologyAuditCompliance() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Reporting & Remediation:</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Deliver detailed reports with compliance gaps and CVSS scores.</li>
-                                    <li className="text-gray-500">Provide actionable remediation plans aligned with standards.</li>
+                                    <li className="text-gray-700">Deliver detailed reports with compliance gaps and CVSS scores.</li>
+                                    <li className="text-gray-700">Provide actionable remediation plans aligned with standards.</li>
                                 </ul>
                             </div>
                         </div>
@@ -138,8 +138,8 @@ export default function MethodologyAuditCompliance() {
                             <div className="border-[1px] border-gray-400 pt-14 justify-start px-8 pb-4 bg-white flex-grow">
                                 <h4 className="text-center  text-lg font-bold mb-4">Ongoing Support & Certification</h4>
                                 <ul className="list-disc text-sm space-y-2">
-                                    <li className="text-gray-500">Assist with remediation and re-audits.</li>
-                                    <li className="text-gray-500">Support certification processes and auditor interactions.</li>
+                                    <li className="text-gray-700">Assist with remediation and re-audits.</li>
+                                    <li className="text-gray-700">Support certification processes and auditor interactions.</li>
                                 </ul>
                             </div>
                         </div>

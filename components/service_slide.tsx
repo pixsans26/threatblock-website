@@ -15,7 +15,7 @@ export default function ServiceSlide() {
                     <div className="w-full h-full bg-no-repeat bg-right " style={{ backgroundImage: `url('/images/hexagon.svg')`, backgroundAttachment: `fixed`, backgroundRepeat: 'fill' }}></div>
                 </div>
                 <div className="lg:w-9/12 w-11/12 mx-auto z-10">
-                    <div className="relative mx-auto lg:flex justify-between h-full lg:py-[200px] lg:gap-20">
+                    <div className="relative mx-auto lg:flex justify-between h-full lg:py-[200px] lg:gap-20 gap-10">
                         <div className="h-[300px] lg:sticky top-[300px] lg:w-6/12 flex flex-col justify-center">
                             <div className="">
                                 <MotionDiv
@@ -26,7 +26,7 @@ export default function ServiceSlide() {
                                         once: true
                                     }}
                                 >
-                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-2xl text-xs">// SERVICES</span>
+                                    <span className="bg-red-100 text-red-600 px-6 py-2 uppercase tracking-[4px] w-auto lg:text-xl text-xs">// SERVICES</span>
                                 </MotionDiv>
 
                                 <div className="flex flex-col gap-5 mt-5">
@@ -47,7 +47,7 @@ export default function ServiceSlide() {
                                         viewport={{
                                             once: true
                                         }}
-                                        className="text-gray-500 lg:text-2xl mb-10">
+                                        className="text-gray-700 lg:text-xl">
                                         We provide a comprehensive suite of cybersecurity services designed to protect your assets and ensure business continuity.
                                     </MotionP>
                                     <MotionDiv

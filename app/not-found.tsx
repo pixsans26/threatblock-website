@@ -6,7 +6,7 @@ export default function NotFound() {
         <>
             <div className="w-full flex justify-center items-center">
                 <div className="w-4/12 absolute justify-center mx-auto items-center flex flex-col">
-                    <h2 className="text-white lg:text-6xl text-2xl mb-10">This link is broken!</h2>
+                    <h2 className="text-white lg:text-5xl text-2xl mb-10">This link is broken!</h2>
                     <Image src='/images/404.png' height={100} width={1000} alt="404" className="mb-10" />
                     <ButtonWhite href="/" text="Return to home" />
                 </div>
