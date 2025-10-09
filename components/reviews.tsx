@@ -1,10 +1,20 @@
 'use client'
 
+
 import { MotionDiv } from "@/utils/motioDiv";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import { reviewsData } from "@/data/reviews"
-import { Marquee } from "@/components/ui/marquee"
+import dynamic from 'next/dynamic';
+
+const Marquee = dynamic(
+    () => import('@/components/ui/marquee').then((mod) => mod.Marquee),
+    {
+        ssr: false,
+        loading: () => <p>Loading marquee...</p>,
+    }
+);
+
 
 
 export default function Reviews() {

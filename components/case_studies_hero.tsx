@@ -50,8 +50,6 @@ export default function CaseStudiesHero() {
                 </h1>
             </section>
 
-
-
         </>
     );
 }
