@@ -1,12 +1,16 @@
-FROM node:20-alpine
+# 1. Update the Node.js version here
+FROM node:22-alpine
 
 # Set the working directory in the container
 WORKDIR /app
 
+# 2. (Optional) Add this line to update npm to its latest version
+RUN npm install -g npm@latest
+
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies using the updated npm
 RUN npm install
 
 # Copy the rest of the application code
