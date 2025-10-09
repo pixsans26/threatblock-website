@@ -7,6 +7,7 @@ WORKDIR /app
 # 2. (Optional) Add this line to update npm to its latest version
 RUN npm install -g npm@latest
 
+RUN npx shadcn@latest add @magicui/marquee
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
