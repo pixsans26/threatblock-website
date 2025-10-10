@@ -5,15 +5,7 @@ import { MotionDiv } from "@/utils/motioDiv";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import { reviewsData } from "@/data/reviews"
-import dynamic from 'next/dynamic';
 
-const Marquee = dynamic(
-    () => import('@/components/ui/marquee').then((mod) => mod.Marquee),
-    {
-        ssr: false,
-        loading: () => <p>Loading marquee...</p>,
-    }
-);
 
 
 
@@ -44,34 +36,34 @@ export default function Reviews() {
                         <Image src='/images/review_image.png' width={1000} height={1000} alt="rwview-bg" className="h-auto w-full" />
                     </div>
                 </MotionDiv>
-                <div className="lg:w-7/12 flex flex-col gap-4 lg:h-[70vh] h-[60vh]">
-                    <Marquee pauseOnHover vertical className="[--duration:20s]">
-                        {/* review Card */}
+                <div className="lg:w-7/12 flex flex-col gap-4 lg:h-[70vh] h-[60vh] overflow-hidden">
 
-                        {reviewsData.map((curElm: any) => (
-                            <div key={curElm.id} className="bg-[#FAF2F2] p-6 w-full">
-                                <div className="mb-2 flex">
-                                    <span className="bg-white px-4 py-2 rounded-full flex gap-2 text-red-600">
-                                        <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
-                                    </span>
-                                </div>
-                                <div className="mb-2">
-                                    <p className="text-gray-700 lg:text-xl text-sm">{curElm.feedback}</p>
-                                </div>
-                                <div className="">
-
-                                    <div>
-                                        <div className="">
-                                            <h5 className="font-semibold text-lg ">{curElm.name}</h5>
+                    {/* This outer div is for the hover-to-pause effect */}
+                    <div className="group flex flex-col justify-center items-center">
+                        {/* This inner div is what actually animates */}
+                        <div className="animate-marquee-y group-hover:[animation-play-state:paused] flex flex-col gap-4">
+                            {reviewsData.map((curElm: any, index: number) => (
+                                <div key={index} className="bg-[#FAF2F2] p-6 w-full">
+                                    <div className="mb-2 flex">
+                                        <span className="bg-white px-4 py-2 rounded-full flex gap-2 text-red-600">
+                                            <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
+                                        </span>
+                                    </div>
+                                    <div className="mb-2">
+                                        <p className="text-gray-700 lg:text-xl text-sm">{curElm.feedback}</p>
+                                    </div>
+                                    <div className="">
+                                        <div>
+                                            <div className="">
+                                                <h5 className="font-semibold text-lg ">{curElm.name}</h5>
+                                            </div>
                                         </div>
-                                        {/* <div>
-                                            <span className="text-gray-700">Design & Development Company</span>
-                                        </div> */}
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Marquee>
+                            ))}
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>

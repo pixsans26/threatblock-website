@@ -40,7 +40,7 @@ export default function Contact() {
                                             <FaEnvelope />
                                         </div>
                                         <div>
-                                            <span>user@email.com</span>
+                                            <span>info@threatblock.com</span>
                                         </div>
                                     </div>
 
@@ -60,7 +60,7 @@ export default function Contact() {
                                             <FaMobile />
                                         </div>
                                         <div>
-                                            +91 983023204
+                                            +91-922-023-3681
                                         </div>
                                     </div>
                                 </div>

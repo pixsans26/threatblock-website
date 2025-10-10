@@ -10,38 +10,16 @@ export default {
 	],
 	theme: {
 		extend: {
-			colors: {
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))'
-			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+			animation: {
+				'marquee-y': 'marquee-y 35s linear infinite',
 			},
 			keyframes: {
-				marquee: {
-					from: {
-						transform: 'translateX(0)'
-					},
-					to: {
-						transform: 'translateX(calc(-100% - var(--gap)))'
-					}
+				'marquee-y': {
+					'0%': { transform: 'translateY(0%)' },
+					'100%': { transform: 'translateY(-100%)' },
 				},
-				'marquee-vertical': {
-					from: {
-						transform: 'translateY(0)'
-					},
-					to: {
-						transform: 'translateY(calc(-100% - var(--gap)))'
-					}
-				}
 			},
-			animation: {
-				marquee: 'marquee var(--duration) infinite linear',
-				'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
-			}
-		}
+		},
 	},
 	plugins: [require("tailwindcss-animate"),
 
