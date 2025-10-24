@@ -5,6 +5,15 @@ import { getCaseStudies } from "@/api/getData";
 import { env } from "@/utils/env";
 const baseUrl = env.NEXT_PUBLIC_API_URL
 
+
+import { Metadata } from 'next';
+
+const metadata: Metadata = {
+    title: 'Case Studies | Proven Cybersecurity Results | ThreatBlock',
+    description: 'See how ThreatBlock has helped businesses like yours solve complex security challenges. Read our client success stories and case studies.',
+    keywords: 'case studies, client success stories, cybersecurity results, customer testimonials, our work, client portfolio'
+};
+
 export default async function CaseStudies() {
     const { data: caseStudies } = await getCaseStudies()
     return (

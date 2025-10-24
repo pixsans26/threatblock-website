@@ -36,32 +36,28 @@ export default function Reviews() {
                         <Image src='/images/review_image.png' width={1000} height={1000} alt="rwview-bg" className="h-auto w-full" />
                     </div>
                 </MotionDiv>
-                <div className="lg:w-7/12 flex flex-col gap-4 lg:h-[70vh] h-[60vh] overflow-hidden">
+                <div className="lg:w-7/12 flex flex-col lg:h-[70vh] h-[60vh] overflow-hidden">
 
-                    {/* This outer div is for the hover-to-pause effect */}
-                    <div className="group flex flex-col justify-center items-center">
-                        {/* This inner div is what actually animates */}
-                        <div className="animate-marquee-y group-hover:[animation-play-state:paused] flex flex-col gap-4">
-                            {reviewsData.map((curElm: any, index: number) => (
-                                <div key={index} className="bg-[#FAF2F2] p-6 w-full">
-                                    <div className="mb-2 flex">
-                                        <span className="bg-white px-4 py-2 rounded-full flex gap-2 text-red-600">
-                                            <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
-                                        </span>
-                                    </div>
-                                    <div className="mb-2">
-                                        <p className="text-gray-700 lg:text-xl text-sm">{curElm.feedback}</p>
-                                    </div>
-                                    <div className="">
-                                        <div>
-                                            <div className="">
-                                                <h5 className="font-semibold text-lg ">{curElm.name}</h5>
-                                            </div>
-                                        </div>
+                    {/* This div contains the duplicated content and is the one that animates */}
+                    <div className="animate-marquee-y flex flex-col gap-4">
+                        {reviewsData.map((curElm, index) => (
+                            // Using index as key because content is duplicated
+                            <div key={index} className="bg-[#FAF2F2] p-6 w-full">
+                                <div className="mb-2 flex">
+                                    <span className="bg-white px-4 py-2 rounded-full flex gap-2 text-red-600">
+                                        <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
+                                    </span>
+                                </div>
+                                <div className="mb-2">
+                                    <p className="text-gray-700 lg:text-xl text-sm">{curElm.feedback}</p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h5 className="font-semibold text-lg ">{curElm.name}</h5>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
                     </div>
 
                 </div>

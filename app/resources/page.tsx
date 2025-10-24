@@ -5,6 +5,14 @@ import { getResources } from "@/api/getData";
 import { env } from "@/utils/env";
 const baseUrl = env.NEXT_PUBLIC_API_URL
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Cybersecurity Resources & Insights | ThreatBlock',
+    description: 'Download free cybersecurity whitepapers, watch on-demand webinars, and access expert guides to improve your security posture.',
+    keywords: 'cybersecurity resources, whitepapers, webinars, security guides, security tools, research reports'
+};
+
 
 export default async function Resources() {
     const { data: resources } = await getResources()

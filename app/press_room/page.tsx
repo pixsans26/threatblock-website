@@ -2,6 +2,15 @@ import PressHero from "@/components/press_room_hero";
 import Image from "next/image";
 import Link from "next/link";
 
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Pressroom & Media | ThreatBlock',
+    description: 'View the latest press releases, media mentions, and company news from ThreatBlock, a leader in cybersecurity.',
+    keywords: 'pressroom, media, press release, ThreatBlock news, in the media, media contact'
+};
+
 export default function PressRoom() {
     return (
         <>

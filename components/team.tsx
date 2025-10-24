@@ -1,8 +1,5 @@
 
-import Image from "next/image";
-import Link from "next/link";
 import { TeamData } from '@/data/team'
-
 
 export default function Team() {
     return (
@@ -24,23 +21,40 @@ export default function Team() {
                 <div className="w-full mx-auto grid lg:grid-cols-4 grid-cols-2 justify-between items-center h-auto lg:gap-8 gap-4">
 
                     {TeamData?.map((curElm: any) => (
-                        <div className="w-full lg:flex h-full bg-slate-300 relative overflow-hidden" key={curElm.id}>
-                            <div className="w-full h-full absolute bg-gradient-to-b from-black/0 to-[#270303]/80">
-                            </div>
+                        // 1. Added `group` and `rounded-lg`
+                        // 2. Changed h-full to fixed heights lg:h-96 h-64
+                        <div key={curElm.id} className="border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white flex flex-grow">
+                            <div className="w-full lg:flex lg:h-96 h-64 bg-slate-300 relative overflow-hidden group" >
 
-                            <div className="w-full absolute bottom-4 left-4  text-white">
-                                <h4 className="text-white font-semibold lg:text-xl">{curElm.name}</h4>
-                                <p className="lg:text-lg text-xs">{curElm.designation}</p>
-                            </div>
-                            <div className="w-full">
-                                <Image src="/images/team1.png" width={1000} height={100} alt="team1" />
+                                {/* 3. Image is now first to be the base layer */}
+                                {/* 4. Fixed Image props for better scaling and alt text */}
+                                <div className="w-full h-full">
+                                    <img
+                                        src={curElm.image}
+                                        alt={curElm.name || 'Team Member'}
+                                        className="w-full h-full object-cover" // Ensures image covers the div
+                                        width={1000}
+                                        height={1000}
+                                    />
+                                </div>
+
+                                {/* 2. Gradient overlay - visible on mobile, appears on hover on desktop */}
+                                <div className="w-full h-full absolute inset-0 bg-gradient-to-b from-black/0 via-black/20 to-black/80
+                                            opacity-100 lg:opacity-0 lg:group-hover:opacity-100
+                                            transition-opacity duration-300 ease-in-out">
+                                </div>
+
+                                {/* 5. Text box - visible on mobile, animates on hover on desktop */}
+                                <div className="w-full absolute bottom-4 left-4 text-white
+                                            transform opacity-100 translate-y-0 lg:opacity-0 lg:translate-y-10 lg:group-hover:opacity-100 lg:group-hover:translate-y-0
+                                            transition-all duration-300 ease-in-out">
+                                    <h4 className="text-white font-semibold lg:text-xl">{curElm.name}</h4>
+                                    <p className="lg:text-lg text-xs">{curElm.designation}</p>
+                                </div>
+
                             </div>
                         </div>
                     ))}
-
-                    {/* Teams card */}
-
-
 
                 </div>
 

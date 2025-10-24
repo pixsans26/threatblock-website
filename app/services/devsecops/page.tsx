@@ -1,29 +1,26 @@
-'use client'
+
 
 import { MotionDiv, MotionH1, MotionH2, MotionP, fadeInLeft, fadeInUp } from "@/utils/motioDiv"
 import Image from "next/image"
 import { WhyImportance, GrowBusiness, OurServices, Faqs, WhatWeDo } from '@/data/devSecOps'
-import { useState } from 'react';
+
 // Using more intuitive icons for open/close states
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
 import MethodologyDevSecOps from "@/components/methodology/devSecOps";
 
+import { Metadata } from 'next';
+import Accordion from "@/components/accordian";
 
-
+export const metadata: Metadata = {
+    title: 'DevSecOps Consulting & Services | ThreatBlock',
+    description: 'Embed security directly into your development lifecycle. Our DevSecOps services help you build secure CI/CD pipelines, automate testing (SAST/DAST), and ship secure code.',
+    keywords: 'devsecops, ci/cd security, sast, dast, secure sdlc, security automation, shift-left security'
+};
 
 export default function CloudSecurity() {
 
-    // State to track the ID of the currently open FAQ item
-    const [openId, setOpenId] = useState(null);
-
-    // Function to toggle the open state
-    const toggleFaq = (id: any) => {
-        // If the clicked FAQ is already open, close it (set state to null).
-        // Otherwise, open the clicked one.
-        setOpenId(openId === id ? null : id);
-    };
 
     return (
         <>
@@ -394,55 +391,7 @@ export default function CloudSecurity() {
                         </MotionH2>
                     </div>
                     <div className="flex flex-col gap-5 justify-start items-center">
-                        {Faqs.map((curElm: any, index: number) => {
-                            // Check if the current item is the one that's open
-                            const isOpen = curElm.id === openId;
-
-                            return (
-                                <MotionDiv
-                                    variants={fadeInUp}
-                                    initial="hidden"
-                                    whileInView={'show'}
-                                    viewport={{
-                                        once: true
-                                    }}
-                                    tabIndex={curElm.id}
-                                    custom={index}
-                                    key={curElm.id}
-
-                                    className="w-full">
-                                    <div className='border border-gray-300 p-2 min-w-sm bg-white'>
-                                        <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6]">
-                                            {/* Question section - now clickable to toggle */}
-                                            <div
-                                                className="flex justify-between items-center cursor-pointer"
-                                                onClick={() => toggleFaq(curElm.id)}
-                                            >
-                                                <h3 className="lg:text-xl  font-bold text-black">
-                                                    {curElm.question}
-                                                </h3>
-                                                {/* Change icon based on the 'isOpen' state */}
-                                                <span>
-                                                    {isOpen ? <BiChevronUp size={28} /> : <BiChevronDown size={28} />}
-                                                </span>
-                                            </div>
-
-                                            {/* Answer section with smooth transition */}
-                                            <div
-                                                className={`grid overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
-                                                    }`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <p className="lg:text-lg text-gray-700 pt-4">
-                                                        {curElm.answers}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </MotionDiv>
-                            );
-                        })}
+                        <Accordion items={Faqs} />
                     </div>
                 </div>
 

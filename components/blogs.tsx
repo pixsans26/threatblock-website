@@ -31,8 +31,8 @@ export default function Blogs() {
 
                     {blogData.map((curElm: any) => (
 
-                        <div className="lg:w-4/12 justify-around h-auto bg-slate-200 relative lg:mb-0 mb-10">
-                            <Link key={curElm.id} href={curElm.link} target="_blank">
+                        <div key={curElm.id} className="lg:w-4/12 justify-around h-auto bg-slate-200 relative lg:mb-0 mb-10">
+                            <Link href={curElm.link} target="_blank">
                                 <div className="w-3/12 flex flex-col absolute top-4 left-4 bg-gray-950 bg-opacity-80 text-white py-5 gap-2 flex-grow">
                                     <h4 className="lg:text-4xl text-2xl font-semibold text-center">{curElm.date}</h4>
                                     <h5 className="lg:text-xl text-sm text-center">{curElm.month}</h5>

@@ -56,7 +56,7 @@ const Footer = () => {
                                     </li>
 
                                     <li>
-                                        <Link href="https://threatblock.typeflo.io/" className="text-gray-400 hover:text-white transition-colors">
+                                        <Link href="https://threatblock.typeflo.io/" target='_blank' className="text-gray-400 hover:text-white transition-colors">
                                             Blogs
                                         </Link>
                                     </li>
@@ -79,7 +79,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/terms_condition" className="text-gray-400 hover:text-white transition-colors">
+                                        <Link href="/terms_&_conditions" className="text-gray-400 hover:text-white transition-colors">
                                             Terms & Condition
                                         </Link>
                                     </li>

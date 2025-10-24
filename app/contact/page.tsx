@@ -4,6 +4,14 @@ import Image from "next/image"
 import { FaEnvelope } from "react-icons/fa"
 import { FaGlobe, FaLocationPin, FaMobile } from "react-icons/fa6"
 
+import { Metadata } from 'next';
+
+const metadata: Metadata = {
+    title: 'Contact Us | ThreatBlock',
+    description: 'Get in touch with our cybersecurity experts. Contact us for a free consultation, sales inquiry, or 24/7 incident response support.',
+    keywords: 'contact ThreatBlock, contact us, get in touch, cybersecurity support, incident response contact, request a quote'
+};
+
 
 export default function Contact() {
 

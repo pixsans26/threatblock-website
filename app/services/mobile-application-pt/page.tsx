@@ -1,27 +1,21 @@
-'use client'
+
 
 import { MotionDiv, MotionH1, MotionH2, MotionP, fadeInLeft, fadeInUp } from "@/utils/motioDiv"
 import Image from "next/image"
 import { WhyImportance, GrowBusiness, WhatWeDo, OurServices } from '@/data/mobileApplicationPentesting'
-import { useState } from 'react';
-// Using more intuitive icons for open/close states
-import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
 import MethodologyMobileApplicationTesting from "@/components/methodology/mobileApplicationPentesting";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Mobile App Penetration Testing (iOS & Android) | ThreatBlock',
+    description: 'Secure your iOS and Android applications. We test for insecure data storage, weak authentication, and other mobile-specific vulnerabilities (OWASP Mobile Top 10).',
+    keywords: 'mobile app pentesting, ios security testing, android security testing, mobile application security, app pentest, owasp mobile'
+};
 
 export default function MobileApplicationPentesting() {
-
-    // State to track the ID of the currently open FAQ item
-    const [openId, setOpenId] = useState(null);
-
-    // Function to toggle the open state
-    const toggleFaq = (id: any) => {
-        // If the clicked FAQ is already open, close it (set state to null).
-        // Otherwise, open the clicked one.
-        setOpenId(openId === id ? null : id);
-    };
 
     return (
         <>
