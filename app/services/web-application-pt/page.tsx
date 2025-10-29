@@ -3,8 +3,6 @@
 import { MotionDiv, MotionH1, MotionH2, MotionP, fadeInLeft, fadeInUp } from "@/utils/motioDiv"
 import Image from "next/image"
 import { WhyImportance, GrowBusiness, OurServices, Faqs } from '@/data/webApplicationPentesting'
-// Using more intuitive icons for open/close states
-import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 import ButtonDark from "@/components/widgets/button_dark";
 import Industries from "@/components/industries";
 import MethodologyWebApplicationTesting from "@/components/methodology/webApplicationPentesting";

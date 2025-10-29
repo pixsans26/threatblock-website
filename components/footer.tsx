@@ -100,10 +100,12 @@ const Footer = () => {
                             {/* Column 4: Contact Info */}
                             <div>
                                 <h4 className="font-semibold tracking-wider text-gray-300 uppercase mb-4">Contact</h4>
-                                <div className="text-gray-400 space-y-3">
+                                <div className="text-gray-400 space-y-2">
                                     <div className="font-semibold text-white">Office- Delhi</div>
-                                    <span>2nd Floor, 67, Satya Niketan, New Delhi, Delhi 110021</span>
-                                    <span>+91 922 023 3681</span>
+                                    <div className='flex flex-col'>
+                                        <span>2nd Floor, 67, Satya Niketan, New Delhi, Delhi 110021</span>
+                                        <span>+91 922 023 3681</span>
+                                    </div>
                                 </div>
                                 <div className="flex items-center space-x-4 mt-6">
                                     {socialLinks.map((social, index) => (
