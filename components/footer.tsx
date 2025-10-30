@@ -128,12 +128,21 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom copyright section */}
-                <div className="w-full text-center bg-[#1A0D0D] lg:py-10 py-5">
+                <div className="w-full text-center bg-[#1A0D0D] lg:py-6 py-5">
                     <span className="text-gray-400 text-sm">
                         © 2025 ThreatBlock All right reserved.
                     </span>
+                    <div className='lg:w-full w-11/12 mx-auto flex lg:flex-row flex-col justify-center items-center lg:gap-2 mt-2'>
+                        <div className='text-sm text-gray-600'>
+                            Designed & Developed by
+                        </div>
+                        <Link href='https://wwww.pixsans.in' target='_blank'>
+                            <Image src='/pixsans_logo.svg' width={100} height={100} alt='footer-logo' />
+                        </Link>
 
+                    </div>
                 </div>
+
             </footer>
         </section>
     );

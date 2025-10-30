@@ -41,76 +41,44 @@ export async function getCaseStudies() {
     }
 }
 
-// // get Clients
-// export async function getClients() {
 
-//     try {
-//         const res = await fetch(`${baseUrl}/items/clients`, {
-//             next: { revalidate: 30 }
-//         });
-//         const response = await res.json();
-//         return response
+// get teams
 
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+export async function getTeams() {
 
-// // get Clients
-// export async function getGoogleReview() {
+    try {
+        const res = await fetch(`${baseUrl}/items/team`, {
+            headers: {
+                Authorization: `Bearer ${DIRECTUS_TOKEN}`,
+            },
 
-//     try {
-//         const res = await fetch(`${baseUrl}/items/greview`, {
-//             next: { revalidate: 30 }
-//         });
-//         const response = await res.json();
-//         return response
+            next: { revalidate: 30 }
+        });
+        const response = await res.json();
 
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+        return response
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 
-// // get Products
+// get news
 
-// export async function getProducts() {
+export async function getNews() {
 
-//     try {
-//         const res = await fetch(`${baseUrl}/items/products?filter[status]=published`, { next: { revalidate: 30 } });
-//         const response = await res.json();
-//         return response
+    try {
+        const res = await fetch(`${baseUrl}/items/news`, {
+            headers: {
+                Authorization: `Bearer ${DIRECTUS_TOKEN}`,
+            },
 
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+            next: { revalidate: 30 }
+        });
+        const response = await res.json();
 
-// export async function getHeroProducts() {
-
-//     try {
-//         const res = await fetch(`${baseUrl}/items/products?filter[status]=published&filter[heroproduct]=true`, { next: { revalidate: 30 } });
-//         const response = await res.json();
-//         return response
-
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
-
-
-// // get single product
-
-// export async function getSingleProduct(id: any) {
-
-
-//     try {
-//         const res = await fetch(`${baseUrl}/items/products/${id}?&fields=*.*`, { next: { revalidate: 30 } });
-//         const response = await res.json();
-//         // console.log(response)
-//         return response
-
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+        return response
+    } catch (error) {
+        console.log(error)
+    }
+}

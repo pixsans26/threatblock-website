@@ -1,7 +1,8 @@
 import PressHero from "@/components/press_room_hero";
 import Image from "next/image";
-import Link from "next/link";
-
+import { getNews } from "@/api/getData";
+import { env } from "@/utils/env";
+const baseUrl = env.NEXT_PUBLIC_API_URL
 
 import { Metadata } from 'next';
 
@@ -11,11 +12,12 @@ export const metadata: Metadata = {
     keywords: 'pressroom, media, press release, ThreatBlock news, in the media, media contact'
 };
 
-export default function PressRoom() {
+export default async function PressRoom() {
+    const { data: news } = await getNews()
     return (
         <>
             <PressHero />
-            {/* <section className="lg:w-9/12 w-11/12 mx-auto flex justify-between items-center gap-10 lg:mb-10 mb-5">
+            <section className="lg:w-9/12 w-11/12 mx-auto flex justify-between items-center gap-10 lg:mb-10 mb-5">
                 <div className="lg:w-7/12 w-full">
                     <div className="flex gap-8 lg:w-9/12">
                         <div className="lg:w-8/12 flex flex-col gap-2">
@@ -31,53 +33,42 @@ export default function PressRoom() {
             </section>
 
             <section className="lg:w-9/12 w-11/12 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-10 mb-40">
-                <div className="w-full">
-                  
-                    <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
-                        <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
-                         
-                            <div className="text-5xl text-zinc-600 mb-4">
-                                <Image src='/images/News1.png' height={100} width={1000} alt='' />
+
+                {/* --- MODIFICATION START --- */}
+                {/* Check if news data exists and has a length greater than 0 */}
+                {news && news.length > 0 ? (
+
+                    // If TRUE: Render the news articles
+                    news.map((curElm: any) => (
+                        <div key={curElm.id} className="w-full">
+                            <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
+                                <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
+                                    <div className="text-5xl text-zinc-600 mb-4">
+                                        <Image src={`${baseUrl}/assets/${curElm.image}`} height={100} width={1000} alt={curElm.title || 'News image'} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-black">
+                                        {curElm.title}
+                                    </h3>
+                                    <p className="text-lg text-gray-700">
+                                        {curElm.description}
+                                    </p>
+                                </div>
                             </div>
-
-                        
-                            <h3 className="text-xl font-bold text-black">
-                                Title
-                            </h3>
-
-                           
-                            <p className="text-lg text-gray-700">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <Link href='/' className="text-red-600">Read more...</Link>
                         </div>
+                    ))
+                ) : (
 
+                    // If FALSE: Render a fallback message
+                    // lg:col-span-2 ensures the message spans the full grid width
+                    <div className="lg:col-span-2 text-center py-20">
+                        <p className="text-gray-500 italic text-lg">
+                            News data is not available.
+                        </p>
                     </div>
-                </div>
-                <div className="w-full">
-                
-                    <div className='border-[1px] border-gray-300 p-2 min-w-sm space-y-6  bg-white'>
-                        <div className="p-4 flex flex-col gap-2 bg-gradient-to-b from-white to-[#fff6f6] overflow-hidden ">
-                     
-                            <div className="text-5xl text-zinc-600 mb-4">
-                                <Image src='/images/News1.png' height={100} width={1000} alt='' />
-                            </div>
+                )}
+                {/* --- MODIFICATION END --- */}
 
-                      
-                            <h3 className="text-xl font-bold text-black">
-                                Title
-                            </h3>
-
-                          
-                            <p className="text-lg text-gray-700">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
-                            <Link href='/' className="text-red-600">Read more...</Link>
-                        </div>
-
-                    </div>
-                </div>
-            </section> */}
+            </section>
         </>
     );
 }
